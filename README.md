@@ -39,14 +39,14 @@ pomoću resursa koje je našao prilikom istraživanja, te time dalje nadograditi
 Iskustvo će biti usmjereno dizajnom mape, za razliku od postojanja *Questline-a.
 Narativ će biti prezentiran kroz komunikaciju sa ostalim karakterima.
 
-* Health - arbitrarna mjera koja govori koliko je karakter "živ" ili zdrav  
-* EXP - Expirience - arbitrarna mjera progresije karaktera služi kao uslov za *levelovanje  
-* Levelovanje - proces "jačanja" karaktera  
-* Spašena lokacija - Checkpoint - stanje igre sačuvano u memoriji  
-* LVL - Level - arbitrarna mjera "snage" karaktera, utiče na druge atribute  
-* NPC - Non Playable Character - u suštini svi likovi osim korisničkog  
-* Questline - niz *Quest-ova koji vode ka razvoju narativa  
-* Quest - specifičan zadatak koji korisnik treba izvršiti (npr. idi od A do B, nađi x, 
+*Health - arbitrarna mjera koja govori koliko je karakter "živ" ili zdrav  
+*EXP - Expirience - arbitrarna mjera progresije karaktera služi kao uslov za *levelovanje  
+*Levelovanje - proces "jačanja" karaktera  
+*Spašena lokacija - Checkpoint - stanje igre sačuvano u memoriji  
+*LVL - Level - arbitrarna mjera "snage" karaktera, utiče na druge atribute  
+*NPC - Non Playable Character - u suštini svi likovi osim korisničkog  
+*Questline - niz *Quest-ova koji vode ka razvoju narativa  
+*Quest - specifičan zadatak koji korisnik treba izvršiti (npr. idi od A do B, nađi x, 
 eliminiši t, ...)
 
 ##Funkcionalnosti
@@ -61,8 +61,8 @@ eliminiši t, ...)
 - Mogućnost korištenja *Consumable Items
 - Mogućnost provjere *inventara
 
-* Consumable Items - pružaju trenutno povećanje određenih atributa, nestanu nakon toga  
-* Inventory - skladište svih stvari koji karakter može skupiti  
+*Consumable Items - pružaju trenutno povećanje određenih atributa, nestanu nakon toga  
+*Inventory - skladište svih stvari koji karakter može skupiti  
 
 ##Akteri
 
