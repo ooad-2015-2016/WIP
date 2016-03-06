@@ -30,7 +30,7 @@ doći do susreta sa određenim neprijateljima prilikom čega igra prelazi na bor
 ekran. Ovjde korisnik bira napade ili sposobnosti koji će njegov karakter izvršiti
 s ciljem da porazi protivnika, nakon čega će on uraditi isto. Borba se završava
 ili kada svi suparnici, ili korisnikom upravljani karakter izgube sav *Health.
-Nakon toga ako je korisnik pobijedio njegov karakter će dobiti iskustvo (*EXP) i
+Nakon toga ako je korisnik pobijedio njegov karakter će dobiti iskustvo( *EXP) i
 možda neke resurse, u suprotnom on biva vraćen na prethodno spašenu lokaciju.
 Nakon određenog broja borbi on dobiva *LVL, te može birati neki novi napad ili
 sposobnost za korištenje u narednim susretima. Također korisnik može na tačno
