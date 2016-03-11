@@ -1,18 +1,15 @@
-﻿# WIP
-Naziv tima: 
+﻿#WIP
 
-WIP(Work in progress)
+##Role Playing Game
 
-Članovi tima:
+###Članovi tima:
 
 1. Subašić Adi
 2. Murselović Lejla
 3. Solak Naida
 4. Muratagić Amer
 
-#Role Playing Game
-
-##Opis Teme
+###Opis Teme
 
 Cilj projekta je napraviti video igru koja pripada RPG žanru(tačnije JRPG).
 Ona se sastoji od niza sistema sa kojima korisnik može istraživati svijet, 
@@ -48,21 +45,21 @@ Narativ će biti prezentiran kroz komunikaciju sa ostalim karakterima.
 eliminiši t, ...)
 
 
-##Procesi
+###Procesi
 
-### Proces započinjanja igre
+####Proces započinjanja igre
 
 Korisniku se pojavi interfejs na kojem može izabrati da li će započeti novu igru ili nastaviti
 sačuvanu igru. Ukoliko započinje novu igru pokrenut će se proces kreiranja novog karaktera u 
 kojem unosi željeno ime. Nakon toga na ekranu se prikaže mapa i kreirani lik.
 
-### Proces kretanja po mapi
+####Proces kretanja po mapi
 
 Korisnik korištenjem tastature može da mijenja poziciju svog karaktera na mapi. To radi pomoću
 strelica koje označavaju smijer kretanja. Tokom tog kretanja postoji mogućnost da lik naiđe na 
 neprijatelja nakon čega se pokreće proces borbe. 
 
-### Proces borbe
+####Proces borbe
 
 Korisniku se prikazuje intefejs na kojem vidi sliku svog lika i neprijatelja, zajedno sa 
 njihovim borbenim statistikama. Korisniku će biti ponuđene mogućnosti odabira napada, 
@@ -75,45 +72,45 @@ igrač ili neprijatelj ne izgube život, osim u slučaju da igrač pobjegne. Ako
 pobijedi dobiva odredjeni broj iskustva i/ili zlata. U suprotnom pokrenut će se proces 
 učitavanja igre sa predhodnog spašenog stanja.
 
-### Proces korištenja menija
+####Proces korištenja menija
 
 Otvaranjem menija pojavljuje se korisnički interfejs koji nudi izbor pregleda osobina karaktera, 
 otvaranja inventara gdje možemo vršiti procese odabira opreme i korištenja predmeta, pregleda 
 sposobnosti igrača i napuštanja igre. 
 
-### Proces levelovanja
+####Proces levelovanja
 
 Ukoliko korisnik stekne dovoljno iskustva povećava mu se level, što donosi statističke prednosti.
 (Povećavanjem na određene levele otvara se mogućnost odabira novih tipova napada u toku borbi.)
 
-### Proces kupovine predmeta i opreme 
+####Proces kupovine predmeta i opreme 
 
 Ako se korisnik nađe u blizini prodavača na mapi, ima mogućnost kupovine novih predmeta i opreme
 koji su mu ponuđeni. Predmeti su prikazani u novom korisničkom interfejsu. Za kupovinu se koristi 
 zlato stečeno u borbi. Kada kupi predmet, on se prohranjuje u inventar.
 
-### Proces odabira opreme
+####Proces odabira opreme
 
 Unutar inventarskog menija biramo opremu koju karakter može koristiti. 
 
-### Proces korištenja predmeta
+####Proces korištenja predmeta
 
 Ako korisnik želi iskoristiti predmet iz inventara kojim bi promijenio trenutno stanje igrača, 
 odabire odgovarajuću opciju unutar menija.
 
-### Proces razgovora sa NPC karakterom
+####Proces razgovora sa NPC karakterom
 
 U blizini NPC-a korisnik može započeti razgovor, prilikom čega dobiva uputstva ili informacije o 
 svijetu u kojem se odvija igra.
 
-### Proces spašavanja igre
+####Proces spašavanja igre
 
-### Proces učitavanja igre
+####Proces učitavanja igre
  
 
 
 
-##Funkcionalnosti
+###Funkcionalnosti
 
 - Mogućnost kretanja po mapi
 	- Mogućnost ulaska u borbu
@@ -128,6 +125,6 @@ svijetu u kojem se odvija igra.
 *Consumable Items - pružaju trenutno povećanje određenih atributa, nestanu nakon toga  
 *Inventory - skladište svih stvari koji karakter može skupiti  
 
-##Akteri
+###Akteri
 
 - Korisnik - on je jedini akter u ovom projektu, ima apsolutnu kontrolu nad svim funkcionalnostima
