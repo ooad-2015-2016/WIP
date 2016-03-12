@@ -81,9 +81,10 @@ sposobnosti igrača i napuštanja igre.
 ######Proces levelovanja
 
 Ukoliko korisnik stekne dovoljno iskustva povećava mu se level, što donosi statističke prednosti.
-(Povećavanjem na određene levele otvara se mogućnost odabira novih tipova napada u toku borbi.)
-
-######Proces kupovine predmeta i opreme 
+On također dobiva i određeni broj "skill" poena sa kojima može otključati nove sposobnosti za
+korištenje unutar borbi.
+ 
+######Proces kupovine predmeta i opreme
 
 Ako se korisnik nađe u blizini prodavača na mapi, ima mogućnost kupovine novih predmeta i opreme
 koji su mu ponuđeni. Predmeti su prikazani u novom korisničkom interfejsu. Za kupovinu se koristi 
