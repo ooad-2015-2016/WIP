@@ -106,10 +106,13 @@ svijetu u kojem se odvija igra. Također on može dobiti i neke nagrade od samog
 
 ######Proces spašavanja igre
 
+Kada se karakter nađe u blizini objekta za spašavanje igre, nazovimo ga "Checkpoint" on ima mogućnost da
+spasi trenutno stanje igre.
+
 ######Proces učitavanja igre
- 
 
-
+Korisnik se može vratiti na početni meni ("Main Meni") odakle može učitati neko od prethodno spašenih stanja
+igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
 ###Funkcionalnosti
 
