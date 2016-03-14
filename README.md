@@ -99,6 +99,10 @@ Unutar inventarskog menija biramo opremu koju karakter može koristiti.
 Ako korisnik želi iskoristiti predmet iz inventara kojim bi promijenio trenutno stanje igrača, 
 odabire odgovarajuću opciju unutar menija.
 
+######Proces bacanja predmeta i opreme
+
+U istom meniju kao i u prethodnom slučaju korisnik može odbaciti neželjene predmete i opremu.
+
 ######Proces razgovora sa NPC karakterom
 
 U blizini NPC-a korisnik može započeti razgovor, prilikom čega dobiva uputstva ili informacije o 
@@ -122,6 +126,7 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 - Mogućnost komunikacije sa NPC karakterima
 - Mogućnost odabira određene opreme ("Equiping Items")
 - Mogućnost korištenja *Consumable Items
+- Mogućnost bacanja predmeta iz inventara
 - Mogućnost provjere *inventara
 - Mogućnost provjere osobina karaktera
 - Mogućnost provjere sposobnosti
