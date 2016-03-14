@@ -125,6 +125,9 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 - Mogućnost odabira određene opreme ("Equiping Items")
 - Mogućnost korištenja *Consumable Items
 - Mogućnost provjere *inventara
+- Mogućnost provjere osobina karaktera
+- Mogućnost provjere sposobnosti
+- Mogućnost napuštanja igre
 
 *Consumable Items - pružaju trenutno povećanje određenih atributa, nestanu nakon toga  
 *Inventory - skladište svih stvari koji karakter može skupiti  
