@@ -118,7 +118,6 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
 - Mogućnost kretanja po mapi
 	- Mogućnost ulaska u borbu
-- Mogućnost levelovanja
 - Mogućnost kupovine opreme
 - Mogućnost komunikacije sa NPC karakterima
 - Mogućnost pregleda određenih statistika
@@ -127,6 +126,7 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 - Mogućnost provjere *inventara
 - Mogućnost provjere osobina karaktera
 - Mogućnost provjere sposobnosti
+	- Mogućnost otključavanja novih sposobnosti
 - Mogućnost napuštanja igre
 
 *Consumable Items - pružaju trenutno povećanje određenih atributa, nestanu nakon toga  
