@@ -102,7 +102,7 @@ odabire odgovarajuću opciju unutar menija.
 ######Proces razgovora sa NPC karakterom
 
 U blizini NPC-a korisnik može započeti razgovor, prilikom čega dobiva uputstva ili informacije o 
-svijetu u kojem se odvija igra.
+svijetu u kojem se odvija igra. Također on može dobiti i neke nagrade od samog NPC-a.
 
 ######Proces spašavanja igre
 
