@@ -120,7 +120,6 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 	- Mogućnost ulaska u borbu
 - Mogućnost kupovine opreme
 - Mogućnost komunikacije sa NPC karakterima
-- Mogućnost pregleda određenih statistika
 - Mogućnost odabira određene opreme ("Equiping Items")
 - Mogućnost korištenja *Consumable Items
 - Mogućnost provjere *inventara
