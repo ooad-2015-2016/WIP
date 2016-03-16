@@ -139,3 +139,30 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 ###Akteri
 
 - Korisnik - on je jedini akter u ovom projektu, ima apsolutnu kontrolu nad svim funkcionalnostima
+
+###Dijagrami i scenariji
+
+#####Use Case dijagram
+
+- [Use Case dijagram](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/root/UseCaseIScenarij/RolePlayingGame.jpg)
+	- [Započinjanje igre](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/root/UseCaseIScenarij/Zapo%C4%8Dinjanje%20igre.jpg)
+
+#####Scenariji
+
+[]()
+#####Activity dijagrami
+
+-[Dijagram ukupnog procesa](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/DijagramUkupnogProcesa.jpg)
+	- [Kretanje po mapi]()
+		-[Odvijanje borbe](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/OdvijanjeBorbe.jpg)
+		-[Kupovina opreme]()
+		-[Razgovor sa NPC karakterom]()
+		-[Spasavanje igre]()
+	- [Korištenje menija]()
+		-[Korištenje Menija]()
+		-[Provjera Inventara](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/ProvjeraInventara.jpg)
+			-[Biranje Opreme](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/BiranjeOpreme.jpg)
+			-[Korištenje Predmeta](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/Kori%C5%A1tenjePredmeta.jpg)
+			-[Bacanje Itema](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramAktivnosti/BacanjeItema.jpg)
+		-[Provjera osobina]()
+			-[Otključavanje sposobnosti]()
