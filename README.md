@@ -153,11 +153,11 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 #####Activity dijagrami
 
 * [Dijagram ukupnog procesa](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/DijagramUkupnogProcesa.jpg)  
-	* [Kretanje po mapi]()  
+	* [Kretanje po mapi](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramAktivnosti/KretanjePoMapi.jpg?raw=true)  
 		* [Odvijanje borbe](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/OdvijanjeBorbe.jpg)  
-		* [Kupovina opreme]()  
-		* [Razgovor sa NPC karakterom]()  
-		* [Spasavanje igre]()  
+		* [Kupovina opreme](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramAktivnosti/KupovinaOpreme.jpg)  
+		* [Razgovor sa NPC karakterom](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/RazgovorSaNpcKarakterom.jpg)  
+		* [Spasavanje igre](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramAktivnosti/SpasavanjeIgre.jpg)  
 	* [Korištenje menija]()  
 		* [Korištenje Menija]()  
 		* [Provjera Inventara](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/ProvjeraInventara.jpg)  
