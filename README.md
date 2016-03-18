@@ -159,7 +159,7 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 		* [Razgovor sa NPC karakterom](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/RazgovorSaNpcKarakterom.jpg)  
 		* [Spasavanje igre](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/SpasavanjeIgre.jpg)  
 	* [Korištenje menija](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/KoristenjeMenija.jpg)  
-* [Provjera osobina](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/ProvjeraOsobina.jpg)  
+		* [Provjera osobina](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/ProvjeraOsobina.jpg)  
 		* [Provjera Inventara](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/ProvjeraInventara.jpg)  
 			* [Biranje Opreme](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/BiranjeOpreme.jpg)  
 			* [Korištenje Predmeta](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/Kori%C5%A1tenjePredmeta.jpg)  
