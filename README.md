@@ -165,3 +165,23 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 			* [Korištenje Predmeta](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/Kori%C5%A1tenjePredmeta.jpg)  
 			* [Bacanje Itema](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/BacanjeItema.jpg)  
 		* [Provjera sposobnosti](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/ProvjeraSposobnosti.jpg)
+
+###Skice Formi
+
+#####Battle Meni
+
+* [Forma 1](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/1.png)
+* [Forma 2](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/2.png)
+* [Forma 3](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/3.png)
+* [Forma 4](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/4.png)
+
+#####Alternate Battle Meni - vjerovatno bolji
+
+* [Forma 1](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/1.png)
+* [Forma 2](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/2.png)
+* [Forma 3](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/3.png)
+* [Forma 4](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/4.png)
+* [Forma 5](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/5.png)
+* [Forma 6](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/6.png)
+* [Forma 7](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/7.png)
+
