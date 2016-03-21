@@ -144,8 +144,8 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
 #####Use Case dijagram
 
-- [Use Case dijagram](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/root/UseCaseIScenarij/RolePlayingGame.jpg)
-	- [Započinjanje igre](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/root/UseCaseIScenarij/Zapo%C4%8Dinjanje%20igre.jpg)
+- [Use Case dijagram](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/UseCaseIScenarij/RolePlayingGame.jpg)
+	- [Započinjanje igre](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/UseCaseIScenarij/Zapo%C4%8Dinjanje%20igre.jpg)
 
 #####Scenariji
 
