@@ -148,8 +148,15 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 	- [Započinjanje igre](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/UseCaseIScenarij/Zapo%C4%8Dinjanje%20igre.jpg)
 
 #####Scenariji
+ 
+* [Započinjanje igre](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/Zapo%C4%8DinjanjeIgre.pdf)
+* [Korištenje mape](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/Kori%C5%A1tenjeMape.pdf)
+	* [Odvijanje borbe](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/Borba.pdf)
+	* [Kupovina Item-a](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/Kupovina.pdf)
+	* [Razgovor sa NPC karakterom](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/RazgovorSaNPC.pdf)
+	* [Spašavanje igre](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/SpašavanjeIgre.pdf)
+* [Korištenje Menija](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/KoristenjeMenija.pdf)
 
-[]()
 #####Activity dijagrami
 
 * [Dijagram ukupnog procesa](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/DijagramUkupnogProcesa.jpg)  
@@ -165,6 +172,13 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 			* [Korištenje Predmeta](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/Kori%C5%A1tenjePredmeta.jpg)  
 			* [Bacanje Itema](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/BacanjeItema.jpg)  
 		* [Provjera sposobnosti](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/ProvjeraSposobnosti.jpg)
+
+[]()
+
+###Dijagram Klasa
+
+* [Glavni dio](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramKlasa/Character.jpg)
+* [Glavni dio bez metoda](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramKlasa/CharacterBezGetISetFunkcija.jpg)
 
 ###Skice Formi
 
