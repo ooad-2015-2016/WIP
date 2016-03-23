@@ -177,8 +177,8 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
 ###Dijagram Klasa
 
-* [Glavni dio](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramKlasa/Character.jpg)
-* [Glavni dio bez metoda](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramKlasa/CharacterBezGetISetFunkcija.jpg)
+* [Glavni dio](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/Character.jpg)
+* [Glavni dio bez metoda](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/CharacterBezGetISetFunkcija.jpg)
 
 ###Skice Formi
 
