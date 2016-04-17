@@ -177,8 +177,8 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
 ###Dijagram Klasa
 
-* [Glavni dio](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/Character.jpg)
-* [Glavni dio bez metoda](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/CharacterBezGetISetFunkcija.jpg)
+* [Klase](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/Character.jpg)
+* [Klase kompresovane](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/KlaseCompressed.jpg)
 
 ###Skice Formi
 
@@ -198,4 +198,9 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 * [Forma 5](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/5.png)
 * [Forma 6](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/6.png)
 * [Forma 7](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/7.png)
+
+#####Battle Meni - XAML
+
+* [XAML implementacija](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeniXAML.png)
+
 
