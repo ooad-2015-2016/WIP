@@ -118,6 +118,10 @@
     <Content Include="Assets\Box1edit.png" />
     <Content Include="Assets\Box2.png" />
     <Content Include="Assets\Button1.png" />
+    <Content Include="Assets\Button_No.png" />
+    <Content Include="Assets\Button_No1.png" />
+    <Content Include="Assets\Button_Yes.png" />
+    <Content Include="Assets\Button_Yes1.png" />
     <Content Include="Assets\CharacterExample.png" />
     <Content Include="Assets\EnemyInfoBox.png" />
     <Content Include="Assets\ImageBox.png" />

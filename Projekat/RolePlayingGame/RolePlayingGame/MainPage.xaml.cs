@@ -26,5 +26,15 @@ namespace RolePlayingGame
         {
             this.InitializeComponent();
         }
+
+        public void RadiNesto()
+        {
+            this.Frame.Navigate(typeof(BlankPage1), null);
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BlankPage1), null);
+        }
     }
 }
