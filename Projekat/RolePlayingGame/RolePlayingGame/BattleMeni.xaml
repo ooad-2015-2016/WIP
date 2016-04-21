@@ -23,13 +23,29 @@
         <Image x:Name="image" HorizontalAlignment="Left" Height="342" VerticalAlignment="Top" Width="1147" Margin="76,356,0,0" Source="/Assets/Box1edit.png"/>
         <Image x:Name="image2" HorizontalAlignment="Left" Height="302" VerticalAlignment="Top" Width="723" Margin="478,372,0,0" Source="/Assets/Box2.png"/>
         <Image x:Name="Attack_Button" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="280" Margin="102,386,0,0" Source="/Assets/Button1.png"/>
-        <Button x:Name="Attack" Content="Attack" HorizontalAlignment="Left" Margin="102,386,0,0" VerticalAlignment="Top" Height="60" Width="280" Click="Attack_Click"/>
+        <Image x:Name="Attack_Select" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="283" Margin="101,385,0,0" Source="/Assets/Button1Select.png"/>
+        <Border BorderBrush="{x:Null}" Margin="107,391,898,275">
+            <TextBlock x:Name ="Attack_Text" TextWrapping="Wrap" Text="Attack" Margin="0,17" TextAlignment="Center"/>
+        </Border>
+        <Button x:Name="Attack" Content="Attack" HorizontalAlignment="Left" Margin="102,386,0,0" VerticalAlignment="Top" Height="60" Width="280" Click="Attack_Click" Opacity="0"/>
         <Image x:Name="Ability_Button" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="280" Margin="102,462,0,0" Source="/Assets/Button1.png"/>
-        <Button x:Name="Use_Ability" Content="Use Ability" HorizontalAlignment="Left" Margin="102,462,0,0" VerticalAlignment="Top" Height="60" Width="280" Click="Use_Ability_Click"/>
+        <Image x:Name="Ability_Select" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="282" Margin="101,461,0,0" Source="/Assets/Button1Select.png"/>
+        <Border BorderBrush="{x:Null}" Margin="107,467,898,203">
+            <TextBlock x:Name ="Ability_Text" TextWrapping="Wrap" Text="Use Ability" Margin="0,17" TextAlignment="Center"/>
+        </Border>
+        <Button x:Name="Use_Ability" Content="Use Ability" HorizontalAlignment="Left" Margin="107,467,0,0" VerticalAlignment="Top" Height="50" Width="275" Click="Use_Ability_Click" Opacity="0"/>
         <Image x:Name="Item_Button" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="280" Margin="102,538,0,0" Source="/Assets/Button1.png"/>
-        <Button x:Name="Use_Item" Content="Use Item" HorizontalAlignment="Left" Margin="102,538,0,0" VerticalAlignment="Top" Height="60" Width="280" Click="Use_Item_Click"/>
+        <Image x:Name="Item_Select" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="282" Margin="101,537,0,0" Source="/Assets/Button1Select.png"/>
+        <Border BorderBrush="{x:Null}" Margin="107,541,898,129">
+            <TextBlock x:Name ="Item_Text" TextWrapping="Wrap" Text="Use Item" Margin="0,17" TextAlignment="Center"/>
+        </Border>
+        <Button x:Name="Use_Item" Content="Use Item" HorizontalAlignment="Left" Margin="102,538,0,0" VerticalAlignment="Top" Height="60" Width="280" Click="Use_Item_Click" Opacity="0"/>
         <Image x:Name="Run_Button" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="280" Margin="102,614,0,0" Source="/Assets/Button1.png"/>
-        <Button x:Name="Run_Away" Content="Run Away" HorizontalAlignment="Left" Margin="102,614,0,0" VerticalAlignment="Top" Height="60" Width="280" Click="Run_Away_Click"/>
+        <Image x:Name="Run_Select" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="282" Margin="101,613,0,0" Source="/Assets/Button1Select.png"/>
+        <Border BorderBrush="{x:Null}" Margin="107,614,898,129">
+            <TextBlock x:Name ="Run_Text" TextWrapping="Wrap" Text="Run Away" Margin="0,19,0,-100" TextAlignment="Center" Height="30" VerticalAlignment="Top"/>
+        </Border>
+        <Button x:Name="Run_Away" Content="Run Away" HorizontalAlignment="Left" Margin="107,619,0,0" VerticalAlignment="Top" Height="55" Width="275" Click="Run_Away_Click" Opacity="0"/>
         <Image x:Name="Confirm_Image" HorizontalAlignment="Left" Margin="398,391,0,0" VerticalAlignment="Top" Height="55" Width="55" Source="/Assets/Button_Yes1.png"/>
         <Button x:Name="Confirm" Content="" HorizontalAlignment="Left" Margin="398,391,0,0" VerticalAlignment="Top" Height="55" Width="55" Click="Confirm_Click"/>
         <Image x:Name="Deny_Image" HorizontalAlignment="Left" Margin="398,462,0,0" VerticalAlignment="Top" Height="55" Width="55" Source="/Assets/Button_No1.png"/>
