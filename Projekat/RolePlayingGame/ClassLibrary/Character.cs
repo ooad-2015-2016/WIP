@@ -22,9 +22,12 @@ namespace Entity {
 		private List<Skill> skills;
 		private List<StatusEffect> statusEffects;
 
-		public Character() {
-			throw new System.Exception("Not implemented");
-		}
+		public Character()
+        {
+            ID = 1; LVL = 1;
+            maxHealth = 100; health = maxHealth;
+            maxMana = 50; mana = maxMana;
+        }
 		public void LevelUp() {
 			throw new System.Exception("Not implemented");
 		}
@@ -52,11 +55,11 @@ namespace Entity {
 		public void Unequip(ref object item) {
 			throw new System.Exception("Not implemented");
 		}
-		public void AddSkill(ref object skill) {
-			throw new System.Exception("Not implemented");
+		public void AddSkill(Skill skill) {
+            skills.Add(skill);
 		}
-		public void RemoveSkill(ref object skill) {
-			throw new System.Exception("Not implemented");
+		public void RemoveSkill(Skill skill) {
+            skills.Remove(skill);
 		}
 		public String GetSkillsInfo() {
 			throw new System.Exception("Not implemented");

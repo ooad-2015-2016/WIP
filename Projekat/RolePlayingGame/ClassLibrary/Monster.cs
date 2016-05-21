@@ -9,15 +9,15 @@ namespace Entity {
 		private Image sprite;
 		private int LVL;
 		private int health;
-        public int Health;
 		private int maxHealth;
 		private int mana;
 		private int maxMana;
 		private Atributes atributes;
 		private List<Skill> skills;
 		private List<StatusEffect> statusEffects;
+        private AI think;
 
-		public int GetID() {
+        public int GetID() {
 			return this.ID;
 		}
 		public void SetID(ref int ID) {
@@ -92,8 +92,6 @@ namespace Entity {
 		public Monster(ref object parameter) {
 			throw new System.Exception("Not implemented");
 		}
-
-		private AI aI;
 
 	}
 
