@@ -40,16 +40,16 @@ namespace Entity {
 		public void SetValue(ref int value) {
 			this.value = value;
 		}
-		public Bool GetAddOrMultiply() {
+		public bool GetAddOrMultiply() {
 			return this.addOrMultiply;
 		}
-		public void SetAddOrMultiply(ref Bool addOrMultiply) {
+		public void SetAddOrMultiply(ref bool addOrMultiply) {
 			this.addOrMultiply = addOrMultiply;
 		}
-		public Bool GetTargetsSelf() {
+		public bool GetTargetsSelf() {
 			return this.targetsSelf;
 		}
-		public void SetTargetsSelf(ref Bool targetsSelf) {
+		public void SetTargetsSelf(ref bool targetsSelf) {
 			this.targetsSelf = targetsSelf;
 		}
 		public StatusEffect GetNewStatusEffect() {

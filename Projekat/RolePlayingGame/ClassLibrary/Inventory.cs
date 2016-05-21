@@ -47,11 +47,6 @@ namespace Entity {
 			this.currentNo = currentNo;
 		}
 
-		private InventorySlot inventorySlot;
-
-		private Character character;
-		private Shop shop;
-
 	}
 
 }

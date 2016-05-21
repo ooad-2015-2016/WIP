@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
+
 namespace Entity {
 	public class Battle {
 		private List<Character> playerParty;
 		private List<Monster> monsterParty;
 		private int target;
-		private Bool targetFriendly;
+		private bool targetFriendly;
 		private int damageDealt;
 
 		public Battle() {
@@ -28,10 +30,10 @@ namespace Entity {
 		public void SetTarget(ref int target) {
 			this.target = target;
 		}
-		public Bool GetTargetFriendly() {
+		public bool GetTargetFriendly() {
 			return this.targetFriendly;
 		}
-		public void SetTargetFriendly(ref Bool targetFriendly) {
+		public void SetTargetFriendly(ref bool targetFriendly) {
 			this.targetFriendly = targetFriendly;
 		}
 		public int GetDamageDealt() {

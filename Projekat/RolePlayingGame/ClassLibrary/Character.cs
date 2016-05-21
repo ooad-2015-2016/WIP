@@ -1,89 +1,26 @@
 using System;
+using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
 
 namespace Entity {
 	public class Character {
-		private int iD;
-		public int ID {
-			get {
-				return iD;
-			}
-			set {
-				iD = value;
-			}
-		}
+		private int ID;
 		private String name;
-		public String Name {
-			get {
-				return name;
-			}
-			set {
-				name = value;
-			}
-		}
 		private int HeroClass;
 		private Image sprite;
 		private int positionX;
 		private int positionY;
-		private int lVL;
-		public int LVL {
-			get {
-				return lVL;
-			}
-			set {
-				lVL = value;
-			}
-		}
-		private int eXP;
-		public int EXP {
-			get {
-				return eXP;
-			}
-			set {
-				eXP = value;
-			}
-		}
+		private int LVL;
+		private int EXP;
 		private int health;
-		public int Health {
-			get {
-				return health;
-			}
-			set {
-				health = value;
-			}
-		}
 		private int maxHealth;
-		public int MaxHealth {
-			get {
-				return maxHealth;
-			}
-			set {
-				maxHealth = value;
-			}
-		}
 		private int mana;
-		public int Mana {
-			get {
-				return mana;
-			}
-			set {
-				mana = value;
-			}
-		}
 		private int maxMana;
-		public int MaxMana {
-			get {
-				return maxMana;
-			}
-			set {
-				maxMana = value;
-			}
-		}
 		private Atributes atributes;
 		private Inventory inventory;
 		private EquipmentSlots equipment;
 		private List<Skill> skills;
-		private list<StatusEffect> statusEffects;
+		private List<StatusEffect> statusEffects;
 
 		public Character() {
 			throw new System.Exception("Not implemented");
@@ -131,10 +68,10 @@ namespace Entity {
 			throw new System.Exception("Not implemented");
 		}
 		public int GetID() {
-			return this.iD;
+			return this.ID;
 		}
-		public void SetID(ref int iD) {
-			this.iD = iD;
+		public void SetID(ref int ID) {
+			this.ID = ID;
 		}
 		public String GetName() {
 			return this.name;
@@ -143,15 +80,15 @@ namespace Entity {
 			this.name = name;
 		}
 		public int GetClass() {
-			return this.class;
+			return this.HeroClass;
 		}
-		public void SetClass(ref int class) {
-			this.class = class;
+		public void SetHeroClass(ref int HeroClass) {
+			this.HeroClass = HeroClass;
 		}
-		public Sprite GetSprite() {
+		public Image GetSprite() {
 			return this.sprite;
 		}
-		public void SetSprite(ref Sprite sprite) {
+		public void SetSprite(ref Image sprite) {
 			this.sprite = sprite;
 		}
 		public int GetPositionX() {
@@ -167,16 +104,16 @@ namespace Entity {
 			this.positionY = positionY;
 		}
 		public int GetLVL() {
-			return this.lVL;
+			return this.LVL;
 		}
 		public void SetLVL(ref int lVL) {
-			this.lVL = lVL;
+			this.LVL = lVL;
 		}
 		public int GetEXP() {
-			return this.eXP;
+			return this.EXP;
 		}
 		public void SetEXP(ref int eXP) {
-			this.eXP = eXP;
+			this.EXP = eXP;
 		}
 		public int GetHealth() {
 			return this.health;

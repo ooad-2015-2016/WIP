@@ -2,28 +2,12 @@ using System;
 namespace Entity {
 	public class Atributes : Monster  {
 		private int strength;
-		public int Strength {
-			get {
-				return strength;
-			}
-			set {
-				strength = value;
-			}
-		}
 		private int vitality;
 		private int agility;
 		private int intelligence;
 		private int willpower;
 		private int luck;
-		public int Luck {
-			get {
-				return luck;
-			}
-			set {
-				luck = value;
-			}
-		}
-
+//Atributes go from 10 to 50
 		public Atributes() {
 			throw new System.Exception("Not implemented");
 		}
@@ -79,8 +63,10 @@ namespace Entity {
 			throw new System.Exception("Not implemented");
 		}
 		public Double GetDodgeChance() {
-			throw new System.Exception("Not implemented");
-		}
+            double dodge = Math.Ceiling(-323.7*Math.Pow(agility, -0.7553) + 56.86);
+            return dodge;
+    
+        }
 		public Double GetCritChance() {
 			throw new System.Exception("Not implemented");
 		}

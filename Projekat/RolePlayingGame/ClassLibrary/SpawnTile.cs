@@ -1,13 +1,13 @@
 using System;
 namespace Entity {
 	public class SpawnTile {
-		private int iD = 0;
+		private int ID = 0;
 
 		public int GetID() {
-			return this.iD;
+			return this.ID;
 		}
 		public void SetID(ref int iD) {
-			this.iD = iD;
+			this.ID = iD;
 		}
 		public SpawnTile() {
 			throw new System.Exception("Not implemented");

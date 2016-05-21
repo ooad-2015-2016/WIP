@@ -22,12 +22,6 @@ namespace Entity {
 		public void SetSubType(ref int subType) {
 			this.subType = subType;
 		}
-		public override String GetDescription() {
-			throw new System.Exception("Not implemented");
-		}
-		public override void SetDescription(ref String description) {
-			throw new System.Exception("Not implemented");
-		}
 		public int GetPower() {
 			return this.power;
 		}

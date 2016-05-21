@@ -4,79 +4,24 @@ using Windows.UI.Xaml.Controls;
 
 namespace Entity {
 	public class Monster {
-		private int iD;
-		public int ID {
-			get {
-				return iD;
-			}
-			set {
-				iD = value;
-			}
-		}
+		private int ID;
 		private String name;
-		public String Name {
-			get {
-				return name;
-			}
-			set {
-				name = value;
-			}
-		}
 		private Image sprite;
-		private int lVL;
-		public int LVL {
-			get {
-				return lVL;
-			}
-			set {
-				lVL = value;
-			}
-		}
+		private int LVL;
 		private int health;
-		public int Health {
-			get {
-				return health;
-			}
-			set {
-				health = value;
-			}
-		}
+        public int Health;
 		private int maxHealth;
-		public int MaxHealth {
-			get {
-				return maxHealth;
-			}
-			set {
-				maxHealth = value;
-			}
-		}
 		private int mana;
-		public int Mana {
-			get {
-				return mana;
-			}
-			set {
-				mana = value;
-			}
-		}
 		private int maxMana;
-		public int MaxMana {
-			get {
-				return maxMana;
-			}
-			set {
-				maxMana = value;
-			}
-		}
 		private Atributes atributes;
 		private List<Skill> skills;
 		private List<StatusEffect> statusEffects;
 
 		public int GetID() {
-			return this.iD;
+			return this.ID;
 		}
-		public void SetID(ref int iD) {
-			this.iD = iD;
+		public void SetID(ref int ID) {
+			this.ID = ID;
 		}
 		public String GetName() {
 			return this.name;
@@ -91,10 +36,10 @@ namespace Entity {
 			this.sprite = sprite;
 		}
 		public int GetLVL() {
-			return this.lVL;
+			return this.LVL;
 		}
-		public void SetLVL(ref int lVL) {
-			this.lVL = lVL;
+		public void SetLVL(ref int LVL) {
+			this.LVL = LVL;
 		}
 		public int GetHealth() {
 			return this.health;
