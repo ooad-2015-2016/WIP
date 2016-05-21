@@ -1,13 +1,16 @@
 using System;
+using System.Collections.Generic;
+using Windows.UI.Xaml.Controls;
+
 namespace Entity {
 	public class Map {
-		private int iD = { 0};
+		private int iD = 0;
 		private int length = 0;
-		private list<void<void<void>>> collisionLayer;
-		private list<void<void<void>>> spawnLayer;
+		private List<bool> collisionLayer;
+		private List<SpawnTile> spawnLayer;
 		private int width = 0;
 		private Image mapImage;
-		private list<void<void<void>>> functionLayer;
+		private List<FunctionTile> functionLayer;
 
 		public Map() {
 			throw new System.Exception("Not implemented");

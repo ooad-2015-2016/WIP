@@ -1,4 +1,6 @@
 using System;
+using Windows.UI.Xaml.Controls;
+
 namespace Entity {
 	public class Modifiers {
 		private int iD;
@@ -6,8 +8,8 @@ namespace Entity {
 		private Image sprite;
 		private String description;
 		private int value;
-		private Bool addOrMultiply;
-		private Bool targetsSelf;
+		private bool addOrMultiply;
+		private bool targetsSelf;
 		private Double statusEffectChance;
 		private StatusEffect newStatusEffect;
 

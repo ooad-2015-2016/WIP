@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using Windows.UI.Xaml.Controls;
+
 namespace Entity {
 	public class Monster {
 		private int iD;
@@ -67,7 +70,7 @@ namespace Entity {
 		}
 		private Atributes atributes;
 		private List<Skill> skills;
-		private list<StatusEffect> statusEffects;
+		private List<StatusEffect> statusEffects;
 
 		public int GetID() {
 			return this.iD;

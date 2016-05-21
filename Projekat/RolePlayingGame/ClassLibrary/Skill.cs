@@ -1,4 +1,6 @@
 using System;
+using Windows.UI.Xaml.Controls;
+
 namespace Entity {
 	public class Skill {
 		private int iD;

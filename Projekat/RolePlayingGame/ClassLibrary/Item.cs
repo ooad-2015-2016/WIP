@@ -1,9 +1,11 @@
 using System;
+using Windows.UI.Xaml.Controls;
+
 namespace Entity {
 	public class Item {
 		private int iD;
 		private String name;
-		private Imagine sprite;
+		private Image sprite;
 		private int price;
 		private String description;
 
@@ -22,10 +24,10 @@ namespace Entity {
 		public void SetName(ref String name) {
 			this.name = name;
 		}
-		public Imagine GetSprite() {
+		public Image GetSprite() {
 			return this.sprite;
 		}
-		public void SetSprite(ref Imagine sprite) {
+		public void SetSprite(ref Image sprite) {
 			this.sprite = sprite;
 		}
 		public int GetPrice() {

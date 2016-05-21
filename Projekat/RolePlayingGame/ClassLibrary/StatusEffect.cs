@@ -1,4 +1,6 @@
 using System;
+using Windows.UI.Xaml.Controls;
+
 namespace Entity {
 	public class StatusEffect : Character  {
 		private int iD;
@@ -7,7 +9,7 @@ namespace Entity {
 		private String description;
 		private int value;
 		private int duration;
-		private Bool beforeAttackPhase;
+		private bool beforeAttackPhase;
 
 		public StatusEffect() {
 			throw new System.Exception("Not implemented");
@@ -42,10 +44,10 @@ namespace Entity {
 		public void SetDuration(ref int duration) {
 			this.duration = duration;
 		}
-		public Bool GetBeforeAttackPhase() {
+		public bool GetBeforeAttackPhase() {
 			return this.beforeAttackPhase;
 		}
-		public void SetBeforeAttackPhase(ref Bool beforeAttackPhase) {
+		public void SetBeforeAttackPhase(ref bool beforeAttackPhase) {
 			this.beforeAttackPhase = beforeAttackPhase;
 		}
 		public String GetStatusEffectInfo() {

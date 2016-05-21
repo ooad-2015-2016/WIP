@@ -1,4 +1,6 @@
 using System;
+using Windows.UI.Xaml.Controls;
+
 namespace Entity {
 	public class Character {
 		private int iD;
@@ -19,8 +21,8 @@ namespace Entity {
 				name = value;
 			}
 		}
-		private int class;
-		private Sprite sprite;
+		private int HeroClass;
+		private Image sprite;
 		private int positionX;
 		private int positionY;
 		private int lVL;
