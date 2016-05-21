@@ -3,7 +3,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace Entity {
 	public class Skill {
-		private int iD;
+		private int ID;
 		private String name;
 		private Image sprite;
 		private int mainType;
@@ -15,9 +15,7 @@ namespace Entity {
 		private StatusEffect newStatusEffect;
 		private Double statusEffectChance;
 
-		public Skill() {
-			throw new System.Exception("Not implemented");
-		}
+		public Skill() { }
 		public void GetSkillInfo() {
 			throw new System.Exception("Not implemented");
 		}
@@ -25,10 +23,10 @@ namespace Entity {
 			throw new System.Exception("Not implemented");
 		}
 		public int GetID() {
-			return this.iD;
+			return this.ID;
 		}
 		public void SetID(ref int iD) {
-			this.iD = iD;
+			this.ID = iD;
 		}
 		public String GetName() {
 			return this.name;

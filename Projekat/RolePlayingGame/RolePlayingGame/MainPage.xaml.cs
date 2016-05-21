@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
+namespace ClassLibrary { }
 namespace RolePlayingGame
 {
     /// <summary>
@@ -25,6 +25,14 @@ namespace RolePlayingGame
     {
         public MainPage()
         {
+            Collection Stuff = new Collection();
+            {
+                //Adding Skills
+                Skill Element = new Skill();
+                Element.SetID(1);
+
+            }
+            
             this.InitializeComponent();
         }
 
