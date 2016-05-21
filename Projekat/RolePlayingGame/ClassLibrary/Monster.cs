@@ -71,18 +71,18 @@ namespace Entity {
 		public void SetAtributes(ref Atributes atributes) {
 			this.atributes = atributes;
 		}
-		public void<Skill> GetSkills() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetSkills(ref object<Skill> skills) {
-			throw new System.Exception("Not implemented");
-		}
-		public void<StatusEffect> GetStatusEffects() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetStatusEffects(ref object<StatusEffect> statusEffects) {
-			throw new System.Exception("Not implemented");
-		}
+		//public void<Skill> GetSkills() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetSkills(ref object<Skill> skills) {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void<StatusEffect> GetStatusEffects() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetStatusEffects(ref object<StatusEffect> statusEffects) {
+		//	throw new System.Exception("Not implemented");
+		//}
 		public Monster() {
 			throw new System.Exception("Not implemented");
 		}

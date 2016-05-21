@@ -151,18 +151,18 @@ namespace Entity {
 		public void SetEquipment(ref EquipmentSlots equipment) {
 			this.equipment = equipment;
 		}
-		public void<Skill> GetSkills() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetSkills(ref object<Skill> skills) {
-			throw new System.Exception("Not implemented");
-		}
-		public void<StatusEffect> GetStatusEffects() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetStatusEffects(ref object<StatusEffect> statusEffects) {
-			throw new System.Exception("Not implemented");
-		}
+		//public void<Skill> GetSkills() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetSkills(ref object<Skill> skills) {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void<StatusEffect> GetStatusEffects() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetStatusEffects(ref object<StatusEffect> statusEffects) {
+		//	throw new System.Exception("Not implemented");
+		//}
 
 		private EquipmentSlots equipmentSlots;
 		private Skill skill;

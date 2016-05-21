@@ -12,18 +12,18 @@ namespace Entity {
 		public Battle() {
 			throw new System.Exception("Not implemented");
 		}
-		public void<Character> GetPlayerParty() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetPlayerParty(ref object<Character> playerParty) {
-			throw new System.Exception("Not implemented");
-		}
-		public void<Monster> GetMonsterParty() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetMonsterParty(ref object<Monster> monsterParty) {
-			throw new System.Exception("Not implemented");
-		}
+		//public void<Character> GetPlayerParty() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetPlayerParty(ref object<Character> playerParty) {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void<Monster> GetMonsterParty() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetMonsterParty(ref object<Monster> monsterParty) {
+		//	throw new System.Exception("Not implemented");
+		//}
 		public int GetTarget() {
 			return this.target;
 		}

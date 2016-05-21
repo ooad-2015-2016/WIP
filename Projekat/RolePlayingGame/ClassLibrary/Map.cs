@@ -24,9 +24,9 @@ namespace Entity {
 		public bool CheckBattle(ref object int_x, ref object int_y) {
 			throw new System.Exception("Not implemented");
 		}
-		public void() MoveCharacter() {
-			throw new System.Exception("Not implemented");
-		}
+		//public void() MoveCharacter() {
+		//	throw new System.Exception("Not implemented");
+		//}
 		public int GetID() {
 			return this.iD;
 		}
@@ -39,18 +39,18 @@ namespace Entity {
 		public void SetLength(ref int length) {
 			this.length = length;
 		}
-		public void<bool> GetCollisionLayer() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetCollisionLayer(ref object<bool> collisionLayer) {
-			throw new System.Exception("Not implemented");
-		}
-		public void<SpawnTile> GetSpawnLayer() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetSpawnLayer(ref object<SpawnTile> spawnLayer) {
-			throw new System.Exception("Not implemented");
-		}
+		//public void<bool> GetCollisionLayer() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetCollisionLayer(ref object<bool> collisionLayer) {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void<SpawnTile> GetSpawnLayer() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetSpawnLayer(ref object<SpawnTile> spawnLayer) {
+		//	throw new System.Exception("Not implemented");
+		//}
 		public int GetWidth() {
 			return this.width;
 		}
@@ -63,12 +63,12 @@ namespace Entity {
 		public void SetMapImage(ref Image mapImage) {
 			this.mapImage = mapImage;
 		}
-		public void<FunctionTile> GetFunctionLayer() {
-			throw new System.Exception("Not implemented");
-		}
-		public void SetFunctionLayer(ref object<FunctionTile> functionLayer) {
-			throw new System.Exception("Not implemented");
-		}
+		//public void<FunctionTile> GetFunctionLayer() {
+		//	throw new System.Exception("Not implemented");
+		//}
+		//public void SetFunctionLayer(ref object<FunctionTile> functionLayer) {
+		//	throw new System.Exception("Not implemented");
+		//}
 
 		private FunctionTile functionTile;
 		private SpawnTile spawnTile;
