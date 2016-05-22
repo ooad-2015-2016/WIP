@@ -129,6 +129,7 @@
     <Content Include="Assets\CharacterExample.png" />
     <Content Include="Assets\EnemyInfoBox.png" />
     <Content Include="Assets\ImageBox.png" />
+    <Content Include="Assets\Monsters\bat.png" />
     <Content Include="Assets\PlayerInfo.png" />
     <Content Include="Assets\Skills\Attacks\punch.png" />
     <Content Include="Properties\Default.rd.xml" />

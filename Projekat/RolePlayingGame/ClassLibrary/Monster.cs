@@ -4,53 +4,57 @@ using Windows.UI.Xaml.Controls;
 
 namespace Entity {
 	public class Monster {
-		private int ID;
+		private int ID = 0;
 		private String name;
-		private Image sprite;
-		private int LVL;
-		private int health;
-		private int maxHealth;
-		private int mana;
-		private int maxMana;
+		private String sprite;
+		private int LVL = 1;
+		private int health = 30;
+		private int maxHealth = 30;
+		private int mana = 20;
+		private int maxMana = 20;
 		private Atributes atributes;
 		private List<Skill> skills;
 		private List<StatusEffect> statusEffects;
         private AI think;
 
+        public Monster() {
+            skills = new List<Skill>();
+            statusEffects = new List<StatusEffect>();
+        }
         public int GetID() {
 			return this.ID;
 		}
-		public void SetID(ref int ID) {
+		public void SetID(int ID) {
 			this.ID = ID;
 		}
 		public String GetName() {
 			return this.name;
 		}
-		public void SetName(ref String name) {
+		public void SetName(String name) {
 			this.name = name;
 		}
-		public Image GetSprite() {
+		public String GetSprite() {
 			return this.sprite;
 		}
-		public void SetSprite(ref Image sprite) {
+		public void SetSprite(String sprite) {
 			this.sprite = sprite;
 		}
 		public int GetLVL() {
 			return this.LVL;
 		}
-		public void SetLVL(ref int LVL) {
+		public void SetLVL(int LVL) {
 			this.LVL = LVL;
 		}
 		public int GetHealth() {
 			return this.health;
 		}
-		public void SetHealth(ref int health) {
+		public void SetHealth(int health) {
 			this.health = health;
 		}
 		public int GetMaxHealth() {
 			return this.maxHealth;
 		}
-		public void SetMaxHealth(ref int maxHealth) {
+		public void SetMaxHealth(int maxHealth) {
 			this.maxHealth = maxHealth;
 		}
 		public int GetMana() {
@@ -83,9 +87,6 @@ namespace Entity {
 		//public void SetStatusEffects(ref object<StatusEffect> statusEffects) {
 		//	throw new System.Exception("Not implemented");
 		//}
-		public Monster() {
-			throw new System.Exception("Not implemented");
-		}
 		public Skill AIDecide() {
 			throw new System.Exception("Not implemented");
 		}

@@ -13,7 +13,9 @@ namespace Entity {
 		private List<FunctionTile> functionLayer;
 
 		public Map() {
-			throw new System.Exception("Not implemented");
+            collisionLayer = new List<bool>();
+            spawnLayer = new List<SpawnTile>();
+            functionLayer = new List<FunctionTile>();
 		}
 		public bool CheckCollision(ref object int_x, ref object int_y) {
 			throw new System.Exception("Not implemented");

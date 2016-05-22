@@ -4,9 +4,7 @@ namespace Entity {
 		private int healthChange;
 		private int manaChange;
 
-		public Consumable() {
-			throw new System.Exception("Not implemented");
-		}
+		public Consumable() { }
 		public int GetHealthChange() {
 			return this.healthChange;
 		}

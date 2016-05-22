@@ -10,7 +10,11 @@ namespace Entity {
 		private int subType;
 		private int power;
 
-		public int GetMainType() {
+        public Equipable()
+        {
+            modifiers = new List<Modifiers>();
+        }
+        public int GetMainType() {
 			return this.mainType;
 		}
 		public void SetMainType(ref int mainType) {

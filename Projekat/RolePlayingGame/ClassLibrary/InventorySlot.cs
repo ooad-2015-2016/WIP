@@ -3,8 +3,9 @@ namespace Entity {
 	public class InventorySlot {
 		private int capacity;
 		private int currentNo;
+        private Item item;
 
-		public InventorySlot() {
+        public InventorySlot() {
 			throw new System.Exception("Not implemented");
 		}
 		public int GetCapacity() {
@@ -19,11 +20,6 @@ namespace Entity {
 		public void SetCurrentNo(ref int currentNo) {
 			this.currentNo = currentNo;
 		}
-
-		private Item item;
-
-		private Inventory inventory;
-
 	}
 
 }

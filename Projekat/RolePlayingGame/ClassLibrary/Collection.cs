@@ -17,7 +17,20 @@ namespace Entity {
         SortedDictionary<int, AI> AIs;
         Battle Fight;
 
-        public Collection() { }
+        public Collection() {
+            Characters = new SortedDictionary<int, Character>();
+            Monsters = new SortedDictionary<int, Monster>();
+            Items = new SortedDictionary<int, Item>();
+            Maps = new SortedDictionary<int, Map>();
+            FunctionTiles = new SortedDictionary<int, FunctionTile>();
+            SpawnTiles = new SortedDictionary<int, SpawnTile>();
+            Skills = new SortedDictionary<int, Skill>();
+            StatusEffects = new SortedDictionary<int, StatusEffect>();
+            AllModifiers = new SortedDictionary<int, Modifiers>();
+            Shops = new SortedDictionary<int, Shop>();
+            NPCs = new SortedDictionary<int, NPC>();
+            AIs = new SortedDictionary<int, AI>();
+        }
         public void AddCharacter(Character Element)
         {
             Characters.Add(Element.GetID(), Element);

@@ -1,16 +1,14 @@
 using System;
 namespace Entity {
 	public class Atributes : Monster  {
-		private int strength;
-		private int vitality;
-		private int agility;
-		private int intelligence;
-		private int willpower;
-		private int luck;
+		private int strength = 10;
+		private int vitality = 10;
+		private int agility = 10;
+		private int intelligence = 10;
+		private int willpower = 10;
+		private int luck = 10;
 //Atributes go from 10 to 50
-		public Atributes() {
-			throw new System.Exception("Not implemented");
-		}
+		public Atributes() { }
 		public int GetStrength() {
 			return this.strength;
 		}

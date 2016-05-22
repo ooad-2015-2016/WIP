@@ -27,6 +27,8 @@ namespace Entity {
             ID = 1; LVL = 1;
             maxHealth = 100; health = maxHealth;
             maxMana = 50; mana = maxMana;
+            skills = new List<Skill>();
+            statusEffects = new List<StatusEffect>();
         }
 		public void LevelUp() {
 			throw new System.Exception("Not implemented");

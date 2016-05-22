@@ -10,7 +10,8 @@ namespace Entity {
 		private int damageDealt;
 
 		public Battle() {
-			throw new System.Exception("Not implemented");
+            playerParty = new List<Character>();
+            monsterParty = new List<Monster>();
 		}
 		//public void<Character> GetPlayerParty() {
 		//	throw new System.Exception("Not implemented");

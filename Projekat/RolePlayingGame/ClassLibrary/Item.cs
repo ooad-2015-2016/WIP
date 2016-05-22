@@ -42,9 +42,6 @@ namespace Entity {
 		public void SetDescription(ref String description) {
 			this.description = description;
 		}
-
-		private InventorySlot inventorySlot;
-
 	}
 
 }

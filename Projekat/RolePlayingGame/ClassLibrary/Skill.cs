@@ -89,8 +89,6 @@ namespace Entity {
 			this.statusEffectChance = statusEffectChance;
 		}
 
-		private Character character;
-
 	}
 
 }

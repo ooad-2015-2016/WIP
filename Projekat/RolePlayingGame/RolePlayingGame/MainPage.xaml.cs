@@ -39,19 +39,22 @@ namespace RolePlayingGame
                 Element.SetAccuracy(1);
                 Element.SetManaCost(0);
                 Stuff.AddSkill(Element);
-
             }
 
             {
                 //Adding Monsters
-
+                Monster Element = new Monster();
+                Element.SetID(1);
+                Element.SetName("Sleepy bat");
+                Element.SetSprite("/Assets/Monsters/bat.png");
+                //Stuff.AddMonster(Element);
             }
 
             {
                 //Adding Character
                 Character Hero = new Character();
-                Hero.AddSkill(Stuff.FindSkill(1));
-                Stuff.AddCharacter(Hero);
+                //Hero.AddSkill(Stuff.FindSkill(1));
+                //Stuff.AddCharacter(Hero);
             }
             
             this.InitializeComponent();
