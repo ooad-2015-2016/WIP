@@ -60,7 +60,7 @@
         	<Run/>
         </TextBlock>
         <TextBlock x:Name="Health" HorizontalAlignment="Left" Margin="102,48,0,0" TextWrapping="Wrap" Text="Health:" VerticalAlignment="Top" FontSize="24"/>
-        <TextBlock x:Name="Player" HorizontalAlignment="Left" Margin="102,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Height="49" SelectionChanged="textBlock2_SelectionChanged" Width="182">
+        <TextBlock x:Name="Player" HorizontalAlignment="Left" Margin="102,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Height="49" SelectionChanged="textBlock2_SelectionChanged" Width="197">
         	<Run Text="Player"/>
         	<LineBreak/>
         	<Run/>
@@ -79,11 +79,15 @@
         	<Run FontSize="20" Text="h"/>
         	<Run Text=":"/>
         </TextBlock>
-        <TextBlock x:Name="Enemy3" HorizontalAlignment="Left" Margin="1095,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90">
+        <Border BorderBrush="{x:Null}" Margin="1053,105,0,0">
+            <TextBlock x:Name ="Enemy3" TextWrapping="Wrap" Text="Enemy3" FontSize="22" Margin="0,0,70,584" TextAlignment="Center"/>
+        </Border>
+        <Image x:Name="Enemy3Image" HorizontalAlignment="Left" Height="128" Margin="1073,199,0,0" VerticalAlignment="Top" Width="128" Source="/Assets/Monsters/Bat.png"/>
+        <!--<TextBlock x:Name="Enemy3" HorizontalAlignment="Left" Margin="1053,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="157">
         	<Run Text="Enemy3"/>
         	<LineBreak/>
-        	<Run/>
-        </TextBlock>
+        	<Run/>-->
+        <!--</TextBlock>-->
         <ProgressBar HorizontalAlignment="Left" Height="20" Margin="924,137,0,0" VerticalAlignment="Top" Width="85"/>
         <ProgressBar HorizontalAlignment="Left" Height="20" Margin="924,163,0,0" VerticalAlignment="Top" Width="85"/>
         <TextBlock x:Name="Enemy2Mana" HorizontalAlignment="Left" Margin="852,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321">
@@ -98,6 +102,7 @@
         	<Run Text=":"/>
         </TextBlock>
         <TextBlock x:Name="Enemy2" HorizontalAlignment="Left" Margin="894,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy2"/>
+        <Image x:Name="Enemy2Image" HorizontalAlignment="Left" Height="128" Margin="872,200,0,0" VerticalAlignment="Top" Width="128" Source="/Assets/Monsters/Bat.png"/>
         <ProgressBar HorizontalAlignment="Left" Height="20" Margin="724,137,0,0" VerticalAlignment="Top" Width="85"/>
         <ProgressBar HorizontalAlignment="Left" Height="20" Margin="724,163,0,0" VerticalAlignment="Top" Width="85"/>
         <TextBlock x:Name="Enemy1Mana" HorizontalAlignment="Left" Margin="650,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321">
@@ -112,5 +117,6 @@
         	<Run Text=":"/>
         </TextBlock>
         <TextBlock x:Name="Enemy1" HorizontalAlignment="Left" Margin="695,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy1"/>
+        <Image x:Name="Enemy1Image" HorizontalAlignment="Left" Height="128" Margin="671,199,0,0" VerticalAlignment="Top" Width="128" Source="/Assets/Monsters/Bat.png"/>
     </Grid>
 </Page>

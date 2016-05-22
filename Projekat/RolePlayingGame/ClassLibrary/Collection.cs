@@ -15,7 +15,7 @@ namespace Entity {
         SortedDictionary<int, Shop> Shops;
         SortedDictionary<int, NPC> NPCs;
         SortedDictionary<int, AI> AIs;
-        Battle Fight;
+        Battle battle;
 
         public Collection() {
             Characters = new SortedDictionary<int, Character>();
@@ -187,6 +187,15 @@ namespace Entity {
         {
             AIs.Remove(ID);
         }
+        public void SetBattle(Battle battle)
+        {
+            this.battle = battle;
+        }
+        public Battle GetBattle()
+        {
+            return battle;
+        }
+
     }
 
 }

@@ -4,8 +4,9 @@ namespace Entity {
 		private int iD;
 		private String name;
 		private String description;
+        private Inventory inventory;
 
-		public int GetID() {
+        public int GetID() {
 			return this.iD;
 		}
 		public void SetID(ref int iD) {
@@ -23,8 +24,6 @@ namespace Entity {
 		public void SetDescription(ref String description) {
 			this.description = description;
 		}
-
-		private Inventory inventory;
 
 	}
 

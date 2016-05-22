@@ -1,8 +1,9 @@
 using System;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
-	public class StatusEffect : Character  {
+	public class StatusEffect {
 		private int iD;
 		private String name;
 		private Image sprite;
@@ -26,7 +27,18 @@ namespace Entity {
 		public void SetName(ref String name) {
 			this.name = name;
 		}
-		public String GetDescription() {
+        public Image GetSprite()
+        {
+            return this.sprite;
+        }
+        public void SetSprite(String text)
+        {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            sprite.Source = imageBitmap;
+        }
+        public String GetDescription() {
 			return this.description;
 		}
 		public void SetDescription(ref String description) {
@@ -53,13 +65,6 @@ namespace Entity {
 		public String GetStatusEffectInfo() {
 			throw new System.Exception("Not implemented");
 		}
-		public Image GetSprite() {
-			return this.sprite;
-		}
-		public void SetPicture(ref Image sprite) {
-			this.sprite = sprite;
-		}
-
 	}
 
 }

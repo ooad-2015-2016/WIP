@@ -1,5 +1,6 @@
 using System;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
 	public class Modifiers {
@@ -28,11 +29,22 @@ namespace Entity {
 		public void SetName(ref String name) {
 			this.name = name;
 		}
-		public Skill GetDescription() {
-			throw new System.Exception("Not implemented");
+        public Image GetSprite()
+        {
+            return this.sprite;
+        }
+        public void SetSprite(String text)
+        {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            sprite.Source = imageBitmap;
+        }
+        public string GetDescription() {
+            return description;
 		}
-		public void SetDescription(ref Skill description) {
-			throw new System.Exception("Not implemented");
+		public void SetDescription(string description) {
+            this.description = description;
 		}
 		public int GetValue() {
 			return this.value;

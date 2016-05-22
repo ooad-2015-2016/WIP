@@ -1,11 +1,12 @@
 using System;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
 	public class Skill {
 		private int ID;
 		private String name;
-		private String sprite;
+		private Image sprite;
 		private int mainType;
 		private int subType;
 		private String description;
@@ -15,7 +16,10 @@ namespace Entity {
 		private StatusEffect newStatusEffect;
 		private Double statusEffectChance;
 
-		public Skill() { }
+		public Skill()
+        {
+            sprite = new Image();
+        }
 		public void GetSkillInfo() {
 			throw new System.Exception("Not implemented");
 		}
@@ -34,12 +38,15 @@ namespace Entity {
 		public void SetName(String name) {
 			this.name = name;
 		}
-		public String GetSprite() {
+		public Image GetSprite() {
 			return this.sprite;
 		}
-		public void SetSprite(String sprite) {
-			this.sprite = sprite;
-		}
+		public void SetSprite(string text) {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            sprite.Source = imageBitmap;
+        }
 		public int GetMainType() {
 			return this.mainType;
 		}

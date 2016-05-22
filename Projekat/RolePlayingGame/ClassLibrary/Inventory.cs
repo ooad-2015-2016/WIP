@@ -31,7 +31,7 @@ namespace Entity {
 		public String GetDescription() {
 			return this.description;
 		}
-		public void SetDescription(ref String description) {
+		public void SetDescription(String description) {
 			this.description = description;
 		}
 		public int GetCapacity() {

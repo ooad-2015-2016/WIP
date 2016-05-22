@@ -1,5 +1,6 @@
 using System;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
 	public class Item {
@@ -27,9 +28,12 @@ namespace Entity {
 		public Image GetSprite() {
 			return this.sprite;
 		}
-		public void SetSprite(ref Image sprite) {
-			this.sprite = sprite;
-		}
+		public void SetSprite(string text) {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            sprite.Source = imageBitmap;
+        }
 		public int GetPrice() {
 			return this.price;
 		}

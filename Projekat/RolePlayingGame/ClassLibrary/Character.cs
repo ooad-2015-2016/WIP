@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
 	public class Character {
@@ -24,7 +25,8 @@ namespace Entity {
 
 		public Character()
         {
-            ID = 1; LVL = 1;
+            ID = 1; name = "";  LVL = 1;
+            sprite = new Image();
             maxHealth = 100; health = maxHealth;
             maxMana = 50; mana = maxMana;
             skills = new List<Skill>();
@@ -75,102 +77,106 @@ namespace Entity {
 		public int GetID() {
 			return this.ID;
 		}
-		public void SetID(ref int ID) {
+		public void SetID(int ID) {
 			this.ID = ID;
 		}
 		public String GetName() {
 			return this.name;
 		}
-		public void SetName(ref String name) {
+		public void SetName(String name) {
 			this.name = name;
 		}
 		public int GetClass() {
 			return this.HeroClass;
 		}
-		public void SetHeroClass(ref int HeroClass) {
+		public void SetHeroClass(int HeroClass) {
 			this.HeroClass = HeroClass;
 		}
 		public Image GetSprite() {
 			return this.sprite;
 		}
-		public void SetSprite(ref Image sprite) {
-			this.sprite = sprite;
+		public void SetSprite(string text) {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            sprite.Source = imageBitmap;
 		}
 		public int GetPositionX() {
 			return this.positionX;
 		}
-		public void SetPositionX(ref int positionX) {
+		public void SetPositionX(int positionX) {
 			this.positionX = positionX;
 		}
 		public int GetPositionY() {
 			return this.positionY;
 		}
-		public void SetPositionY(ref int positionY) {
+		public void SetPositionY(int positionY) {
 			this.positionY = positionY;
 		}
 		public int GetLVL() {
 			return this.LVL;
 		}
-		public void SetLVL(ref int lVL) {
+		public void SetLVL(int lVL) {
 			this.LVL = lVL;
 		}
 		public int GetEXP() {
 			return this.EXP;
 		}
-		public void SetEXP(ref int eXP) {
+		public void SetEXP(int eXP) {
 			this.EXP = eXP;
 		}
 		public int GetHealth() {
 			return this.health;
 		}
-		public void SetHealth(ref int health) {
+		public void SetHealth(int health) {
 			this.health = health;
 		}
 		public int GetMaxHealth() {
 			return this.maxHealth;
 		}
-		public void SetMaxHealth(ref int maxHealth) {
+		public void SetMaxHealth(int maxHealth) {
 			this.maxHealth = maxHealth;
 		}
 		public int GetMana() {
 			return this.mana;
 		}
-		public void SetMana(ref int mana) {
+		public void SetMana(int mana) {
 			this.mana = mana;
 		}
 		public int GetMaxMana() {
 			return this.maxMana;
 		}
-		public void SetMaxMana(ref int maxMana) {
+		public void SetMaxMana(int maxMana) {
 			this.maxMana = maxMana;
 		}
 		public Inventory GetInventory() {
 			return this.inventory;
 		}
-		public void SetInventory(ref Inventory inventory) {
+		public void SetInventory(Inventory inventory) {
 			this.inventory = inventory;
 		}
 		public EquipmentSlots GetEquipment() {
 			return this.equipment;
 		}
-		public void SetEquipment(ref EquipmentSlots equipment) {
+		public void SetEquipment(EquipmentSlots equipment) {
 			this.equipment = equipment;
 		}
-		//public void<Skill> GetSkills() {
-		//	throw new System.Exception("Not implemented");
-		//}
-		//public void SetSkills(ref object<Skill> skills) {
-		//	throw new System.Exception("Not implemented");
-		//}
-		//public void<StatusEffect> GetStatusEffects() {
-		//	throw new System.Exception("Not implemented");
-		//}
-		//public void SetStatusEffects(ref object<StatusEffect> statusEffects) {
-		//	throw new System.Exception("Not implemented");
-		//}
-
-		private EquipmentSlots equipmentSlots;
-		private Skill skill;
+        public List<Skill> GetSkills()
+        {
+            return skills;
+        }
+        public void SetSkills(List<Skill> skills)
+        {
+            this.skills = skills;
+        }
+        public List<StatusEffect> GetStatusEffects()
+        {
+            return statusEffects;
+        }
+        public void SetStatusEffects(List<StatusEffect> statusEffects)
+        {
+            this.statusEffects = statusEffects;
+        }
 
 	}
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
 	public class Map {
@@ -62,8 +63,11 @@ namespace Entity {
 		public Image GetMapImage() {
 			return this.mapImage;
 		}
-		public void SetMapImage(ref Image mapImage) {
-			this.mapImage = mapImage;
+		public void SetMapImage(string text) {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            mapImage.Source = imageBitmap;
 		}
 		//public void<FunctionTile> GetFunctionLayer() {
 		//	throw new System.Exception("Not implemented");

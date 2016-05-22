@@ -13,19 +13,31 @@ namespace Entity {
             playerParty = new List<Character>();
             monsterParty = new List<Monster>();
 		}
-		//public void<Character> GetPlayerParty() {
-		//	throw new System.Exception("Not implemented");
-		//}
-		//public void SetPlayerParty(ref object<Character> playerParty) {
-		//	throw new System.Exception("Not implemented");
-		//}
-		//public void<Monster> GetMonsterParty() {
-		//	throw new System.Exception("Not implemented");
-		//}
-		//public void SetMonsterParty(ref object<Monster> monsterParty) {
-		//	throw new System.Exception("Not implemented");
-		//}
-		public int GetTarget() {
+        public List<Character> GetPlayerParty()
+        {
+            return playerParty;
+        }
+        public void AddPlayer(Character player)
+        {
+            playerParty.Add(player);
+        }
+        public void RemovePlayer(Character player)
+        {
+            playerParty.Remove(player);
+        }
+        public List<Monster> GetMonsterParty()
+        {
+            return monsterParty;
+        }
+        public void AddMonster(Monster monster)
+        {
+            monsterParty.Add(monster);
+        }
+        public void RemoveMonster(Monster monster)
+        {
+            monsterParty.Remove(monster);
+        }
+        public int GetTarget() {
 			return this.target;
 		}
 		public void SetTarget(ref int target) {

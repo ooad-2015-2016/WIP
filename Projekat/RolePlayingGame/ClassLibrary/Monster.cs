@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
 	public class Monster {
 		private int ID = 0;
 		private String name;
-		private String sprite;
+		private Image sprite;
 		private int LVL = 1;
 		private int health = 30;
 		private int maxHealth = 30;
@@ -18,6 +19,7 @@ namespace Entity {
         private AI think;
 
         public Monster() {
+            sprite  = new Image();
             skills = new List<Skill>();
             statusEffects = new List<StatusEffect>();
         }
@@ -33,11 +35,14 @@ namespace Entity {
 		public void SetName(String name) {
 			this.name = name;
 		}
-		public String GetSprite() {
+		public Image GetSprite() {
 			return this.sprite;
 		}
-		public void SetSprite(String sprite) {
-			this.sprite = sprite;
+		public void SetSprite(String text) {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            sprite.Source = imageBitmap;
 		}
 		public int GetLVL() {
 			return this.LVL;
