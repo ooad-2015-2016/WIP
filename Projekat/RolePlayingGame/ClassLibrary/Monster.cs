@@ -7,6 +7,7 @@ namespace Entity {
 	public class Monster {
 		private int ID = 0;
 		private String name;
+        private String description;
 		private Image sprite;
 		private int LVL = 1;
 		private int health = 30;
@@ -16,7 +17,7 @@ namespace Entity {
 		private Atributes atributes;
 		private List<Skill> skills;
 		private List<StatusEffect> statusEffects;
-        private AI think;
+        private AI ai;
 
         public Monster() {
             sprite  = new Image();
@@ -35,7 +36,15 @@ namespace Entity {
 		public void SetName(String name) {
 			this.name = name;
 		}
-		public Image GetSprite() {
+        public String GetDescription()
+        {
+            return this.description;
+        }
+        public void SetDescription(String description)
+        {
+            this.description = description;
+        }
+        public Image GetSprite() {
 			return this.sprite;
 		}
 		public void SetSprite(String text) {
@@ -80,26 +89,63 @@ namespace Entity {
 		public void SetAtributes(ref Atributes atributes) {
 			this.atributes = atributes;
 		}
-        public void ReduceHealth(int health)
+        public List<Skill> GetSkills()
+        {
+            return skills;
+        }
+        public void SetSkills(List<Skill> skills)
+        {
+            this.skills = skills;
+        }
+        public List<StatusEffect> GetStatusEffects()
+        {
+            return statusEffects;
+        }
+        public void SetStatusEffects(List<StatusEffect> statusEffects)
+        {
+            this.statusEffects = statusEffects;
+        }
+        public AI GetAI()
+        {
+            return ai;
+        }
+        public void SetAI(AI ai)
+        {
+            this.ai = ai;
+        }
+
+        public void LoseHealth(int health)
         {
             this.health -= health;
         }
-        public void ReduceMana(int health)
+        public void LoseMana(int mana)
         {
-            this.health -= health;
+            this.mana -= mana;
         }
-        //public void<Skill> GetSkills() {
-        //	throw new System.Exception("Not implemented");
-        //}
-        //public void SetSkills(ref object<Skill> skills) {
-        //	throw new System.Exception("Not implemented");
-        //}
-        //public void<StatusEffect> GetStatusEffects() {
-        //	throw new System.Exception("Not implemented");
-        //}
-        //public void SetStatusEffects(ref object<StatusEffect> statusEffects) {
-        //	throw new System.Exception("Not implemented");
-        //}
+        public void AddSkill(Skill skill)
+        {
+            skills.Add(skill);
+        }
+        public void RemoveSkill(Skill skill)
+        {
+            skills.Remove(skill);
+        }
+        public void HardCopy(Monster monster)
+        {
+            ID = monster.GetID();
+            name = monster.GetName();
+            description = monster.GetDescription();
+            sprite = monster.GetSprite();
+            LVL = monster.GetLVL();
+            health = monster.GetHealth();
+            maxHealth = monster.GetMaxHealth();
+            mana = monster.GetMana();
+            maxMana = monster.GetMaxMana();
+            atributes = monster.GetAtributes();
+            skills = monster.GetSkills();
+            statusEffects = monster.GetStatusEffects();
+            ai = monster.GetAI();
+        }
         public Skill AIDecide() {
 			throw new System.Exception("Not implemented");
 		}

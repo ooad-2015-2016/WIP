@@ -3,6 +3,7 @@ namespace Entity {
 	public class AI {
         private int ID = 0;
 
+        public AI() { }
         public int GetID()
         {
             return this.ID;
@@ -11,8 +12,6 @@ namespace Entity {
         {
             this.ID = iD;
         }
-
-        public AI() { }
 
     }
 
