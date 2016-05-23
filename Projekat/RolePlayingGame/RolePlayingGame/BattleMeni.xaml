@@ -52,13 +52,9 @@
         <Button x:Name="Deny" Content="" HorizontalAlignment="Left" Margin="398,462,0,0" VerticalAlignment="Top" Height="55" Width="55" Click="Deny_Click"/>
         <Image x:Name="PlayerImage" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="182" Margin="76,200,0,0" Source="/Assets/CharacterExample.png"/>
         <Image x:Name="PlayerImageBox" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="182" Margin="76,200,0,0" Source="/Assets/ImageBox.png"/>
-        <ProgressBar HorizontalAlignment="Left" Height="31" Margin="102,80,0,0" VerticalAlignment="Top" Width="182"/>
-        <ProgressBar HorizontalAlignment="Left" Height="31" Margin="102,144,0,0" VerticalAlignment="Top" Width="182"/>
-        <TextBlock x:Name="Mana" HorizontalAlignment="Left" Margin="102,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="28" SelectionChanged="textBlock_SelectionChanged">
-        	<Run Text="Mana:"/>
-        	<LineBreak/>
-        	<Run/>
-        </TextBlock>
+        <ProgressBar x:Name="PlayerHealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="31" Margin="102,80,0,0" VerticalAlignment="Top" Width="182"/>
+        <ProgressBar x:Name="PlayerManaBar" HorizontalAlignment="Left" Height="31" Margin="102,144,0,0" VerticalAlignment="Top" Width="182"/>
+        <TextBlock x:Name="Mana" HorizontalAlignment="Left" Margin="102,111,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="24" Height="28" SelectionChanged="textBlock_SelectionChanged"> </TextBlock>
         <TextBlock x:Name="Health" HorizontalAlignment="Left" Margin="102,48,0,0" TextWrapping="Wrap" Text="Health:" VerticalAlignment="Top" FontSize="24"/>
         <TextBlock x:Name="Player" HorizontalAlignment="Left" Margin="102,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Height="49" SelectionChanged="textBlock2_SelectionChanged" Width="197">
         	<Run Text="Player"/>
@@ -66,19 +62,10 @@
         	<Run/>
         </TextBlock>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="89" Margin="1044,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="179" Opacity="0"/>
-        <ProgressBar HorizontalAlignment="Left" Height="20" Margin="1125,137,0,0" VerticalAlignment="Top" Width="85"/>
-        <ProgressBar HorizontalAlignment="Left" Height="20" Margin="1125,163,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBlock x:Name="Enemy3Mana" HorizontalAlignment="Left" Margin="1053,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321">
-        	<Run Text="Mana:"/>
-        	<LineBreak/>
-        	<Run/>
-        </TextBlock>
-        <TextBlock x:Name="Enemy3Health" HorizontalAlignment="Left" Margin="1053,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="74">
-        	<Run FontSize="20" Text="Health:"/>
-        	<LineBreak/>
-        	<Run FontSize="20" Text="h"/>
-        	<Run Text=":"/>
-        </TextBlock>
+        <ProgressBar x:Name="Enemy3HealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="20" Margin="1125,137,0,0" VerticalAlignment="Top" Width="85"/>
+        <ProgressBar x:Name="Enemy3ManaBar" HorizontalAlignment="Left" Height="20" Margin="1125,163,0,0" VerticalAlignment="Top" Width="85"/>
+        <TextBlock x:Name="Enemy3Mana" HorizontalAlignment="Left" Margin="1053,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321"> </TextBlock>
+        <TextBlock x:Name="Enemy3Health" HorizontalAlignment="Left" Margin="1053,132,0,0" TextWrapping="Wrap" FontSize="20" Text="Health:" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="157"> </TextBlock>
         <Border BorderBrush="{x:Null}" Margin="1053,105,0,0">
             <TextBlock x:Name ="Enemy3" TextWrapping="Wrap" Text="Enemy3" FontSize="22" Margin="0,0,70,584" TextAlignment="Center"/>
         </Border>
@@ -88,35 +75,23 @@
         	<LineBreak/>
         	<Run/>-->
         <!--</TextBlock>-->
-        <ProgressBar HorizontalAlignment="Left" Height="20" Margin="924,137,0,0" VerticalAlignment="Top" Width="85"/>
-        <ProgressBar HorizontalAlignment="Left" Height="20" Margin="924,163,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBlock x:Name="Enemy2Mana" HorizontalAlignment="Left" Margin="852,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321">
-        	<Run Text="Mana:"/>
-        	<LineBreak/>
-        	<Run/>
-        </TextBlock>
-        <TextBlock x:Name="Enemy2Health" HorizontalAlignment="Left" Margin="852,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="74">
-        	<Run FontSize="20" Text="Health:"/>
-        	<LineBreak/>
-        	<Run FontSize="20" Text="h"/>
-        	<Run Text=":"/>
-        </TextBlock>
-        <TextBlock x:Name="Enemy2" HorizontalAlignment="Left" Margin="894,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy2"/>
+        <ProgressBar x:Name="Enemy2HealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="20" Margin="924,137,0,0" VerticalAlignment="Top" Width="85"/>
+        <ProgressBar x:Name="Enemy2ManaBar" HorizontalAlignment="Left" Height="20" Margin="924,163,0,0" VerticalAlignment="Top" Width="85"/>
+        <TextBlock x:Name="Enemy2Mana" HorizontalAlignment="Left" Margin="852,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321" Width="157"> </TextBlock>
+        <TextBlock x:Name="Enemy2Health" HorizontalAlignment="Left" Margin="852,132,0,0" TextWrapping="Wrap" FontSize="20" Text="Health:" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="157"> </TextBlock>
+        <!--<TextBlock x:Name="Enemy2" HorizontalAlignment="Left" Margin="894,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy2"/>-->
+        <Border BorderBrush="{x:Null}" Margin="894,105,0,0">
+            <TextBlock x:Name ="Enemy2" TextWrapping="Wrap" Text="Enemy2" FontSize="22" Margin="-44,0,265,584" TextAlignment="Center"/>
+        </Border>
         <Image x:Name="Enemy2Image" HorizontalAlignment="Left" Height="128" Margin="872,200,0,0" VerticalAlignment="Top" Width="128" Source="/Assets/Monsters/Bat.png"/>
-        <ProgressBar HorizontalAlignment="Left" Height="20" Margin="724,137,0,0" VerticalAlignment="Top" Width="85"/>
-        <ProgressBar HorizontalAlignment="Left" Height="20" Margin="724,163,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBlock x:Name="Enemy1Mana" HorizontalAlignment="Left" Margin="650,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321">
-        	<Run Text="Mana:"/>
-        	<LineBreak/>
-        	<Run/>
-        </TextBlock>
-        <TextBlock x:Name="Enemy1Health" HorizontalAlignment="Left" Margin="650,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="74">
-        	<Run FontSize="20" Text="Health:"/>
-        	<LineBreak/>
-        	<Run FontSize="20" Text="h"/>
-        	<Run Text=":"/>
-        </TextBlock>
-        <TextBlock x:Name="Enemy1" HorizontalAlignment="Left" Margin="695,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy1"/>
+        <ProgressBar x:Name="Enemy1HealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="20" Margin="724,137,0,0" VerticalAlignment="Top" Width="85"/>
+        <ProgressBar x:Name="Enemy1ManaBar" HorizontalAlignment="Left" Height="20" Margin="724,163,0,0" VerticalAlignment="Top" Width="85"/>
+        <TextBlock x:Name="Enemy1Mana" HorizontalAlignment="Left" Margin="650,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321" Width="159"> </TextBlock>
+        <TextBlock x:Name="Enemy1Health" HorizontalAlignment="Left" Margin="650,132,0,0" FontSize="20" Text="Health:" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="159"> </TextBlock>
+        <!--<TextBlock x:Name="Enemy1" HorizontalAlignment="Left" Margin="695,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy1"/>-->
+        <Border BorderBrush="{x:Null}" Margin="695,105,0,0">
+            <TextBlock x:Name ="Enemy1" TextWrapping="Wrap" Text="Enemy1" FontSize="22" Margin="-44,0,464,584" TextAlignment="Center"/>
+        </Border>
         <Image x:Name="Enemy1Image" HorizontalAlignment="Left" Height="128" Margin="671,199,0,0" VerticalAlignment="Top" Width="128" Source="/Assets/Monsters/Bat.png"/>
     </Grid>
 </Page>

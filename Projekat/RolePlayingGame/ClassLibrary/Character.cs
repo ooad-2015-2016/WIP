@@ -35,17 +35,17 @@ namespace Entity {
 		public void LevelUp() {
 			throw new System.Exception("Not implemented");
 		}
-		public void IncreaseHealth(ref object int_) {
-			throw new System.Exception("Not implemented");
-		}
-		public void LoseHealth(ref object int_) {
-			throw new System.Exception("Not implemented");
-		}
-		public void IncreaseMana(ref object int_) {
-			throw new System.Exception("Not implemented");
-		}
-		public void LoseMana(ref object int_) {
-			throw new System.Exception("Not implemented");
+		public void IncreaseHealth(int x) {
+            health += x;
+        }
+		public void LoseHealth(int x) {
+            health -= x;
+        }
+		public void IncreaseMana(int x) {
+            mana += x;
+        }
+		public void LoseMana(int x) {
+            mana -= x; 
 		}
 		public Atributes GetAtributes() {
 			return this.atributes;

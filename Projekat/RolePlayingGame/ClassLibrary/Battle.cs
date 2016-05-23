@@ -31,7 +31,9 @@ namespace Entity {
         }
         public void AddMonster(Monster monster)
         {
-            monsterParty.Add(monster);
+            Monster real = new Monster();
+            real = monster;
+            monsterParty.Add(real);
         }
         public void RemoveMonster(Monster monster)
         {
@@ -73,13 +75,12 @@ namespace Entity {
 		public void BeginTurn() {
 			throw new System.Exception("Not implemented");
 		}
-		public void EndTurn() {
-			throw new System.Exception("Not implemented");
-		}
-		public void UseSkill() {
-			throw new System.Exception("Not implemented");
-		}
-		public void ChooseTarget() {
+        public void EndTurn(Skill skill, int target) {
+            damageDealt = skill.GetPower();
+            playerParty[0].LoseMana(skill.GetManaCost());
+            monsterParty[target].ReduceHealth(damageDealt);
+        }
+        public void ChooseTarget() {
 			throw new System.Exception("Not implemented");
 		}
 		public void MonsterTurn() {
