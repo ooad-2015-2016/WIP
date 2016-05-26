@@ -23,8 +23,146 @@ namespace RolePlayingGame
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Collection Stuff = new Collection();
         public MainPage()
         {
+            {
+                //Adding Skills
+                Skill skill1 = new Skill();
+                skill1.SetID(1);
+                skill1.SetName("Soft Punch");
+                skill1.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill1.SetMainType(1);
+                skill1.SetSubType(1);
+                skill1.SetDescription("Lightly tap your opponent with your fist");
+                skill1.SetPower(10);
+                skill1.SetAccuracy(1);
+                skill1.SetManaCost(0);
+                Stuff.AddSkill(skill1);
+
+                Skill skill2 = new Skill();
+                skill2.SetID(2);
+                skill2.SetName("Hard Punch");
+                skill2.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill2.SetMainType(1);
+                skill2.SetSubType(1);
+                skill2.SetDescription("Tap your opponent with your fist slightly harder");
+                skill2.SetPower(30);
+                skill2.SetAccuracy(1);
+                skill2.SetManaCost(25);
+                Stuff.AddSkill(skill2);
+
+                Skill skill3 = new Skill();
+                skill3.SetID(3);
+                skill3.SetName("Stab");
+                skill3.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill3.SetMainType(1);
+                skill3.SetSubType(1);
+                skill3.SetDescription("BEGONE DEMON!");
+                skill3.SetPower(10);
+                skill3.SetAccuracy(1);
+                skill3.SetManaCost(0);
+                Stuff.AddSkill(skill3);
+
+                Skill skill4 = new Skill();
+                skill4.SetID(4);
+                skill4.SetName("Heal");
+                skill4.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill4.SetMainType(2);
+                skill4.SetSubType(1);
+                skill4.SetDescription("Increase your health");
+                skill4.SetPower(10);
+                skill4.SetAccuracy(1);
+                skill4.SetManaCost(0);
+                Stuff.AddSkill(skill4);
+
+                Skill skill5 = new Skill();
+                skill5.SetID(5);
+                skill5.SetName("Focus");
+                skill5.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill5.SetMainType(2);
+                skill5.SetSubType(1);
+                skill5.SetDescription("Slightly increases health and mana");
+                skill5.SetPower(10);
+                skill5.SetAccuracy(1);
+                skill5.SetManaCost(0);
+                Stuff.AddSkill(skill5);
+
+                Skill skill6 = new Skill();
+                skill6.SetID(6);
+                skill6.SetName("Beserk");
+                skill6.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill6.SetMainType(2);
+                skill6.SetSubType(1);
+                skill6.SetDescription("Increases attack");
+                skill6.SetPower(10);
+                skill6.SetAccuracy(1);
+                skill6.SetManaCost(0);
+                Stuff.AddSkill(skill6);
+
+                //Adding enemy skills
+                Skill skill = new Skill();
+                skill.SetID(101);
+                skill.SetName("Bite");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent");
+                skill.SetPower(5);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(0);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(102);
+                skill.SetName("Ferotious Bite");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(15);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(15);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(103);
+                skill.SetName("Drain Life");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(10);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(20);
+                Stuff.AddSkill(skill);
+            }
+
+            {
+                //Adding Monsters
+                Monster Enemy = new Monster();
+                Enemy.SetID(1);
+                Enemy.SetName("Sleepy Bat");
+                Enemy.SetSprite("/Assets/Monsters/bat.png");
+                Enemy.SetDescription("Likes to hang around.");
+                Enemy.AddSkill(Stuff.FindSkill(101));
+                Enemy.AddSkill(Stuff.FindSkill(102));
+                Enemy.AddSkill(Stuff.FindSkill(103));
+                Stuff.AddMonster(Enemy);
+            }
+
+            {
+                //Adding Character
+                Character Hero = new Character();
+                Hero.SetName("Helpless Soul");
+                Hero.AddSkill(Stuff.FindSkill(1));
+                Hero.AddSkill(Stuff.FindSkill(2));
+                Hero.AddSkill(Stuff.FindSkill(3));
+                Hero.AddSkill(Stuff.FindSkill(4));
+                Hero.AddSkill(Stuff.FindSkill(5));
+                Hero.AddSkill(Stuff.FindSkill(6));
+                Stuff.AddCharacter(Hero);
+            }
             this.InitializeComponent();
         }
 
@@ -35,7 +173,7 @@ namespace RolePlayingGame
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1), null);
+            this.Frame.Navigate(typeof(BlankPage1), Stuff);
         }
     }
 }

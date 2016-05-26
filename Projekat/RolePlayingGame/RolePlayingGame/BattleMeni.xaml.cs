@@ -140,7 +140,7 @@ namespace RolePlayingGame
                 skill1.SetMainType(1);
                 skill1.SetSubType(1);
                 skill1.SetDescription("Lightly tap your opponent with your fist");
-                skill1.SetPower(30);
+                skill1.SetPower(10);
                 skill1.SetAccuracy(1);
                 skill1.SetManaCost(0);
                 Stuff.AddSkill(skill1);
@@ -601,7 +601,6 @@ namespace RolePlayingGame
                 default:
                     EndTurn(k);
                     SetProgressBars();
-                    Player.Text = k.ToString();
                     Attack_Text.Text = "Attack";
                     Ability_Text.Text = "Use Ability";
                     Item_Text.Text = "Use Item";
@@ -645,7 +644,6 @@ namespace RolePlayingGame
                     p = 100;
                     break;
                 default:
-                    Player.Text = k.ToString();
                     Attack_Text.Text = "Attack";
                     Ability_Text.Text = "Use Ability";
                     Item_Text.Text = "Use Item";

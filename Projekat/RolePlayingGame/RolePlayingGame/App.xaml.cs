@@ -30,36 +30,6 @@ namespace RolePlayingGame
         Collection Stuff = new Collection();
         public App()
         {
-            {
-                //Adding Skills
-                Skill Element = new Skill();
-                Element.SetID(1);
-                Element.SetName("Soft Punch");
-                Element.SetSprite("/Assets/Skills/Attacks/punch.png");
-                Element.SetMainType(1);
-                Element.SetSubType(1);
-                Element.SetDescription("Lightly tap your opponent with your fist");
-                Element.SetPower(10);
-                Element.SetAccuracy(1);
-                Element.SetManaCost(0);
-                Stuff.AddSkill(Element);
-            }
-
-            {
-                //Adding Monsters
-                Monster Element = new Monster();
-                Element.SetID(1);
-                Element.SetName("Sleepy bat");
-                Element.SetSprite("/Assets/Monsters/bat.png");
-                Stuff.AddMonster(Element);
-            }
-
-            {
-                //Adding Character
-                Character Hero = new Character();
-                Hero.AddSkill(Stuff.FindSkill(1));
-                Stuff.AddCharacter(Hero);
-            }
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
                 Microsoft.ApplicationInsights.WindowsCollectors.Metadata |
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
