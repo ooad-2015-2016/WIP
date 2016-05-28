@@ -15,6 +15,7 @@ namespace Entity {
         SortedDictionary<int, Shop> Shops;
         SortedDictionary<int, NPC> NPCs;
         SortedDictionary<int, AI> AIs;
+        int CurrentMapID = 0;
         Battle battle;
 
         public Collection() {
@@ -186,6 +187,14 @@ namespace Entity {
         public void RemoveAI(int ID)
         {
             AIs.Remove(ID);
+        }
+        public int GetCurrentMapID()
+        {
+            return CurrentMapID;
+        }
+        public void SetCurrentMapID(int ID)
+        {
+            CurrentMapID = ID;
         }
         public void SetBattle(Battle battle)
         {

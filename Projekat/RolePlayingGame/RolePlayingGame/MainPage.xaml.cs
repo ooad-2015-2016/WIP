@@ -175,5 +175,10 @@ namespace RolePlayingGame
         {
             this.Frame.Navigate(typeof(BlankPage1), Stuff);
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MapMeni), Stuff);
+        }
     }
 }

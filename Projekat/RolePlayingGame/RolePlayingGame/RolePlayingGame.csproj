@@ -107,6 +107,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MapMeni.xaml.cs">
+      <DependentUpon>MapMeni.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -129,8 +132,15 @@
     <Content Include="Assets\CharacterExample.png" />
     <Content Include="Assets\EnemyInfoBox.png" />
     <Content Include="Assets\ImageBox.png" />
+    <Content Include="Assets\Maps\Mapa1.png" />
+    <Content Include="Assets\Maps\Mapa1Front.png" />
+    <Content Include="Assets\Maps\PrimjerMape.png" />
     <Content Include="Assets\Monsters\bat.png" />
     <Content Include="Assets\PlayerInfo.png" />
+    <Content Include="Assets\Players\PlayerDown.png" />
+    <Content Include="Assets\Players\PlayerLeft.png" />
+    <Content Include="Assets\Players\PlayerRight.png" />
+    <Content Include="Assets\Players\PlayerUp.png" />
     <Content Include="Assets\Skills\Attacks\punch.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -153,6 +163,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MapMeni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
