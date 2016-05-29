@@ -1,0 +1,947 @@
+{ "height":10,
+ "layers":[
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2199, 2199, 2199, 2199, 2199, 2199, 2199, 2199, 0, 0, 2199, 2141, 2142, 2142, 2142, 2142, 2143, 2199, 0, 0, 2199, 2149, 2150, 2150, 2150, 2150, 2151, 2199, 0, 0, 2199, 2149, 2150, 2150, 2150, 2150, 2151, 2199, 0, 0, 2199, 2157, 2158, 2158, 2158, 2158, 2159, 2199, 0, 0, 2199, 2199, 2199, 2199, 2199, 2199, 2199, 2199, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"Tile Layer 3",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2174, 2174, 2174, 2174, 2174, 2174, 2174, 2174, 0, 0, 2190, 2190, 2190, 2190, 2190, 2190, 2190, 2190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2173, 2173, 2173, 2173, 2173, 2173, 2173, 2173, 0, 0, 2181, 2181, 2181, 2181, 2181, 2181, 2181, 2181, 0, 0, 2189, 2189, 2189, 2189, 2189, 2189, 2189, 2189, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1465, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1475, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2197, 2197, 2197, 2197, 2197, 2197, 2197, 2197, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"Tile Layer 4",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 513, 516, 514, 0, 0, 0, 0, 0, 0, 0, 519, 522, 520, 0, 0, 0, 0, 441, 442, 0, 525, 528, 526, 0, 0, 0, 0, 445, 446, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"Tile Layer 5",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3487, 3488, 0, 0, 0, 0, 0, 0, 0, 0, 3513, 3514, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"ShopKeeper",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3168, 0, 3168, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 510, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3261, 3262, 3166, 3142, 3260, 3174, 3137, 3239, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 386, 0, 0, 0, 0, 0, 0, 386, 0, 0, 397, 0, 0, 0, 0, 0, 0, 397, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"Tile Layer 6",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[2170, 2171, 2171, 2171, 2171, 2171, 2171, 2171, 2171, 2172, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2178, 0, 0, 0, 0, 0, 0, 0, 0, 2180, 2186, 2171, 2171, 2171, 2194, 2196, 2171, 2171, 2171, 2188],
+         "height":10,
+         "name":"Tile Layer 2",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 0, 0, 0, 0, 0, 0, 0, 0, 4465, 4465, 0, 0, 0, 0, 0, 0, 0, 0, 4465, 4465, 0, 0, 0, 0, 0, 0, 0, 0, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 0, 0, 0, 0, 0, 0, 0, 0, 4465, 4465, 0, 0, 0, 0, 0, 0, 0, 0, 4465, 4465, 4465, 0, 0, 0, 0, 0, 0, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465, 4465],
+         "height":10,
+         "name":"collision",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1350, 1350, 1350, 1350, 1350, 1350, 1350, 1350, 0, 0, 1350, 1350, 1350, 1350, 1350, 1350, 1350, 1350, 0, 0, 0, 0, 0, 4465, 4465, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":10,
+         "name":"functions",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "renderorder":"right-down",
+ "tileheight":32,
+ "tilesets":[
+        {
+         "columns":3,
+         "firstgid":1,
+         "image":"LPC Base Assets\/tiles\/watergrass.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"watergrass",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":2,
+         "firstgid":19,
+         "image":"LPC Base Assets\/tiles\/kitchen.png",
+         "imageheight":128,
+         "imagewidth":64,
+         "margin":0,
+         "name":"kitchen",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":8,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":27,
+         "image":"LPC Base Assets\/tiles\/lava.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"lava",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":45,
+         "image":"LPC Base Assets\/tiles\/lavarock.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"lavarock",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":12,
+         "firstgid":63,
+         "image":"LPC Base Assets\/tiles\/mountains.png",
+         "imageheight":288,
+         "imagewidth":384,
+         "margin":0,
+         "name":"mountains",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":108,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":2,
+         "firstgid":171,
+         "image":"LPC Base Assets\/tiles\/rock.png",
+         "imageheight":32,
+         "imagewidth":64,
+         "margin":0,
+         "name":"rock",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":2,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":173,
+         "image":"LPC Base Assets\/tiles\/signs.png",
+         "imageheight":64,
+         "imagewidth":96,
+         "margin":0,
+         "name":"signs",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":6,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":8,
+         "firstgid":179,
+         "image":"LPC Base Assets\/tiles\/stairs.png",
+         "imageheight":448,
+         "imagewidth":256,
+         "margin":0,
+         "name":"stairs",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":112,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":6,
+         "firstgid":291,
+         "image":"LPC Base Assets\/tiles\/treetop.png",
+         "imageheight":224,
+         "imagewidth":192,
+         "margin":0,
+         "name":"treetop",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":42,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":6,
+         "firstgid":333,
+         "image":"LPC Base Assets\/tiles\/trunk.png",
+         "imageheight":96,
+         "imagewidth":192,
+         "margin":0,
+         "name":"trunk",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":11,
+         "firstgid":351,
+         "image":"LPC Base Assets\/tiles\/victoria.png",
+         "imageheight":160,
+         "imagewidth":352,
+         "margin":0,
+         "name":"victoria",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":55,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":406,
+         "image":"LPC Base Assets\/tiles\/water.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"water",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":424,
+         "image":"LPC Base Assets\/tiles\/waterfall.png",
+         "imageheight":160,
+         "imagewidth":96,
+         "margin":0,
+         "name":"waterfall",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":15,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":4,
+         "firstgid":439,
+         "image":"LPC Base Assets\/tiles\/barrel.png",
+         "imageheight":64,
+         "imagewidth":128,
+         "margin":0,
+         "name":"barrel",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":8,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":447,
+         "image":"LPC Base Assets\/tiles\/brackish.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"brackish",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":6,
+         "firstgid":465,
+         "image":"LPC Base Assets\/tiles\/bridges.png",
+         "imageheight":224,
+         "imagewidth":192,
+         "margin":0,
+         "name":"bridges",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":42,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":507,
+         "image":"LPC Base Assets\/tiles\/buckets.png",
+         "imageheight":64,
+         "imagewidth":96,
+         "margin":0,
+         "name":"buckets",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":6,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":6,
+         "firstgid":513,
+         "image":"LPC Base Assets\/tiles\/cabinets.png",
+         "imageheight":416,
+         "imagewidth":192,
+         "margin":0,
+         "name":"cabinets",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":78,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":5,
+         "firstgid":591,
+         "image":"LPC Base Assets\/tiles\/castle_lightsources.png",
+         "imageheight":128,
+         "imagewidth":160,
+         "margin":0,
+         "name":"castle_lightsources",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":20,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":17,
+         "firstgid":611,
+         "image":"LPC Base Assets\/tiles\/castle_outside.png",
+         "imageheight":352,
+         "imagewidth":544,
+         "margin":0,
+         "name":"castle_outside",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":187,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":10,
+         "firstgid":798,
+         "image":"LPC Base Assets\/tiles\/castlefloors.png",
+         "imageheight":320,
+         "imagewidth":320,
+         "margin":0,
+         "name":"castlefloors",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":100,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":4,
+         "firstgid":898,
+         "image":"LPC Base Assets\/tiles\/castlefloors_outside.png",
+         "imageheight":160,
+         "imagewidth":128,
+         "margin":0,
+         "name":"castlefloors_outside",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":20,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":12,
+         "firstgid":918,
+         "image":"LPC Base Assets\/tiles\/castlewalls.png",
+         "imageheight":480,
+         "imagewidth":384,
+         "margin":0,
+         "name":"castlewalls",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":180,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1098,
+         "image":"LPC Base Assets\/tiles\/cement.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"cement",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":5,
+         "firstgid":1116,
+         "image":"LPC Base Assets\/tiles\/cementstair.png",
+         "imageheight":128,
+         "imagewidth":160,
+         "margin":0,
+         "name":"cementstair",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":20,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":2,
+         "firstgid":1136,
+         "image":"LPC Base Assets\/tiles\/chests.png",
+         "imageheight":96,
+         "imagewidth":64,
+         "margin":0,
+         "name":"chests",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":6,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":5,
+         "firstgid":1142,
+         "image":"LPC Base Assets\/tiles\/country.png",
+         "imageheight":128,
+         "imagewidth":160,
+         "margin":0,
+         "name":"country",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":20,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":1,
+         "firstgid":1162,
+         "image":"LPC Base Assets\/tiles\/cup.png",
+         "imageheight":64,
+         "imagewidth":32,
+         "margin":0,
+         "name":"cup",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":2,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1164,
+         "image":"LPC Base Assets\/tiles\/dirt.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"dirt",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1182,
+         "image":"LPC Base Assets\/tiles\/dirt2.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"dirt2",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":13,
+         "firstgid":1200,
+         "image":"LPC Base Assets\/tiles\/dungeon.png",
+         "imageheight":256,
+         "imagewidth":416,
+         "margin":0,
+         "name":"dungeon",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":104,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1304,
+         "image":"LPC Base Assets\/tiles\/grass.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"grass",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1322,
+         "image":"LPC Base Assets\/tiles\/grassalt.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"grassalt",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1340,
+         "image":"LPC Base Assets\/tiles\/hole.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"hole",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1358,
+         "image":"LPC Base Assets\/tiles\/holek.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"holek",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":1376,
+         "image":"LPC Base Assets\/tiles\/holemid.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"holemid",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":9,
+         "firstgid":1394,
+         "image":"LPC Base Assets\/tiles\/house.png",
+         "imageheight":224,
+         "imagewidth":288,
+         "margin":0,
+         "name":"house",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":63,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":10,
+         "firstgid":1457,
+         "image":"LPC Base Assets\/tiles\/inside.png",
+         "imageheight":320,
+         "imagewidth":320,
+         "margin":0,
+         "name":"inside",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":100,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":12,
+         "firstgid":1557,
+         "image":"terrain2.png",
+         "imageheight":576,
+         "imagewidth":384,
+         "margin":0,
+         "name":"terrain2",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":216,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":16,
+         "firstgid":1773,
+         "image":"house_inside.png",
+         "imageheight":448,
+         "imagewidth":512,
+         "margin":0,
+         "name":"house_inside",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":224,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":4,
+         "firstgid":1997,
+         "image":"signpost-outsidestuff.png",
+         "imageheight":128,
+         "imagewidth":128,
+         "margin":0,
+         "name":"signpost-outsidestuff",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":16,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":8,
+         "firstgid":2013,
+         "image":"adobe building set\/adobe.png",
+         "imageheight":384,
+         "imagewidth":256,
+         "margin":0,
+         "name":"adobe",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":96,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":8,
+         "firstgid":2109,
+         "image":"arabic set\/arabic.png",
+         "imageheight":384,
+         "imagewidth":256,
+         "margin":0,
+         "name":"arabic",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":96,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":20,
+         "firstgid":2205,
+         "image":"LPC_compatible_Ancient_Greek_Architecture\/LPC_Ancient_Greece_Architecture.png",
+         "imageheight":640,
+         "imagewidth":640,
+         "margin":0,
+         "name":"LPC_Ancient_Greece_Architecture",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":400,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":16,
+         "firstgid":2605,
+         "image":"thatched-roof.png",
+         "imageheight":512,
+         "imagewidth":512,
+         "margin":0,
+         "name":"thatched-roof",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":256,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":16,
+         "firstgid":2861,
+         "image":"cottage.png",
+         "imageheight":512,
+         "imagewidth":512,
+         "margin":0,
+         "name":"cottage",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":256,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":16,
+         "firstgid":3117,
+         "image":"ItemsAndEffects\/ItemsAndEffects\/items1.png",
+         "imageheight":512,
+         "imagewidth":512,
+         "margin":0,
+         "name":"items1",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":256,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":26,
+         "firstgid":3373,
+         "image":"male_sprites.png",
+         "imageheight":1344,
+         "imagewidth":832,
+         "margin":0,
+         "name":"male_sprites",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":1092,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":1,
+         "firstgid":4465,
+         "image":"collision.png",
+         "imageheight":32,
+         "imagewidth":32,
+         "margin":0,
+         "name":"collision",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":1,
+         "tileheight":32,
+         "tilewidth":32
+        }],
+ "tilewidth":32,
+ "version":1,
+ "width":10
+}

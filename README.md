@@ -180,6 +180,15 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 * [Klase](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/Character.jpg)
 * [Klase kompresovane](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/KlaseCompressed.jpg)
 
+###Dijagram Sekvenci
+
+* [Dijagram sekvenci](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramSekvenci.png)
+
+###Design pattern-i
+
+* [Strategy pattern](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/StrategyPattern.png)
+
+
 ###Skice Formi
 
 #####Battle Meni

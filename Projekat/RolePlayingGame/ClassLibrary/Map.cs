@@ -11,11 +11,13 @@ namespace Entity {
         private int width = 0;
         private List<bool> collisionLayer;
 		private List<SpawnTile> spawnLayer;
-		private Image mapImage;
+		private Image bottomLayer;
+        private Image topLayer;
 		private List<FunctionTile> functionLayer;
 
 		public Map() {
-            mapImage = new Image();
+            bottomLayer = new Image();
+            topLayer = new Image();
             collisionLayer = new List<bool>();
             spawnLayer = new List<SpawnTile>();
             functionLayer = new List<FunctionTile>();
@@ -28,11 +30,17 @@ namespace Entity {
         }
 
         public bool CheckCollision(int x, int y) {
-            int z = GetPosition(x, y);
-            return !collisionLayer[z];
+            bool collision = false;
+            if (x >= 0 && y >= 0 && x <= width && y <= height)
+            {
+                int z = GetPosition(x, y);
+                collision = !collisionLayer[z];
+            }
+            return collision;
 		}
-		public bool CheckFunction(ref object int_x, ref object int_y) {
-			throw new System.Exception("Not implemented");
+		public FunctionTile GetFunction(int x, int y) {
+            int z = GetPosition(x, y);
+            return functionLayer[z];
 		}
 		public bool CheckBattle(ref object int_x, ref object int_y) {
 			throw new System.Exception("Not implemented");
@@ -94,15 +102,26 @@ namespace Entity {
         {
             this.spawnLayer = spawnLayer;
         }
-        public Image GetMapImage() {
-			return this.mapImage;
+        public Image GetBottomLayer() {
+			return this.bottomLayer;
 		}
-		public void SetMapImage(string text) {
+		public void SetBottomLayer(string text) {
             text = "ms-appx:" + text;
             Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
             BitmapImage imageBitmap = new BitmapImage(imageUri);
-            mapImage.Source = imageBitmap;
+            bottomLayer.Source = imageBitmap;
 		}
+        public Image GetTopLayer()
+        {
+            return this.topLayer;
+        }
+        public void SetTopLayer(string text)
+        {
+            text = "ms-appx:" + text;
+            Uri imageUri = new Uri(text, UriKind.RelativeOrAbsolute);
+            BitmapImage imageBitmap = new BitmapImage(imageUri);
+            topLayer.Source = imageBitmap;
+        }
         public List<FunctionTile> GetFunctionLayer()
         {
             return functionLayer;
@@ -111,7 +130,6 @@ namespace Entity {
         {
             this.functionLayer = functionLayer;
         }
-
 	}
 
 }

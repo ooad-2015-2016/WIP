@@ -135,6 +135,8 @@
     <Content Include="Assets\Maps\Mapa1.png" />
     <Content Include="Assets\Maps\Mapa1Front.png" />
     <Content Include="Assets\Maps\PrimjerMape.png" />
+    <Content Include="Assets\Maps\Shop.png" />
+    <Content Include="Assets\Maps\ShopFront.png" />
     <Content Include="Assets\Monsters\bat.png" />
     <Content Include="Assets\PlayerInfo.png" />
     <Content Include="Assets\Players\PlayerDown.png" />

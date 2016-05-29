@@ -38,7 +38,10 @@ namespace Entity {
         }
         public Character FindCharacter(int ID)
         {
-            Character Element = Characters[ID];
+            Character Element;
+            if (Characters.ContainsKey(ID) != false)
+                Element = Characters[ID];
+            else Element = new Character();
             return Element;
         }
         public void RemoveCharacter(int ID)
@@ -51,7 +54,10 @@ namespace Entity {
         }
         public Monster FindMonster(int ID)
         {
-            Monster Element = Monsters[ID];
+            Monster Element;
+            if (Monsters.ContainsKey(ID) != false)
+                Element = Monsters[ID];
+            else Element = new Monster();
             return Element;
         }
         public void RemoveMonster(int ID)
@@ -64,7 +70,10 @@ namespace Entity {
         }
         public Item FindItem(int ID)
         {
-            Item Element = Items[ID];
+            Item Element;
+            if (Items.ContainsKey(ID) != false)
+                Element = Items[ID];
+            else Element = new Item();
             return Element;
         }
         public void RemoveItem(int ID)
@@ -77,7 +86,10 @@ namespace Entity {
         }
         public Map FindMap(int ID)
         {
-            Map Element = Maps[ID];
+            Map Element;
+            if (Maps.ContainsKey(ID) != false)
+                Element = Maps[ID];
+            else Element = new Map();
             return Element;
         }
         public void RemoveMap(int ID)
@@ -90,7 +102,10 @@ namespace Entity {
         }
         public FunctionTile FindFunctionTile(int ID)
         {
-            FunctionTile Element = FunctionTiles[ID];
+            FunctionTile Element;
+            if (FunctionTiles.ContainsKey(ID) != false)
+                Element = FunctionTiles[ID];
+            else Element = new FunctionTile();
             return Element;
         }
         public void RemoveFunctionTile(int ID)
@@ -103,7 +118,10 @@ namespace Entity {
         }
         public SpawnTile FindSpawnTile(int ID)
         {
-            SpawnTile Element = SpawnTiles[ID];
+            SpawnTile Element;
+            if (SpawnTiles.ContainsKey(ID) != false)
+                Element = SpawnTiles[ID];
+            else Element = new SpawnTile();
             return Element;
         }
         public void RemoveSpawnTile(int ID)
@@ -116,7 +134,10 @@ namespace Entity {
         }
         public Skill FindSkill(int ID)
         {
-            Skill Element = Skills[ID];
+            Skill Element;
+            if (Skills.ContainsKey(ID) != false)
+                Element = Skills[ID];
+            else Element = new Skill();
             return Element;
         }
         public void RemoveSkill(int ID)
@@ -129,7 +150,10 @@ namespace Entity {
         }
         public StatusEffect FindStatusEffect(int ID)
         {
-            StatusEffect Element = StatusEffects[ID];
+            StatusEffect Element;
+            if (StatusEffects.ContainsKey(ID) != false)
+                Element = StatusEffects[ID];
+            else Element = new StatusEffect();
             return Element;
         }
         public void RemoveStatusEffect(int ID)
@@ -142,7 +166,10 @@ namespace Entity {
         }
         public Modifiers FindModifiers(int ID)
         {
-            Modifiers Element = AllModifiers[ID];
+            Modifiers Element;
+            if (AllModifiers.ContainsKey(ID) != false)
+                Element = AllModifiers[ID];
+            else Element = new Modifiers();
             return Element;
         }
         public void RemoveModifiers(int ID)
@@ -155,7 +182,10 @@ namespace Entity {
         }
         public Shop FindShop(int ID)
         {
-            Shop Element = Shops[ID];
+            Shop Element;
+            if (Shops.ContainsKey(ID) != false)
+                Element = Shops[ID];
+            else Element = new Shop();
             return Element;
         }
         public void RemoveShop(int ID)
@@ -168,7 +198,10 @@ namespace Entity {
         }
         public NPC FindNPC(int ID)
         {
-            NPC Element = NPCs[ID];
+            NPC Element;
+            if (NPCs.ContainsKey(ID) != false)
+                Element = NPCs[ID];
+            else Element = new NPC();
             return Element;
         }
         public void RemoveNPC(int ID)
@@ -181,7 +214,10 @@ namespace Entity {
         }
         public AI FindAI(int ID)
         {
-            AI Element = AIs[ID];
+            AI Element;
+            if (AIs.ContainsKey(ID) != false)
+                Element = AIs[ID];
+            else Element = new AI();
             return Element;
         }
         public void RemoveAI(int ID)
