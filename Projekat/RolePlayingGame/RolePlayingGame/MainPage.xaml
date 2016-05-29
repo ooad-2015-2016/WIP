@@ -10,6 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="348,140,0,0" VerticalAlignment="Top" Height="270" Width="542" Click="button_Click"/>
         <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="152" Margin="348,464,0,0" VerticalAlignment="Top" Width="431" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Meni&#xD;&#xA;" HorizontalAlignment="Left" Height="315" Margin="948,140,0,0" VerticalAlignment="Top" Width="242" Click="button2_Click"/>
 
     </Grid>
 </Page>

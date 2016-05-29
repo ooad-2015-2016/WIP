@@ -32,6 +32,7 @@ namespace RolePlayingGame
         {
             Stuff = e.Parameter as Collection;
             UpdateCharacter();
+            SetMap();
         }
         public MapMeni()
         {
@@ -152,6 +153,11 @@ namespace RolePlayingGame
             int x = 0, y = 0;
             GetCharacterPosition(ref x, ref y);
             button4.Content = x + " " + y + " " + Stuff.FindMap(1).GetFunction(x, y).GetID();  
+        }
+
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InGameMeni), Stuff);
         }
     }
 }

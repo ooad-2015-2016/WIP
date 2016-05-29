@@ -69,7 +69,7 @@ namespace RolePlayingGame
             double PlayerMaxMana = Stuff.FindCharacter(1).GetMaxMana();
             PlayerManaBar.Value = PlayerMana / PlayerMaxMana * 100;
             Health.Text = "Health:" + "\t" + PlayerHealth + "/" + PlayerMaxHealth;
-            Mana.Text = "Mana:" + "  \t" + PlayerMana + "/" + PlayerMaxMana;
+            Mana.Text = "Mana:" + "  \t" + PlayerMana + "/" + 10E+7;// + " " + PlayerMaxMana;
 
             int numberOfEnemies = monsterparty.Count();
 
@@ -464,6 +464,12 @@ namespace RolePlayingGame
                 case 42:
                     ChangeButtonText(3);
                     p = 100;
+                    break;
+                case 14:
+                case 24:
+                case 34:
+                case 44:
+                    this.Frame.Navigate(typeof(MapMeni), Stuff);
                     break;
                 default:
                     EndTurn(k);

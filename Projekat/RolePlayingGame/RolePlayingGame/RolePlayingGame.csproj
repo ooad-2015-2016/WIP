@@ -104,6 +104,9 @@
     <Compile Include="BattleMeni.xaml.cs">
       <DependentUpon>BattleMeni.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InGameMeni.xaml.cs">
+      <DependentUpon>InGameMeni.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,8 @@
     <Content Include="Assets\CharacterExample.png" />
     <Content Include="Assets\EnemyInfoBox.png" />
     <Content Include="Assets\ImageBox.png" />
+    <Content Include="Assets\InGameMeni\MainBox.png" />
+    <Content Include="Assets\InGameMeni\SideBox.png" />
     <Content Include="Assets\Maps\Mapa1.png" />
     <Content Include="Assets\Maps\Mapa1Front.png" />
     <Content Include="Assets\Maps\PrimjerMape.png" />
@@ -159,6 +164,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="BattleMeni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InGameMeni.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -125,7 +125,12 @@ namespace Entity {
 		public void SetEXP(int eXP) {
 			this.EXP = eXP;
 		}
-		public int GetHealth() {
+        public double GetMaxEXP()
+        {
+            double max = 50 * Math.Pow(LVL, 3) - 300 * Math.Pow(LVL, 2) + 750 * LVL - 400;
+            return max;
+        }
+        public int GetHealth() {
 			return this.health;
 		}
 		public void SetHealth(int health) {
