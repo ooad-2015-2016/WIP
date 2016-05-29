@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="RolePlayingGame.InGameMeni"
+    x:Class="RolePlayingGame.InventoryMeni"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RolePlayingGame"
@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image x:Name="Background" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="1280" Source="/Assets/Background.png"/>
-        
+
         <Image x:Name="image" HorizontalAlignment="Left" Height="676" VerticalAlignment="Top" Width="1147" Margin="76,22,0,0" Source="/Assets/InGameMeni/MainBox.png"/>
         <Image x:Name="image2" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="723" Margin="478,46,0,0" Source="/Assets/InGameMeni/SideBox.png"/>
         <TextBlock x:Name="InfoBox" HorizontalAlignment="Left" Margin="493,61,0,0" FontSize="20" Foreground="White" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="598" Width="695"/>
@@ -48,27 +48,46 @@
         <Image x:Name="Deny_Image" HorizontalAlignment="Left" Margin="398,132,0,0" VerticalAlignment="Top" Height="55" Width="55" Source="/Assets/Button_No1.png"/>
         <Button x:Name="Deny" Content="" HorizontalAlignment="Left" Margin="398,132,0,0" VerticalAlignment="Top" Height="55" Width="55" Click="Deny_Click"/>
 
-        <Image x:Name="PlayerImage" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="182" Margin="1006,61,0,0" Source="/Assets/CharacterExample.png"/>
-        <Image x:Name="PlayerImageBox" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="182" Margin="1006,61,0,0" Source="/Assets/ImageBox.png"/>
-        <ProgressBar x:Name="PlayerHealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="31" Margin="798,105,0,0" VerticalAlignment="Top" Width="182"/>
-        <ProgressBar x:Name="PlayerManaBar" HorizontalAlignment="Left" Height="31" Margin="798,169,0,0" VerticalAlignment="Top" Width="182"/>
-        <TextBlock x:Name="Mana" Foreground="White" HorizontalAlignment="Left" Margin="798,136,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="24" Height="28"></TextBlock>
-        <TextBlock x:Name="Health" Foreground="White" HorizontalAlignment="Left" Margin="798,73,0,0" TextWrapping="Wrap" Text="Health:" VerticalAlignment="Top" FontSize="24"/>
-        <ProgressBar x:Name="PlayerXPBar" Foreground="Chocolate" HorizontalAlignment="Left" Height="31" Margin="493,169,0,0" VerticalAlignment="Top" Width="274"/>
-        <TextBlock x:Name="XP" Foreground="White" HorizontalAlignment="Left" Margin="493,138,0,0" Text="EXP:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="28"></TextBlock>
-        <TextBlock x:Name="LVL" Foreground="White" HorizontalAlignment="Left" Margin="493,108,0,0" Text="LVL:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="28"></TextBlock>
         <TextBlock x:Name="Player" HorizontalAlignment="Left" Margin="493,61,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Height="49" Width="197">
-        	<Run Text="Player"/>
+        	<Run Text="Inventory: "/>
         	<LineBreak/>
         	<Run/>
         </TextBlock>
-        <!--<TextBlock x:Name="Enemy3" HorizontalAlignment="Left" Margin="1053,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="157">
-        	<Run Text="Enemy3"/>
-        	<LineBreak/>
-        	<Run/>-->
-        <!--</TextBlock>-->
-        <!--<TextBlock x:Name="Enemy2" HorizontalAlignment="Left" Margin="894,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy2"/>-->
-        <!--<TextBlock x:Name="Enemy1" HorizontalAlignment="Left" Margin="695,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy1"/>-->
+
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+
+        <Image x:Name="Item1" HorizontalAlignment="Left" Height="64" Margin="530,150,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        
+        <Rectangle Fill="Silver" HorizontalAlignment="Left" Height="464" Margin="1030,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="130" Opacity="0"/>
+        <Image x:Name="InventorySideBox" HorizontalAlignment="Left" Height="464" VerticalAlignment="Top" Width="130" Margin="1030,150,0,0" Source="/Assets/InGameMeni/InventorySideBox.png"/>
 
     </Grid>
 </Page>

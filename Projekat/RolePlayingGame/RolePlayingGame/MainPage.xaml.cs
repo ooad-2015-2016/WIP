@@ -155,7 +155,6 @@ namespace RolePlayingGame
                 //Adding Character
                 Character Hero = new Character();
                 Hero.SetName("Helpless Soul");
-                Hero.SetEXP(23);
                 Hero.AddSkill(Stuff.FindSkill(1));
                 Hero.AddSkill(Stuff.FindSkill(2));
                 Hero.AddSkill(Stuff.FindSkill(3));
@@ -255,6 +254,11 @@ namespace RolePlayingGame
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(InGameMeni), Stuff);
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InventoryMeni), Stuff);
         }
     }
 }

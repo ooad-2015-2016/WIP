@@ -17,6 +17,7 @@ namespace Entity {
         SortedDictionary<int, AI> AIs;
         int CurrentMapID = 0;
         Battle battle;
+        String report;
 
         public Collection() {
             Characters = new SortedDictionary<int, Character>();
@@ -238,9 +239,20 @@ namespace Entity {
         }
         public Battle GetBattle()
         {
-            return battle;
+            if (battle != null)
+            {
+                return battle;
+            }
+            return new Battle();
         }
-
+        public void SetReport(String report)
+        {
+            this.report = report;
+        }
+        public String GetReport()
+        {
+            return report;
+        }
     }
 
 }

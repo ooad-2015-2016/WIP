@@ -20,6 +20,6 @@
         </Button>
         <Button x:Name="button3" Content="Down" HorizontalAlignment="Left" Margin="172,574,0,0" VerticalAlignment="Top" Height="89" Width="104" Click="button3_Click"/>
         <Button x:Name="button4" Content="ENTER" HorizontalAlignment="Left" Margin="982,544,0,0" VerticalAlignment="Top" Height="116" Width="230" Click="button4_Click"/>
-        <Button x:Name="button5" Content="Inventory" HorizontalAlignment="Left" Height="89" Margin="982,432,0,0" VerticalAlignment="Top" Width="230" Click="button5_Click"/>
+        <Button x:Name="button5" Content="Meni" HorizontalAlignment="Left" Height="89" Margin="982,432,0,0" VerticalAlignment="Top" Width="230" Click="button5_Click"/>
     </Grid>
 </Page>

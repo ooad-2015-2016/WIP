@@ -12,7 +12,8 @@ namespace Entity {
 		private int positionX;
 		private int positionY;
 		private int LVL;
-		private int EXP;
+		private long EXP;
+        private int gold;
 		private int health;
 		private int maxHealth;
 		private int mana;
@@ -22,6 +23,7 @@ namespace Entity {
 		private EquipmentSlots equipment;
 		private List<Skill> skills;
 		private List<StatusEffect> statusEffects;
+        private int ChangedLVL = 0;
 
 		public Character()
         {
@@ -33,7 +35,7 @@ namespace Entity {
             statusEffects = new List<StatusEffect>();
         }
 		public void LevelUp() {
-			throw new System.Exception("Not implemented");
+            LVL++;
 		}
 		public void IncreaseHealth(int x) {
             health += x;
@@ -47,7 +49,20 @@ namespace Entity {
 		public void LoseMana(int x) {
             mana -= x; 
 		}
-		public Atributes GetAtributes() {
+        public void IncreaseEXP(int x)
+        {
+            EXP += x;
+            while (EXP >= GetMaxEXP())
+            {
+                EXP -= GetMaxEXP();
+                LevelUp();
+            }
+        }
+        public void IncreaseGold(int x)
+        {
+            gold += x;
+        }
+        public Atributes GetAtributes() {
 			return this.atributes;
 		}
 		public void SetAtributes(ref Atributes atributes) {
@@ -119,15 +134,24 @@ namespace Entity {
 		public void SetLVL(int lVL) {
 			this.LVL = lVL;
 		}
-		public int GetEXP() {
+		public long GetEXP() {
 			return this.EXP;
 		}
-		public void SetEXP(int eXP) {
+		public void SetEXP(long eXP) {
 			this.EXP = eXP;
 		}
-        public double GetMaxEXP()
+        public int GetGold()
         {
-            double max = 50 * Math.Pow(LVL, 3) - 300 * Math.Pow(LVL, 2) + 750 * LVL - 400;
+            return this.gold;
+        }
+        public void SetGold(int gold)
+        {
+            this.gold = gold;
+        }
+        public long GetMaxEXP()
+        {
+            long max = (long)(50 * Math.Pow((LVL+ChangedLVL), 3) 
+                - 300 * Math.Pow((LVL + ChangedLVL), 2) + 750 * (LVL + ChangedLVL) - 400);
             return max;
         }
         public int GetHealth() {
@@ -182,7 +206,14 @@ namespace Entity {
         {
             this.statusEffects = statusEffects;
         }
-
+        public int GetChangedLVL()
+        {
+            return ChangedLVL;
+        }
+        public void SetChangedLVL(int lvl)
+        {
+            this.ChangedLVL = lvl;
+        }
 	}
 
 }

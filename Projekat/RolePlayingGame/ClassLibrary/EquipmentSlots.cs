@@ -6,30 +6,28 @@ namespace Entity {
 		private Item armor;
 
 		public EquipmentSlots() {
-			throw new System.Exception("Not implemented");
+            primaryWeapon = new Equipable();
+            secondaryWeapon = new Equipable();
+            armor = new Equipable();
+        }
+		public void AddPrimary(Equipable item) {
+            primaryWeapon = item;
 		}
-		public void AddPrimary(ref object item) {
-			throw new System.Exception("Not implemented");
+		public void AddSecondary(Equipable item) {
+            secondaryWeapon = item;
 		}
-		public void AddSecondary(ref object item) {
-			throw new System.Exception("Not implemented");
-		}
-		public void AddArmor(ref object item) {
-			throw new System.Exception("Not implemented");
-		}
-		public void RemovePrimary(ref object item) {
-			throw new System.Exception("Not implemented");
-		}
-		public void RemoveSecondary(ref object item) {
-			throw new System.Exception("Not implemented");
-		}
-		public void RemoveArmor(ref object item) {
-			throw new System.Exception("Not implemented");
-		}
-
-		private Equipable equipable;
-
-		private Character character;
+		public void AddArmor(Equipable item) {
+            armor = item;
+        }
+		public void RemovePrimary() {
+            primaryWeapon = new Equipable();
+        }
+		public void RemoveSecondary() {
+            secondaryWeapon = new Equipable();
+        }
+		public void RemoveArmor() {
+            armor = new Equipable();
+        }
 
 	}
 

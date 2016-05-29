@@ -69,7 +69,7 @@ namespace RolePlayingGame
             double PlayerMaxMana = Stuff.FindCharacter(1).GetMaxMana();
             PlayerManaBar.Value = PlayerMana / PlayerMaxMana * 100;
             Health.Text = "Health:" + "\t" + PlayerHealth + "/" + PlayerMaxHealth;
-            Mana.Text = "Mana:" + "  \t" + PlayerMana + "/" + 10E+7;// + " " + PlayerMaxMana;
+            Mana.Text = "Mana:" + "  \t" + PlayerMana + "/" + " " + PlayerMaxMana;
 
             int numberOfEnemies = monsterparty.Count();
 
@@ -220,6 +220,11 @@ namespace RolePlayingGame
                         if (target < 0) throw new System.ArgumentException("Invalid enemy selected", "option");
                         String report = Stuff.GetBattle().EndTurn(skill, target);
                         InfoBox.Text = report;
+                        if(Stuff.GetBattle().DidBattleEnd())
+                        {
+                            Stuff.SetReport(report);
+                            this.Frame.Navigate(typeof(ExitBattle), Stuff);
+                        }
                     }
                     catch(System.ArgumentException ex)
                     {

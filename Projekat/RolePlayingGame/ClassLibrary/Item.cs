@@ -16,13 +16,13 @@ namespace Entity {
 		public int GetID() {
 			return this.iD;
 		}
-		public void SetID(ref int iD) {
+		public void SetID(int iD) {
 			this.iD = iD;
 		}
 		public String GetName() {
 			return this.name;
 		}
-		public void SetName(ref String name) {
+		public void SetName(String name) {
 			this.name = name;
 		}
 		public Image GetSprite() {
@@ -37,13 +37,13 @@ namespace Entity {
 		public int GetPrice() {
 			return this.price;
 		}
-		public void SetPrice(ref int price) {
+		public void SetPrice(int price) {
 			this.price = price;
 		}
 		public String GetDescription() {
 			return this.description;
 		}
-		public void SetDescription(ref String description) {
+		public void SetDescription(String description) {
 			this.description = description;
 		}
 	}

@@ -1,8 +1,8 @@
 using System;
 namespace Entity {
 	public class Consumable : Item  {
-		private int healthChange;
-		private int manaChange;
+		private int healthChange = 0;
+		private int manaChange = 0;
 
 		public Consumable() { }
 		public int GetHealthChange() {

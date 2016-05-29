@@ -8,6 +8,7 @@ namespace Entity {
 		private int target;
 		private bool targetFriendly;
 		private int damageDealt;
+        private bool battleEnd = false;
 
 		public Battle() {
             playerParty = new List<Character>();
@@ -57,6 +58,10 @@ namespace Entity {
 		public void SetDamageDealt(ref int damageDealt) {
 			this.damageDealt = damageDealt;
 		}
+        public bool DidBattleEnd()
+        {
+            return battleEnd;
+        }
 		public Double GetTotalHitChance() {
 			throw new System.Exception("Not implemented");
 		}
@@ -100,8 +105,18 @@ namespace Entity {
             if (playerParty[0].GetMana() >= skill.GetManaCost())
             {
                 UseSkill(skill, target);
+                Monster monster = monsterParty[target - 1];
                 report = playerParty[0].GetName() + " used " + skill.GetName() 
-                    + " on " + monsterParty[target - 1].GetName() + " and did " + damageDealt + " damage.\n\n";
+                    + " on " + monster.GetName() + " and did " + damageDealt + " damage.\n";
+                if(monster.GetID() == 0)
+                {
+                    int exp = monster.GetEXPReward(), gold = monster.GetGoldReward();
+                    playerParty[0].IncreaseEXP(exp);
+                    playerParty[0].IncreaseGold(gold);
+                    report += "You killed " + monster.GetName() + " and recieved "
+                        + exp + " EXP and " + gold + " gold\n";
+                }
+                report += "\n";
                 report = MonsterTurn(report);
             }
             else
@@ -130,7 +145,7 @@ namespace Entity {
         }
 		public String MonsterTurn(String report) {
             Random x = new Random();
-            int n = monsterParty.Count;
+            int n = monsterParty.Count, m = 0;
             for(int i = 0; i < n; i++)
             {
                 if(monsterParty[i].GetID() != 0)
@@ -139,8 +154,10 @@ namespace Entity {
                     UseSkill(skill, 0, i + 1);
                     report += monsterParty[i].GetName() + " used " + skill.GetName()
                     + " on " + playerParty[0].GetName() + " and did " + damageDealt + " damage.\n";
+                    m++;
                 }
             }
+            if (m == 0) battleEnd = true;
             return report;        
 		}
 		public void Render() {

@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Entity {
 	public class Equipable : Item  {
 		private List<Modifiers> modifiers;
-		private Image sprite;
 		private int mainType;
 		private int subType;
 		private int power;
@@ -38,9 +38,6 @@ namespace Entity {
 		public void SetModifiers(ref Modifiers modifiers) {
 			throw new System.Exception("Not implemented");
 		}
-
-		private EquipmentSlots equipmentSlots;
-
 	}
 
 }

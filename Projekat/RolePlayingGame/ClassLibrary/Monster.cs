@@ -149,9 +149,17 @@ namespace Entity {
         public Skill AIDecide() {
 			throw new System.Exception("Not implemented");
 		}
-		public Monster(ref object parameter) {
-			throw new System.Exception("Not implemented");
-		}
+
+        public int GetEXPReward()
+        {
+            int x = (int)Math.Ceiling((double)((30 + 10 * LVL) * (1 + (ID - 1) / 4)));
+            return x;
+        }
+        public int GetGoldReward()
+        {
+            int x = (int)Math.Ceiling((double)((30 + 10 * LVL) * (1 + (ID - 1) / 4))/4);
+            return x;
+        }
 
 	}
 
