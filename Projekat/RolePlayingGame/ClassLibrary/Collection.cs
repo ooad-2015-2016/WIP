@@ -18,6 +18,7 @@ namespace Entity {
         int CurrentMapID = 0;
         Battle battle;
         String report;
+        int option = 0;
 
         public Collection() {
             Characters = new SortedDictionary<int, Character>();
@@ -252,6 +253,14 @@ namespace Entity {
         public String GetReport()
         {
             return report;
+        }
+        public void SetOption(int option)
+        {
+            this.option = option;
+        }
+        public int GetOption()
+        {
+            return option;
         }
     }
 

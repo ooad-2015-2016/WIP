@@ -12,9 +12,9 @@
         <Image x:Name="Player" HorizontalAlignment="Left" Height="64" Width="32" Margin="0,0,0,0" Source="/Assets/Players/PlayerDown.png" VerticalAlignment="Top" />
         <Image x:Name="MapFront" HorizontalAlignment="Left" Height="736" Width="1280" Margin="0,0,0,-16" Source="/Assets/Maps/Mapa1Front.png" VerticalAlignment="Top" />
         <Image x:Name="image" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="723" Source="/Assets/InGameMeni/SideBox.png" Margin="275,10,0,0"/>
-        <TextBlock x:Name="BattleResults" Foreground="White" HorizontalAlignment="Left" Height="613" Margin="281,17,0,0" TextWrapping="Wrap" Text="You Won" VerticalAlignment="Top" Width="710" FontSize="36"/>
+        <TextBlock x:Name="BattleResults" Foreground="White" TextAlignment="Center" HorizontalAlignment="Left" Height="613" Margin="281,17,0,0" TextWrapping="Wrap" Text="You Won" VerticalAlignment="Top" Width="710" FontSize="36"/>
         <TextBlock x:Name="textBox" Foreground="White" HorizontalAlignment="Left" Height="50" Margin="418,580,0,0" TextWrapping="Wrap" Text="Click anywhere to continue!" VerticalAlignment="Top" Width="440" FontSize="36"/>
-        <TextBlock x:Name="BattleReport" Foreground="White" HorizontalAlignment="Left" Height="202" Margin="345,168,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="574" FontSize="20"/>
+        <TextBlock x:Name="BattleReport" Foreground="White" TextAlignment="Center" HorizontalAlignment="Left" Height="398" Margin="309,168,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="655" FontSize="22"/>
         <Button x:Name="button" HorizontalAlignment="Left" Margin="0,0,0,0" Height="720" Width="1280" VerticalAlignment="Top" Opacity="0" Click="button_Click"></Button>
     </Grid>
 </Page>

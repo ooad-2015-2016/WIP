@@ -12,34 +12,66 @@ namespace Entity {
 		public int GetStrength() {
 			return this.strength;
 		}
-		public void SetStrength(ref int strength) {
+		public void SetStrength(int strength) {
 			this.strength = strength;
 		}
+        public void IncreaseStrength()
+        {
+            strength++;
+        }
 		public int GetVitality() {
 			return this.vitality;
 		}
-		public void SetVitality(ref int vitality) {
+		public void SetVitality(int vitality) {
 			this.vitality = vitality;
 		}
-		public int GetAgility() {
+        public void IncreaseVitality()
+        {
+            vitality++;
+        }
+        public int GetAgility() {
 			return this.agility;
 		}
-		public void SetAgility(ref int agility) {
+		public void SetAgility(int agility) {
 			this.agility = agility;
 		}
-		public int GetIntelligence() {
+        public void IncreaseAgility()
+        {
+            agility++;
+        }
+        public int GetIntelligence() {
 			return this.intelligence;
 		}
-		public void SetIntelligence(ref int intelligence) {
+		public void SetIntelligence(int intelligence) {
 			this.intelligence = intelligence;
 		}
-		public int GetLuck() {
+        public void IncreaseIntelligence()
+        {
+            intelligence++;
+        }
+        public int GetWillPower()
+        {
+            return this.willpower;
+        }
+        public void SetWillpower(int willpower)
+        {
+            this.willpower = willpower;
+        }
+        public void IncreaseWillpower()
+        {
+            willpower++;
+        }
+        public int GetLuck() {
 			return this.luck;
 		}
-		public void SetLuck(ref int luck) {
+		public void SetLuck(int luck) {
 			this.luck = luck;
 		}
-		public String GetStrengthInfo() {
+        public void IncreaseLuck()
+        {
+            luck++;
+        }
+        public String GetStrengthInfo() {
 			throw new System.Exception("Not implemented");
 		}
 		public String GetVitalityInfo() {

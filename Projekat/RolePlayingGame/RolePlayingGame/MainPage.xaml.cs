@@ -152,15 +152,215 @@ namespace RolePlayingGame
             }
 
             {
+                //Adding consumable items
+                Consumable item = new Consumable();
+
+                //Adding food
+                item.SetID(2);
+                item.SetName("Bread");
+                item.SetDescription("Restores 15 health");
+                item.SetSprite("/Assets/Items/Food1.png");
+                item.SetPrice(1);
+                item.SetHealthChange(15);
+                Stuff.AddItem(item);
+
+                item = new Consumable();
+                item.SetID(3);
+                item.SetName("Cheese");
+                item.SetDescription("Restores 25 health");
+                item.SetSprite("/Assets/Items/Food2.png");
+                item.SetPrice(1);
+                item.SetHealthChange(25);
+                Stuff.AddItem(item);
+
+                item = new Consumable();
+                item.SetID(4);
+                item.SetName("Spinach");
+                item.SetDescription("Restores 40 health");
+                item.SetSprite("/Assets/Items/Food3.png");
+                item.SetPrice(1);
+                item.SetHealthChange(40);
+                Stuff.AddItem(item);
+
+                //Adding Scrolls
+
+                item = new Consumable();
+                item.SetID(5);
+                item.SetName("Healing Scroll");
+                item.SetDescription("Restores 60 health");
+                item.SetSprite("/Assets/Items/Scroll1.png");
+                item.SetPrice(1);
+                item.SetHealthChange(60);
+                Stuff.AddItem(item);
+
+                item = new Consumable();
+                item.SetID(6);
+                item.SetName("Mana Scroll");
+                item.SetDescription("Restores 40 mana");
+                item.SetSprite("/Assets/Items/Scroll2.png");
+                item.SetPrice(1);
+                item.SetManaChange(40);
+                Stuff.AddItem(item);
+            }
+            {
+                //Adding Equipment
+
+                //Adding armor
+                Equipable item = new Equipable();
+                item.SetID(7);
+                item.SetName("Leather Armor");
+                item.SetDescription("Offers light protection.");
+                item.SetSprite("/Assets/Items/Armor1.png");
+                item.SetPrice(1);
+                item.SetMainType(3);
+                item.SetPower(20);
+                Stuff.AddItem(item);
+
+                item = new Equipable();
+                item.SetID(8);
+                item.SetName("Fancy Shirt");
+                item.SetDescription("Offers next to no protection.");
+                item.SetSprite("/Assets/Items/Armor2.png");
+                item.SetPrice(1);
+                item.SetMainType(3);
+                item.SetPower(5);
+                Stuff.AddItem(item);
+
+                item = new Equipable();
+                item.SetID(9);
+                item.SetName("Chainmail Armor");
+                item.SetDescription("Offers decent protection.");
+                item.SetSprite("/Assets/Items/Armor3.png");
+                item.SetPrice(1);
+                item.SetMainType(3);
+                item.SetPower(50);
+                Stuff.AddItem(item);
+
+                item = new Equipable();
+                item.SetID(10);
+                item.SetName("Steel Armor");
+                item.SetDescription("Offers great protection.");
+                item.SetSprite("/Assets/Items/Armor4.png");
+                item.SetPrice(1);
+                item.SetMainType(3);
+                item.SetSubType(2);
+                item.SetPower(100);
+                Stuff.AddItem(item);
+
+                //Adding axes
+                item = new Equipable();
+                item.SetID(11);
+                item.SetName("Stone Axe");
+                item.SetDescription("Cuts trees semi-decently.");
+                item.SetSprite("/Assets/Items/Axe1.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(2);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+
+                item = new Equipable();
+                item.SetID(12);
+                item.SetName("Iron Axe");
+                item.SetDescription("Chops all sorts of things.");
+                item.SetSprite("/Assets/Items/Axe1.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(2);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+
+                item = new Equipable();
+                item.SetID(13);
+                item.SetName("Steel Waraxe");
+                item.SetDescription("You don't want to know where this one was found.");
+                item.SetSprite("/Assets/Items/Axe3.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(2);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+
+                //Adding swords
+                item = new Equipable();
+                item.SetID(14);
+                item.SetName("Steel Sword");
+                item.SetDescription("Pretty basic");
+                item.SetSprite("/Assets/Items/Sword1.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(1);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+
+                item = new Equipable();
+                item.SetID(15);
+                item.SetName("Legendary Dragon's Blade");
+                item.SetDescription("Shiny");
+                item.SetSprite("/Assets/Items/Sword2.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(1);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+
+                //Adding daggers
+                item = new Equipable();
+                item.SetID(16);
+                item.SetName("Dark Shiv");
+                item.SetDescription("Silent, and deadly.");
+                item.SetSprite("/Assets/Items/Dagger2.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(3);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+
+                item = new Equipable();
+                item.SetID(17);
+                item.SetName("Ritual Blade");
+                item.SetDescription("Has some strange illegible markings.");
+                item.SetSprite("/Assets/Items/Dagger1.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(3);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+
+                //Adding staves
+                item = new Equipable();
+                item.SetID(18);
+                item.SetName("Old man's walking stick");
+                item.SetDescription("Seriously, has no magical abilities.");
+                item.SetSprite("/Assets/Items/Staff1.png");
+                item.SetPrice(1);
+                item.SetMainType(1);
+                item.SetSubType(4);
+                item.SetPower(10);
+                Stuff.AddItem(item);
+            }
+
+            {
+                //Adding Shops
+                Shop shop = new Shop();
+                shop.SetID(1);
+                shop.SetName("Lil' Billy's General Store");
+                shop.SetDescription("It's dangerous to go alone! So buy something wud'ya.");
+                Inventory stock = new Inventory();
+                stock.SetID(1);
+                for(int i = 2; i <= 17; i++)
+                {
+                    stock.AddItem(Stuff.FindItem(i));
+                }
+                shop.SetInventory(stock);
+                Stuff.AddShop(shop);
+            }
+
+            {
                 //Adding Character
                 Character Hero = new Character();
                 Hero.SetName("Helpless Soul");
-                Hero.AddSkill(Stuff.FindSkill(1));
-                Hero.AddSkill(Stuff.FindSkill(2));
-                Hero.AddSkill(Stuff.FindSkill(3));
-                Hero.AddSkill(Stuff.FindSkill(4));
-                Hero.AddSkill(Stuff.FindSkill(5));
-                Hero.AddSkill(Stuff.FindSkill(6));
+                for(int i = 1; i <= 6; i++) Hero.AddSkill(Stuff.FindSkill(i));
                 Stuff.AddCharacter(Hero);
             }
 
@@ -211,8 +411,8 @@ namespace RolePlayingGame
                 Mapa.SetFunctionLayer(functions);
 
                 Stuff.AddMap(Mapa);
-                Stuff.FindCharacter(1).SetPositionX(20);
-                Stuff.FindCharacter(1).SetPositionY(14);
+                Stuff.FindCharacter(1).SetPositionX(14);
+                Stuff.FindCharacter(1).SetPositionY(11);
                 Stuff.SetCurrentMapID(1);
 
                 //Mapa 2 -Shop
@@ -258,6 +458,7 @@ namespace RolePlayingGame
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
+            Stuff.SetOption(1);
             this.Frame.Navigate(typeof(InventoryMeni), Stuff);
         }
     }

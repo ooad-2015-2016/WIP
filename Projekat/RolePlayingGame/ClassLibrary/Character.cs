@@ -33,10 +33,60 @@ namespace Entity {
             maxMana = 50; mana = maxMana;
             skills = new List<Skill>();
             statusEffects = new List<StatusEffect>();
+            atributes = new Atributes();
+            inventory = new Inventory();
         }
-		public void LevelUp() {
-            LVL++;
-		}
+		public void LevelUp(ref string report) {
+            LVL++; ChangedLVL--;
+            maxHealth += (int)(maxHealth / 2);
+            maxMana += (int)(maxMana / 4);
+            health = maxHealth;
+            mana = maxMana;
+            report = "Your maximum health has increased to " + maxHealth + " HP"
+                + "\nYour maximum mana has increased to " + maxMana + " MP"
+                + "\nYour health and mana has been restored.";
+            int SP = GetAtributePoints(), atribute;
+            Random x = new Random();
+            int str = 0, vit = 0, ag = 0, inte = 0, will = 0, lck = 0; 
+            while (SP > 0)
+            {
+                atribute = x.Next(1, 6);
+                switch(atribute)
+                {
+                    case 1:
+                        atributes.IncreaseStrength();
+                        str++;
+                        break;
+                    case 2:
+                        atributes.IncreaseVitality();
+                        vit++;
+                        break;
+                    case 3:
+                        atributes.IncreaseAgility();
+                        ag++;
+                        break;
+                    case 4:
+                        atributes.IncreaseIntelligence();
+                        inte++;
+                        break;
+                    case 5:
+                        atributes.IncreaseWillpower();
+                        will++;
+                        break;
+                    default:
+                        atributes.IncreaseLuck();
+                        lck++;
+                        break;
+                }
+                SP--;
+            }
+            if (str > 0) report += "\nYour Strength has increased by " + str;
+            if (vit > 0) report += "\nYour Vitality has increased by " + vit;
+            if (ag > 0) report += "\nYour Agility has increased by " + ag;
+            if (inte > 0) report += "\nYour Intelligence has increased by " + inte;
+            if (will > 0) report += "\nYour Willpower has increased by " + will;
+            if (lck > 0) report += "\nYour Luck has increased by " + lck;
+        }
 		public void IncreaseHealth(int x) {
             health += x;
         }
@@ -55,7 +105,7 @@ namespace Entity {
             while (EXP >= GetMaxEXP())
             {
                 EXP -= GetMaxEXP();
-                LevelUp();
+                ChangedLVL++;
             }
         }
         public void IncreaseGold(int x)
@@ -213,6 +263,12 @@ namespace Entity {
         public void SetChangedLVL(int lvl)
         {
             this.ChangedLVL = lvl;
+        }
+
+        public int GetAtributePoints()
+        {
+            int x = (int)Math.Floor(2.403 * Math.Pow(LVL, 0.2532) - 1.443);
+            return x;
         }
 	}
 

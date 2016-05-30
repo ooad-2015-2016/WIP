@@ -11,8 +11,8 @@ namespace Entity {
 		private String description;
 
 		public Item() {
-			throw new System.Exception("Not implemented");
-		}
+            sprite = new Image();
+        }
 		public int GetID() {
 			return this.iD;
 		}
@@ -46,6 +46,10 @@ namespace Entity {
 		public void SetDescription(String description) {
 			this.description = description;
 		}
+        public void ActuallySetSprite(Image image)
+        {
+            sprite = image;
+        }
 	}
 
 }

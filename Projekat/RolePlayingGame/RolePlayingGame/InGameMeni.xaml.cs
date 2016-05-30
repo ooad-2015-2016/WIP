@@ -148,6 +148,7 @@ namespace RolePlayingGame
                     ShowStats(1);
                     break;
                 case 2:
+                    this.Frame.Navigate(typeof(InventoryMeni), Stuff);
                     break;
                 case 3:
                     break;

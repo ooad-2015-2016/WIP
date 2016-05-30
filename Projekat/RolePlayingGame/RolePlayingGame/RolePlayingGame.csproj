@@ -141,6 +141,7 @@
     <Content Include="Assets\CharacterExample.png" />
     <Content Include="Assets\EnemyInfoBox.png" />
     <Content Include="Assets\ImageBox.png" />
+    <Content Include="Assets\InGameMeni\InventoryInfoBox.png" />
     <Content Include="Assets\InGameMeni\InventorySideBox.png" />
     <Content Include="Assets\InGameMeni\MainBox.png" />
     <Content Include="Assets\InGameMeni\SideBox.png" />

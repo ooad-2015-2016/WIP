@@ -24,6 +24,18 @@ namespace Entity {
             skills = new List<Skill>();
             statusEffects = new List<StatusEffect>();
         }
+
+        public void LevelUpTo(int x)
+        {
+            while (LVL < x)
+            {
+                LVL++;
+                maxHealth += (int)(maxHealth / 2);
+                maxMana += (int)(maxMana / 4);
+                health = maxHealth;
+                mana = maxMana;
+            }
+        }
         public int GetID() {
 			return this.ID;
 		}

@@ -12,7 +12,7 @@
 
         <Image x:Name="image" HorizontalAlignment="Left" Height="676" VerticalAlignment="Top" Width="1147" Margin="76,22,0,0" Source="/Assets/InGameMeni/MainBox.png"/>
         <Image x:Name="image2" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="723" Margin="478,46,0,0" Source="/Assets/InGameMeni/SideBox.png"/>
-        <TextBlock x:Name="InfoBox" HorizontalAlignment="Left" Margin="493,61,0,0" FontSize="20" Foreground="White" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="598" Width="695"/>
+        <TextBlock x:Name="InfoBox" HorizontalAlignment="Left" Margin="493,69,0,0" FontSize="20" Foreground="White" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="590" Width="695"/>
 
         <Image x:Name="ViewStats_Button" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="280" Margin="102,56,0,0" Source="/Assets/Button1.png"/>
         <Image x:Name="ViewStats_Select" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="283" Margin="101,55,0,0" Source="/Assets/Button1Select.png"/>
@@ -48,46 +48,152 @@
         <Image x:Name="Deny_Image" HorizontalAlignment="Left" Margin="398,132,0,0" VerticalAlignment="Top" Height="55" Width="55" Source="/Assets/Button_No1.png"/>
         <Button x:Name="Deny" Content="" HorizontalAlignment="Left" Margin="398,132,0,0" VerticalAlignment="Top" Height="55" Width="55" Click="Deny_Click"/>
 
-        <TextBlock x:Name="Player" HorizontalAlignment="Left" Margin="493,61,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Height="49" Width="197">
+        <TextBlock x:Name="Player" HorizontalAlignment="Left" Margin="493,61,0,0" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32" Height="49" Width="682">
         	<Run Text="Inventory: "/>
         	<LineBreak/>
         	<Run/>
         </TextBlock>
 
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item1_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item2_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item3_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item4_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item5_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
 
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item6_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item7_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item8_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item9_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item10_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
 
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item11_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item12_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item13_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item14_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item15_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
 
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item16_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item17_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item18_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item19_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item20_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,450,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
 
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item21_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="530,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item22_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="630,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item23_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="730,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item24_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="830,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Rectangle Name="Item25_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="930,550,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+
+
+        <!--Items-->
 
         <Image x:Name="Item1" HorizontalAlignment="Left" Height="64" Margin="530,150,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
-        
-        <Rectangle Fill="Silver" HorizontalAlignment="Left" Height="464" Margin="1030,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="130" Opacity="0"/>
-        <Image x:Name="InventorySideBox" HorizontalAlignment="Left" Height="464" VerticalAlignment="Top" Width="130" Margin="1030,150,0,0" Source="/Assets/InGameMeni/InventorySideBox.png"/>
+        <TextBlock x:Name="Item1_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="569,183,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item1_Button" HorizontalAlignment="Left" Height="64" Margin="530,150,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item1_Button_Click"/>
+
+        <Image x:Name="Item2" HorizontalAlignment="Left" Height="64" Margin="630,150,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item2_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="669,183,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item2_Button" HorizontalAlignment="Left" Height="64" Margin="630,150,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item2_Button_Click"/>
+
+        <Image x:Name="Item3" HorizontalAlignment="Left" Height="64" Margin="730,150,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item3_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="769,183,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item3_Button" HorizontalAlignment="Left" Height="64" Margin="730,150,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item3_Button_Click"/>
+
+        <Image x:Name="Item4" HorizontalAlignment="Left" Height="64" Margin="830,150,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item4_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="869,183,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item4_Button" HorizontalAlignment="Left" Height="64" Margin="830,150,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item4_Button_Click"/>
+
+        <Image x:Name="Item5" HorizontalAlignment="Left" Height="64" Margin="930,150,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item5_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="969,183,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item5_Button" HorizontalAlignment="Left" Height="64" Margin="930,150,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item5_Button_Click"/>
+
+        <Image x:Name="Item6" HorizontalAlignment="Left" Height="64" Margin="530,250,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item6_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="569,283,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item6_Button" HorizontalAlignment="Left" Height="64" Margin="530,250,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item6_Button_Click"/>
+
+        <Image x:Name="Item7" HorizontalAlignment="Left" Height="64" Margin="630,250,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item7_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="669,283,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item7_Button" HorizontalAlignment="Left" Height="64" Margin="630,250,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item7_Button_Click"/>
+
+        <Image x:Name="Item8" HorizontalAlignment="Left" Height="64" Margin="730,250,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item8_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="769,283,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item8_Button" HorizontalAlignment="Left" Height="64" Margin="730,250,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item8_Button_Click"/>
+
+        <Image x:Name="Item9" HorizontalAlignment="Left" Height="64" Margin="830,250,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item9_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="869,283,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item9_Button" HorizontalAlignment="Left" Height="64" Margin="830,250,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item9_Button_Click"/>
+
+        <Image x:Name="Item10" HorizontalAlignment="Left" Height="64" Margin="930,250,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item10_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="969,283,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item10_Button" HorizontalAlignment="Left" Height="64" Margin="930,250,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item10_Button_Click"/>
+
+        <Image x:Name="Item11" HorizontalAlignment="Left" Height="64" Margin="530,350,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item11_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="569,383,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item11_Button" HorizontalAlignment="Left" Height="64" Margin="530,350,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item11_Button_Click"/>
+
+        <Image x:Name="Item12" HorizontalAlignment="Left" Height="64" Margin="630,350,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item12_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="669,383,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item12_Button" HorizontalAlignment="Left" Height="64" Margin="630,350,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item12_Button_Click"/>
+
+        <Image x:Name="Item13" HorizontalAlignment="Left" Height="64" Margin="730,350,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item13_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="769,383,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item13_Button" HorizontalAlignment="Left" Height="64" Margin="730,350,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item13_Button_Click"/>
+
+        <Image x:Name="Item14" HorizontalAlignment="Left" Height="64" Margin="830,350,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item14_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="869,383,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item14_Button" HorizontalAlignment="Left" Height="64" Margin="830,350,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item14_Button_Click"/>
+
+        <Image x:Name="Item15" HorizontalAlignment="Left" Height="64" Margin="930,350,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item15_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="969,383,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item15_Button" HorizontalAlignment="Left" Height="64" Margin="930,350,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item15_Button_Click"/>
+
+        <Image x:Name="Item16" HorizontalAlignment="Left" Height="64" Margin="530,450,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item16_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="569,483,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item16_Button" HorizontalAlignment="Left" Height="64" Margin="530,450,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item16_Button_Click"/>
+
+        <Image x:Name="Item17" HorizontalAlignment="Left" Height="64" Margin="630,450,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item17_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="669,483,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item17_Button" HorizontalAlignment="Left" Height="64" Margin="630,450,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item17_Button_Click"/>
+
+        <Image x:Name="Item18" HorizontalAlignment="Left" Height="64" Margin="730,450,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item18_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="769,483,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item18_Button" HorizontalAlignment="Left" Height="64" Margin="730,450,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item18_Button_Click"/>
+
+        <Image x:Name="Item19" HorizontalAlignment="Left" Height="64" Margin="830,450,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item19_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="869,483,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item19_Button" HorizontalAlignment="Left" Height="64" Margin="830,450,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item19_Button_Click"/>
+
+        <Image x:Name="Item20" HorizontalAlignment="Left" Height="64" Margin="930,450,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item20_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="969,483,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item20_Button" HorizontalAlignment="Left" Height="64" Margin="930,450,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item20_Button_Click"/>
+
+        <Image x:Name="Item21" HorizontalAlignment="Left" Height="64" Margin="530,550,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item21_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="569,583,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item21_Button" HorizontalAlignment="Left" Height="64" Margin="530,550,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item21_Button_Click"/>
+
+        <Image x:Name="Item22" HorizontalAlignment="Left" Height="64" Margin="630,550,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item22_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="669,583,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item22_Button" HorizontalAlignment="Left" Height="64" Margin="630,550,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item22_Button_Click"/>
+
+        <Image x:Name="Item23" HorizontalAlignment="Left" Height="64" Margin="730,550,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item23_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="769,583,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item23_Button" HorizontalAlignment="Left" Height="64" Margin="730,550,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item23_Button_Click"/>
+
+        <Image x:Name="Item24" HorizontalAlignment="Left" Height="64" Margin="830,550,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item24_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="869,583,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item24_Button" HorizontalAlignment="Left" Height="64" Margin="830,550,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item24_Button_Click"/>
+
+        <Image x:Name="Item25" HorizontalAlignment="Left" Height="64" Margin="930,550,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <TextBlock x:Name="Item25_Quantity" Foreground="white" HorizontalAlignment="Left" Height="27" Margin="969,583,0,0" TextWrapping="Wrap" Text="x8" VerticalAlignment="Top" Width="25" FontSize="20"/>
+        <Button x:Name="Item25_Button" HorizontalAlignment="Left" Height="64" Margin="930,550,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item25_Button_Click"/>
+
+
+        <!--<Rectangle Fill="Silver" HorizontalAlignment="Left" Height="464" Margin="1030,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="130" Opacity="0"/>
+        <Image x:Name="InventorySideBox" HorizontalAlignment="Left" Height="464" VerticalAlignment="Top" Width="130" Margin="1030,150,0,0" Source="/Assets/InGameMeni/InventorySideBox.png"/>-->
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="302" Margin="107,372,0,0" Stroke="Black" VerticalAlignment="Top" Width="280" Opacity="0"/>
+        <Image x:Name="InventorySideBox" HorizontalAlignment="Left" Height="302" VerticalAlignment="Top" Width="280" Margin="107,372,0,0" Source="/Assets/InGameMeni/InventoryInfoBox.png"/>
+        <TextBlock x:Name="ItemInfoBox" Foreground ="White" HorizontalAlignment="Left" Height="269" Margin="122,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" FontSize="20"/>
+
 
     </Grid>
 </Page>

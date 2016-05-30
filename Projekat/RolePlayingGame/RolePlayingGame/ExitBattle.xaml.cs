@@ -28,12 +28,12 @@ namespace RolePlayingGame
             SetMap();
             if (Stuff.GetBattle().GetPlayerParty()[0].GetID() != 0)
             {
-                BattleResults.Text = "\t         Congratulations!\n\t\tYou won!\n";
+                BattleResults.Text = "Congratulations!\nYou won!\n";
                 BattleReport.Text = Stuff.GetReport();
             }
             else
             {
-                BattleResults.Text = "\t         You have DIED!";
+                BattleResults.Text = "You have DIED!";
                 BattleReport.Text = Stuff.GetReport();
             }
 
@@ -42,6 +42,14 @@ namespace RolePlayingGame
         public ExitBattle()
         {
             this.InitializeComponent();
+        }
+
+        public void LevelUp()
+        {
+            BattleResults.Text = "Congratulations!\nYou leveled up!\n";
+            string report = "";
+            Stuff.FindCharacter(1).LevelUp(ref report);
+            BattleReport.Text = report;
         }
 
         public void SetMap()
@@ -79,7 +87,14 @@ namespace RolePlayingGame
         {
             if(Stuff.GetBattle().GetPlayerParty()[0].GetID() != 0)
             {
-                this.Frame.Navigate(typeof(MapMeni), Stuff);
+                if (Stuff.GetBattle().GetPlayerParty()[0].GetChangedLVL() > 0)
+                {
+                    LevelUp();
+                }
+                else
+                {
+                    this.Frame.Navigate(typeof(MapMeni), Stuff);
+                }
             }
             else
             {

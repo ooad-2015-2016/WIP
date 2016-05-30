@@ -7,16 +7,40 @@ namespace Entity {
 		private String name;
 		private String description;
 		private int capacity = 25;
-		private int currentNo;
-        private List<Item> items;
+		private int quantity;
+        private List<InventorySlot> items;
 
 		public Inventory() {
-            items = new List<Item>();
+            items = new List<InventorySlot>();
 		}
+        public int FindAvailableSlot(Item item)
+        {
+            int slot = -1;
+            for(int i = 0; i < items.Count; i++)
+            {
+                if(items[i].GetItem().GetID() == item.GetID() && !items[i].IsFull())
+                {
+                    slot = i;
+                }
+            }
+            return slot;
+        }
 		public void AddItem(Item item){
-            items.Add(item);
+            int pos = FindAvailableSlot(item);
+            if(pos == -1)
+            {
+                InventorySlot slot = new InventorySlot();
+                slot.IncreaseQuantity();
+                slot.SetItem(item);
+                items.Add(slot);
+                quantity++;
+            }
+            else
+            {
+                items[pos].IncreaseQuantity();
+            }
 		}
-		public void RemoveItem(Item item) {
+		public void RemoveItemSlot(InventorySlot item) {
             items.Remove(item);
 		}
 		public int GetID() {
@@ -43,17 +67,17 @@ namespace Entity {
 		public void SetCapacity(int capacity) {
 			this.capacity = capacity;
 		}
-		public int GetCurrentNo() {
-			return this.currentNo;
+		public int GetQuantity() {
+			return this.quantity;
 		}
-		public void SetCurrentNo(int currentNo) {
-			this.currentNo = currentNo;
+		public void SetQuantity(int currentNo) {
+			this.quantity = currentNo;
 		}
-        public void SetItems(List<Item> items)
+        public void SetItemSlots(List<InventorySlot> items)
         {
             this.items = items;
         }
-        public List<Item> GetItems()
+        public List<InventorySlot> GetItemSlots()
         {
             return items;
         }
