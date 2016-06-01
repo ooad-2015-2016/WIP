@@ -89,16 +89,20 @@ namespace Entity {
         }
 		public void IncreaseHealth(int x) {
             health += x;
+            if (health > maxHealth) health = maxHealth;
         }
 		public void LoseHealth(int x) {
             health -= x;
+            if (health < 0) health = 0;
         }
 		public void IncreaseMana(int x) {
             mana += x;
+            if (mana > maxMana) mana = maxMana;
         }
 		public void LoseMana(int x) {
-            mana -= x; 
-		}
+            mana -= x;
+            if (mana < 0) mana = 0;
+        }
         public void IncreaseEXP(int x)
         {
             EXP += x;
@@ -115,12 +119,25 @@ namespace Entity {
         public Atributes GetAtributes() {
 			return this.atributes;
 		}
-		public void SetAtributes(ref Atributes atributes) {
+		public void SetAtributes(Atributes atributes) {
 			this.atributes = atributes;
 		}
-		public void Equip(ref object item) {
-			throw new System.Exception("Not implemented");
-		}
+		public void Equip(Item item) {
+            Equipable equip = (Equipable)item;
+            if(equip.GetMainType() == 1)
+            {
+                equipment.SetPrimary(equip);
+            }
+            else if (equip.GetMainType() == 2)
+            {
+                equipment.SetSecondary(equip);
+            }
+            else
+            {
+                equipment.SetArmor(equip);
+            }
+
+        }
 		public void Unequip(ref object item) {
 			throw new System.Exception("Not implemented");
 		}
@@ -264,12 +281,15 @@ namespace Entity {
         {
             this.ChangedLVL = lvl;
         }
-
         public int GetAtributePoints()
         {
             int x = (int)Math.Floor(2.403 * Math.Pow(LVL, 0.2532) - 1.443);
             return x;
         }
-	}
+        //public void UseItem(Item item)
+        //{
+        //    inventory.RemoveItem(item);
+        //}
+    }
 
 }

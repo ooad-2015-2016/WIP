@@ -193,7 +193,15 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="302" Margin="107,372,0,0" Stroke="Black" VerticalAlignment="Top" Width="280" Opacity="0"/>
         <Image x:Name="InventorySideBox" HorizontalAlignment="Left" Height="302" VerticalAlignment="Top" Width="280" Margin="107,372,0,0" Source="/Assets/InGameMeni/InventoryInfoBox.png"/>
         <TextBlock x:Name="ItemInfoBox" Foreground ="White" HorizontalAlignment="Left" Height="269" Margin="122,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="251" FontSize="20"/>
-
+        <ProgressBar x:Name="PlayerHealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="31" Margin="1013,382,0,0" VerticalAlignment="Top" Width="175"/>
+        <ProgressBar x:Name="PlayerManaBar" HorizontalAlignment="Left" Height="31" Margin="1013,482,0,0" VerticalAlignment="Top" Width="175"/>
+        <TextBlock x:Name="Mana" Foreground="White" HorizontalAlignment="Left" Margin="1013,449,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="24" Height="28"/>
+        <TextBlock x:Name="Health" Foreground="White" HorizontalAlignment="Left" Margin="1013,350,0,0" TextWrapping="Wrap" Text="Health:" VerticalAlignment="Top" FontSize="24"/>
+        <ProgressBar x:Name="PlayerXPBar" Foreground="Chocolate" HorizontalAlignment="Left" Height="31" Margin="1013,282,0,0" VerticalAlignment="Top" Width="175"/>
+        <TextBlock x:Name="XP" Foreground="White" HorizontalAlignment="Left" Margin="1013,249,0,0" Text="EXP:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="28"/>
+        <TextBlock x:Name="LVL" Foreground="White" HorizontalAlignment="Left" Margin="1013,215,0,0" Text="LVL:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="28" Width="100"/>
+        <Image x:Name="PlayerImage" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="182" Margin="1006,61,0,0" Source="/Assets/CharacterExample.png"/>
+        <Image x:Name="PlayerImageBox" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="182" Margin="1006,61,0,0" Source="/Assets/ImageBox.png"/>
 
     </Grid>
 </Page>

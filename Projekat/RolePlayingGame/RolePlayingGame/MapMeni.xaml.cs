@@ -30,6 +30,7 @@ namespace RolePlayingGame
             Stuff = e.Parameter as Collection;
             UpdateCharacter();
             SetMap();
+            Stuff.SetOption(0);
         }
         public MapMeni()
         {

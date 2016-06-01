@@ -1,22 +1,34 @@
 using System;
 namespace Entity {
 	public class EquipmentSlots {
-		private Item primaryWeapon;
-		private Item secondaryWeapon;
-		private Item armor;
+		private Equipable primaryWeapon;
+		private Equipable secondaryWeapon;
+		private Equipable armor;
 
 		public EquipmentSlots() {
             primaryWeapon = new Equipable();
             secondaryWeapon = new Equipable();
             armor = new Equipable();
         }
-		public void AddPrimary(Equipable item) {
+        public Equipable GetPrimary()
+        {
+            return primaryWeapon;
+        }
+		public void SetPrimary(Equipable item) {
             primaryWeapon = item;
 		}
-		public void AddSecondary(Equipable item) {
+        public Equipable GetSecondary()
+        {
+            return secondaryWeapon;
+        }
+        public void SetSecondary(Equipable item) {
             secondaryWeapon = item;
 		}
-		public void AddArmor(Equipable item) {
+        public Equipable GetArmor()
+        {
+            return primaryWeapon;
+        }
+        public void SetArmor(Equipable item) {
             armor = item;
         }
 		public void RemovePrimary() {

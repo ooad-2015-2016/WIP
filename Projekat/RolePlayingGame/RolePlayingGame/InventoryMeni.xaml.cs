@@ -30,7 +30,7 @@ namespace RolePlayingGame
             if (Stuff.GetOption() == 1)
             {
                 usedInventory = Stuff.FindShop(1).GetInventory();
-                Stuff.SetOption(2); ShowShop();
+                Stuff.SetOption(2); ShowShop(); k = 1;
                 ItemInfoBox.Text = "Your Gold: " + Stuff.FindCharacter(1).GetGold() + "\n  ";
             }
             else
@@ -41,11 +41,29 @@ namespace RolePlayingGame
             ResetSelect();
             UnloadInventory();
             LoadInventory();
+            SetBars();
         }
 
         public InventoryMeni()
         {
             this.InitializeComponent();
+        }
+
+        public void SetBars()
+        {
+            double PlayerHealth = Stuff.FindCharacter(1).GetHealth();
+            double PlayerMaxHealth = Stuff.FindCharacter(1).GetMaxHealth();
+            PlayerHealthBar.Value = PlayerHealth / PlayerMaxHealth * 100;
+            double PlayerMana = Stuff.FindCharacter(1).GetMana();
+            double PlayerMaxMana = Stuff.FindCharacter(1).GetMaxMana();
+            PlayerManaBar.Value = PlayerMana / PlayerMaxMana * 100;
+            double PlayerXP = Stuff.FindCharacter(1).GetEXP();
+            double PlayerMaxXP = Stuff.FindCharacter(1).GetMaxEXP();
+            PlayerXPBar.Value = PlayerXP / PlayerMaxXP * 100;
+            Health.Text = "Health: " + PlayerHealth + "/" + PlayerMaxHealth;
+            Mana.Text = "Mana: " + PlayerMana + "/" + PlayerMaxMana;
+            LVL.Text = "LVL: " + Stuff.FindCharacter(1).GetLVL();
+            XP.Text = "XP: " + PlayerXP + "/" + PlayerMaxXP;
         }
 
         public void ShowShop()
@@ -57,6 +75,21 @@ namespace RolePlayingGame
             Inventory_Text.Text = "";
             ViewSkills_Text.Text = "";
             BackToGame_Text.Text = "Leave Shop";
+
+            SetBars();
+        }
+
+        public void ShowInventory()
+        {
+            Player.Text = Stuff.FindShop(1).GetName();
+            InfoBox.Text = "\n " + Stuff.FindShop(1).GetDescription();
+
+            ViewStats_Text.Text = "View Stats";
+            Inventory_Text.Text = "Open Inventory";
+            ViewSkills_Text.Text = "View Skills";
+            BackToGame_Text.Text = "Back to Game";
+
+            SetBars();
         }
 
         private void ResetSelect()
@@ -81,6 +114,15 @@ namespace RolePlayingGame
             Deny_Image.Opacity = 1;
         }
 
+        public void ResetItemInfo()
+        {
+            if(Stuff.GetOption() == 2)
+            {
+                ItemInfoBox.Text = "Your Gold: " + Stuff.FindCharacter(1).GetGold() + "\n  ";
+            }
+            else ItemInfoBox.Text = "";
+        }
+
         private void ResetItemSelect()
         {
             pos = 0;
@@ -89,13 +131,7 @@ namespace RolePlayingGame
                 Rectangle itemslot = (Rectangle)this.FindName("Item" + i + "_Slot");
                 itemslot.Fill = new SolidColorBrush(Colors.Black);
             }
-            ShowConfirmationBoxes();
-            if(Stuff.GetOption() == 2)
-            {
-                ItemInfoBox.Text = "Your Gold: " + Stuff.FindCharacter(1).GetGold() + "\n  ";
-            }
-            else ItemInfoBox.Text = "";
-
+            ShowConfirmationBoxes(); ResetItemInfo();
         }
 
         public void UnloadInventory()
@@ -434,16 +470,17 @@ namespace RolePlayingGame
 
         private void Confirm_Click(object sender, RoutedEventArgs e)
         {
-            ResetSelect();
+            ResetSelect(); ResetItemInfo();
             switch (k)
             {
                 case 1:
-                    if(Stuff.GetOption() == 2)
+                    if (pos != -1)
                     {
-                        if (pos != -1)
+                        Item item = usedInventory.GetItemSlots()[pos].GetItem();
+                        if (Stuff.GetOption() == 2)
                         {
+
                             bool didBuy = BuyItem();
-                            Item item = usedInventory.GetItemSlots()[pos].GetItem();
                             if (didBuy)
                             {
                                 ItemInfoBox.Text += "You have bought " + item.GetName() + " for "
@@ -451,14 +488,105 @@ namespace RolePlayingGame
                             }
                             else
                             {
-                                ItemInfoBox.Text += "You do not have enough gold.\nYou need "
-                                    + (int)(item.GetPrice() - Stuff.FindCharacter(1).GetGold()) + " Gold";
+                                ItemInfoBox.Text += "You do not have enough gold.";
                             }
                         }
+                        else
+                        {
+                            Character player = Stuff.FindCharacter(1);
+                            if (item is Equipable)
+                            {
+                                player.Equip(item);
+                                ItemInfoBox.Text += "You have equiped " + item.GetName() + " as your ";
+                                if(((Equipable)item).GetMainType() == 1)
+                                {
+                                    ItemInfoBox.Text += "primary weapon.";
+                                }
+                                else if (((Equipable)item).GetMainType() == 2)
+                                {
+                                    ItemInfoBox.Text += "secondary weapon.";
+                                }
+                                else
+                                {
+                                    ItemInfoBox.Text += "armor set.";
+                                }
+                            }
+                            else
+                            {
+                                ItemInfoBox.Text += "You have used " + item.GetName() + " and restored ";
+                                if(((Consumable)item).GetHealthChange() != 0)
+                                {
+                                    int x = player.GetMaxHealth() - player.GetHealth();
+                                    if (((Consumable)item).GetHealthChange() > x)
+                                    {
+                                        ItemInfoBox.Text += x;
+                                    }
+                                    else
+                                    {
+                                        ItemInfoBox.Text += ((Consumable)item).GetHealthChange();
+                                    }
+                                    ItemInfoBox.Text += "Health";
+                                    if (((Consumable)item).GetManaChange() != 0) ItemInfoBox.Text += " and";
+                                    else ItemInfoBox.Text += ".";
+                                }
+                                else
+                                {
+                                    int x = player.GetMaxMana() - player.GetMana();
+                                    if (((Consumable)item).GetManaChange() > x)
+                                    {
+                                        ItemInfoBox.Text += x;
+                                    }
+                                    else
+                                    {
+                                        ItemInfoBox.Text += ((Consumable)item).GetManaChange();
+                                    }
+                                    ItemInfoBox.Text += "Mana.";
+                                }
+                                Stuff.FindCharacter(1).IncreaseHealth(((Consumable)item).GetHealthChange());
+                                Stuff.FindCharacter(1).IncreaseMana(((Consumable)item).GetManaChange());
+                                InventorySlot slot = usedInventory.GetItemSlots()[pos];
+                                int quantity = slot.GetQuantity();
+                                quantity--;
+                                if(quantity == 0)
+                                {
+                                    player.GetInventory().RemoveItemSlot(slot);
+                                    usedInventory = Stuff.FindCharacter(1).GetInventory();
+                                }
+                                else
+                                {
+                                    slot.SetQuantity(quantity);
+                                    player.SetInventory(usedInventory);
+                                    usedInventory = player.GetInventory();
+                                }
+                            }
+                        }
+                        LoadInventory();
                         ShowConfirmationBoxes();
                     }
+                    else
+                    {
+                        Stuff.SetOption(1);
+                        this.Frame.Navigate(typeof(InGameMeni), Stuff);
+                    }
+                    ShowConfirmationBoxes();
                     break;
                 case 2:
+                    if (Stuff.GetOption() == 0)
+                    {
+                        if(pos != -1 && pos < usedInventory.GetItemSlots().Count)
+                        {
+                            Character player = Stuff.FindCharacter(1);
+                            InventorySlot slot = usedInventory.GetItemSlots()[pos];
+                            ItemInfoBox.Text += "You have dropped the " + slot.GetItem().GetName() + ".";
+                            player.GetInventory().RemoveItemSlot(slot);
+                            LoadInventory();
+                            ShowConfirmationBoxes();
+                        }
+                        else
+                        {
+                            ItemInfoBox.Text += "You have not selected an item.";
+                        }
+                    }
                     break;
                 case 3:
                     break;
@@ -472,7 +600,8 @@ namespace RolePlayingGame
         private void Deny_Click(object sender, RoutedEventArgs e)
         {
             ResetSelect(); ResetItemSelect(); pos = -1;
-            if(Stuff.GetOption() == 2) ShowShop();
+            if (Stuff.GetOption() == 2) ShowShop();
+            else ShowInventory();
         }
     }
 }

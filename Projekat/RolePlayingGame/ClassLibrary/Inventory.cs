@@ -81,7 +81,16 @@ namespace Entity {
         {
             return items;
         }
-
-	}
+        //public void RemoveItem(Item item)
+        //{
+        //    for (int i = 0; i < items.Count; i++)
+        //    {
+        //        if (items[i].GetItem().GetID() == item.GetID())
+        //        {
+        //            items[i]
+        //        }
+        //    }
+        //}
+        }
 
 }

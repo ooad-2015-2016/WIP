@@ -14,13 +14,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace RolePlayingGame
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class InGameMeni : Page
     {
         Collection Stuff = new Collection();
@@ -28,7 +24,9 @@ namespace RolePlayingGame
         {
             Stuff = e.Parameter as Collection;
             ResetSelect();
-            ShowStats(0);
+            if (Stuff.GetOption() == 1) ShowStats(1);
+            else ShowStats(0);
+            Stuff.SetOption(0);
         }
         public InGameMeni()
         {
