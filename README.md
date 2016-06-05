@@ -218,5 +218,10 @@ Da bi pokrenuli ovaj projekat potrebno je extractovati .rar fajl koji se nalazi 
 
 Projekat u .rar-u nije Update-ovan jer projekat u .7z nije radio kad sam testirao na faks-u. Kada se uradi gore navedeno projekat bi se trebao moći pokrenuti.
 
+Sa implementacijom postoji i mobilni port. Generalono je inferiorniji od izvornog. Borba se vrsi samo s jednim neprijateljem, inventory je ogranicen sa 9 item-a. 
+
+Na nekim menijima ima viska stvari sa strane koji se ne bi trebali vidjeti na mobitelu. Takodjer igra nije testirana na mobitelu zbog nedostatka istog.
+
+Ne bi trebao imati bug-ova ali nije previse testiran. Pokrece se na isti nacin kao i izvorni projekat.
+
 * [Implementacija u video formi - Youtube](https://youtu.be/TnAXd54byJs)
-* [Posljednja borba u video formi - Youtube]()
