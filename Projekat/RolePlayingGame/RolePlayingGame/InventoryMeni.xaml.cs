@@ -479,7 +479,7 @@ namespace RolePlayingGame
             switch (k)
             {
                 case 1:
-                    if (pos != -1)
+                    if (pos != -1 && pos < usedInventory.GetItemSlots().Count)
                     {
                         Item item = usedInventory.GetItemSlots()[pos].GetItem();
                         if (Stuff.GetOption() == 2)
