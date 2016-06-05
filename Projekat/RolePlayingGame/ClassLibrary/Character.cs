@@ -104,7 +104,7 @@ namespace Entity {
             mana -= x;
             if (mana < 0) mana = 0;
         }
-        public void IncreaseEXP(int x)
+        public void IncreaseEXP(long x)
         {
             EXP += x;
             while (EXP >= GetMaxEXP())

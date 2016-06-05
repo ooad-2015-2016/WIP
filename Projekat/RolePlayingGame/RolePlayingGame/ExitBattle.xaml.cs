@@ -26,15 +26,24 @@ namespace RolePlayingGame
             Stuff = e.Parameter as Collection;
             UpdateCharacter();
             SetMap();
-            if (Stuff.GetBattle().GetPlayerParty()[0].GetID() != 0)
+            if (Stuff.GetOption() == 0)
             {
-                BattleResults.Text = "Congratulations!\nYou won!\n";
-                BattleReport.Text = Stuff.GetReport();
+                if (Stuff.GetBattle().GetPlayerParty()[0].GetID() != 0)
+                {
+                    BattleResults.Text = "Congratulations!\nYou won!\n";
+                    BattleReport.Text = Stuff.GetReport();
+                }
+                else
+                {
+                    BattleResults.Text = "You have DIED!";
+                    BattleReport.Text = Stuff.GetReport();
+                }
             }
             else
             {
-                BattleResults.Text = "You have DIED!";
-                BattleReport.Text = Stuff.GetReport();
+                BattleResults.Text = "Coward!";
+                BattleReport.Text = "\nYou managed to run away!";
+                Stuff.SetOption(0);
             }
 
         }

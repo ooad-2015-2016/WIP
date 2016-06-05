@@ -8,7 +8,7 @@ namespace Entity {
 		private List<Modifiers> modifiers;
 		private int mainType;  // 1 - weapon, 2 - shield, 3 - armor 
 		private int subType;
-		private int power;
+		private int power = 0;
 
         public Equipable()
         {

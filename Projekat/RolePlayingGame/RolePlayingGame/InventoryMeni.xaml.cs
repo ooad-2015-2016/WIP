@@ -27,7 +27,12 @@ namespace RolePlayingGame
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Stuff = e.Parameter as Collection;
-            if (Stuff.GetOption() == 1)
+            if(Stuff.GetOption() == 11)
+            {
+                usedInventory = Stuff.FindCharacter(1).GetInventory();
+                ShowInventory();
+            }
+            else if (Stuff.GetOption() == 1)
             {
                 usedInventory = Stuff.FindShop(1).GetInventory();
                 Stuff.SetOption(2); ShowShop(); k = 1;
@@ -36,6 +41,7 @@ namespace RolePlayingGame
             else
             {
                 usedInventory = Stuff.FindCharacter(1).GetInventory();
+                ShowInventory();
                 Stuff.SetOption(0);
             }
             ResetSelect();
@@ -81,8 +87,7 @@ namespace RolePlayingGame
 
         public void ShowInventory()
         {
-            Player.Text = Stuff.FindShop(1).GetName();
-            InfoBox.Text = "\n " + Stuff.FindShop(1).GetDescription();
+            Player.Text = "Inventory: ";
 
             ViewStats_Text.Text = "View Stats";
             Inventory_Text.Text = "Open Inventory";
@@ -565,7 +570,7 @@ namespace RolePlayingGame
                     }
                     else
                     {
-                        Stuff.SetOption(1);
+                        if(Stuff.GetOption() != 11) Stuff.SetOption(1);
                         this.Frame.Navigate(typeof(InGameMeni), Stuff);
                     }
                     ShowConfirmationBoxes();
@@ -591,7 +596,9 @@ namespace RolePlayingGame
                 case 3:
                     break;
                 default:
-                    if(pos == -1)
+                    if(Stuff.GetOption() == 11)
+                        this.Frame.Navigate(typeof(BlankPage1), Stuff);
+                    else if(pos == -1)
                         this.Frame.Navigate(typeof(MapMeni), Stuff);
                     break;
             }

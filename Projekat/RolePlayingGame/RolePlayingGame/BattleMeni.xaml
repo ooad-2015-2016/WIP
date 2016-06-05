@@ -64,8 +64,8 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="89" Margin="1044,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="179" Opacity="0"/>
         <ProgressBar x:Name="Enemy3HealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="20" Margin="1125,137,0,0" VerticalAlignment="Top" Width="85"/>
         <ProgressBar x:Name="Enemy3ManaBar" HorizontalAlignment="Left" Height="20" Margin="1125,163,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBlock x:Name="Enemy3Mana" HorizontalAlignment="Left" Margin="1053,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321"></TextBlock>
-        <TextBlock x:Name="Enemy3Health" HorizontalAlignment="Left" Margin="1053,132,0,0" TextWrapping="Wrap" FontSize="20" Text="Health:" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="157"></TextBlock>
+        <TextBlock x:Name="Enemy3Mana" HorizontalAlignment="Left" Margin="1053,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321" Width="217"></TextBlock>
+        <TextBlock x:Name="Enemy3Health" HorizontalAlignment="Left" Margin="1053,132,0,0" TextWrapping="Wrap" FontSize="20" Text="Health:" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="227"></TextBlock>
         <Border BorderBrush="{x:Null}" Margin="1053,105,0,0">
             <TextBlock x:Name ="Enemy3" TextWrapping="Wrap" Text="Enemy3" FontSize="22" Margin="0,0,70,584" TextAlignment="Center"/>
         </Border>
@@ -77,8 +77,8 @@
         <!--</TextBlock>-->
         <ProgressBar x:Name="Enemy2HealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="20" Margin="924,137,0,0" VerticalAlignment="Top" Width="85"/>
         <ProgressBar x:Name="Enemy2ManaBar" HorizontalAlignment="Left" Height="20" Margin="924,163,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBlock x:Name="Enemy2Mana" HorizontalAlignment="Left" Margin="852,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321" Width="157"></TextBlock>
-        <TextBlock x:Name="Enemy2Health" HorizontalAlignment="Left" Margin="852,132,0,0" TextWrapping="Wrap" FontSize="20" Text="Health:" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="157"></TextBlock>
+        <TextBlock x:Name="Enemy2Mana" HorizontalAlignment="Left" Margin="852,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321" Width="187"></TextBlock>
+        <TextBlock x:Name="Enemy2Health" HorizontalAlignment="Left" Margin="852,132,0,0" TextWrapping="Wrap" FontSize="20" Text="Health:" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="187"></TextBlock>
         <!--<TextBlock x:Name="Enemy2" HorizontalAlignment="Left" Margin="894,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy2"/>-->
         <Border BorderBrush="{x:Null}" Margin="894,105,0,0">
             <TextBlock x:Name ="Enemy2" TextWrapping="Wrap" Text="Enemy2" FontSize="22" Margin="-44,0,265,584" TextAlignment="Center"/>
@@ -86,8 +86,8 @@
         <Image x:Name="Enemy2Image" HorizontalAlignment="Left" Height="150" Margin="872,200,0,0" VerticalAlignment="Top" Width="128" Source="/Assets/Monsters/Bat.png"/>
         <ProgressBar x:Name="Enemy1HealthBar" Foreground="Maroon" HorizontalAlignment="Left" Height="20" Margin="724,137,0,0" VerticalAlignment="Top" Width="85"/>
         <ProgressBar x:Name="Enemy1ManaBar" HorizontalAlignment="Left" Height="20" Margin="724,163,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBlock x:Name="Enemy1Mana" HorizontalAlignment="Left" Margin="650,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321" Width="159"></TextBlock>
-        <TextBlock x:Name="Enemy1Health" HorizontalAlignment="Left" Margin="650,132,0,0" FontSize="20" Text="Health:" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="159"></TextBlock>
+        <TextBlock x:Name="Enemy1Mana" HorizontalAlignment="Left" Margin="650,157,0,0" TextWrapping="Wrap" Text="Mana:" VerticalAlignment="Top" FontSize="20" Height="31" SelectionChanged="textBlock_SelectionChanged" RenderTransformOrigin="0.508,1.321" Width="188"></TextBlock>
+        <TextBlock x:Name="Enemy1Health" HorizontalAlignment="Left" Margin="650,132,0,0" FontSize="20" Text="Health:" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" SelectionChanged="Enemy1Health_Copy_SelectionChanged" Width="239"></TextBlock>
         <!--<TextBlock x:Name="Enemy1" HorizontalAlignment="Left" Margin="695,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy1"/>-->
         <Border BorderBrush="{x:Null}" Margin="695,105,0,0">
             <TextBlock x:Name ="Enemy1" TextWrapping="Wrap" Text="Enemy1" FontSize="22" Margin="-44,0,464,584" TextAlignment="Center"/>

@@ -30,38 +30,38 @@ namespace RolePlayingGame
                 //Adding Skills
                 Skill skill1 = new Skill();
                 skill1.SetID(1);
-                skill1.SetName("Soft Punch");
+                skill1.SetName("Basic Attack");
                 skill1.SetSprite("/Assets/Skills/Attacks/punch.png");
                 skill1.SetMainType(1);
                 skill1.SetSubType(1);
-                skill1.SetDescription("Lightly tap your opponent with your fist");
-                skill1.SetPower(10);
+                skill1.SetDescription("It's basic.");
+                skill1.SetPower(80);
                 skill1.SetAccuracy(1);
                 skill1.SetManaCost(0);
                 Stuff.AddSkill(skill1);
 
                 Skill skill2 = new Skill();
                 skill2.SetID(2);
-                skill2.SetName("Hard Punch");
+                skill2.SetName("Strong Attack");
                 skill2.SetSprite("/Assets/Skills/Attacks/punch.png");
                 skill2.SetMainType(1);
                 skill2.SetSubType(1);
-                skill2.SetDescription("Tap your opponent with your fist slightly harder");
-                skill2.SetPower(30);
+                skill2.SetDescription("It's strong.");
+                skill2.SetPower(150);
                 skill2.SetAccuracy(1);
-                skill2.SetManaCost(25);
+                skill2.SetManaCost(20);
                 Stuff.AddSkill(skill2);
 
                 Skill skill3 = new Skill();
                 skill3.SetID(3);
-                skill3.SetName("Stab");
+                skill3.SetName("Insane Attack");
                 skill3.SetSprite("/Assets/Skills/Attacks/punch.png");
                 skill3.SetMainType(1);
                 skill3.SetSubType(1);
                 skill3.SetDescription("BEGONE DEMON!");
-                skill3.SetPower(10);
+                skill3.SetPower(300);
                 skill3.SetAccuracy(1);
-                skill3.SetManaCost(0);
+                skill3.SetManaCost(50);
                 Stuff.AddSkill(skill3);
 
                 Skill skill4 = new Skill();
@@ -407,7 +407,6 @@ namespace RolePlayingGame
                 Stuff.AddSkill(skill);
 
                 //-Devil's Advocate
-
                 skill = new Skill();
                 skill.SetID(161);
                 skill.SetName("Harrasement Complaint");
@@ -514,7 +513,7 @@ namespace RolePlayingGame
 
                 Enemy = new Monster();
                 Enemy.SetID(5);
-                Enemy.SetName("Powerfull Dragonling");
+                Enemy.SetName("Dragonling");
                 Enemy.SetSprite("/Assets/Monsters/lizard.png");
                 Enemy.SetDescription("Oh. So you like hitting babies. How nice of you. This baby ain't messing around.");
                 for (int i = 1; i <= 5; i++)
@@ -550,25 +549,25 @@ namespace RolePlayingGame
                 item.SetName("Bread");
                 item.SetDescription("Restores 15 health");
                 item.SetSprite("/Assets/Items/Food1.png");
-                item.SetPrice(1);
+                item.SetPrice(5);
                 item.SetHealthChange(15);
                 Stuff.AddItem(item);
 
                 item = new Consumable();
                 item.SetID(3);
                 item.SetName("Cheese");
-                item.SetDescription("Restores 25 health");
+                item.SetDescription("Restores 50 health");
                 item.SetSprite("/Assets/Items/Food2.png");
-                item.SetPrice(1);
+                item.SetPrice(20);
                 item.SetHealthChange(25);
                 Stuff.AddItem(item);
 
                 item = new Consumable();
                 item.SetID(4);
                 item.SetName("Spinach");
-                item.SetDescription("Restores 40 health");
+                item.SetDescription("Restores 100 health");
                 item.SetSprite("/Assets/Items/Food3.png");
-                item.SetPrice(1);
+                item.SetPrice(50);
                 item.SetHealthChange(40);
                 Stuff.AddItem(item);
 
@@ -577,19 +576,19 @@ namespace RolePlayingGame
                 item = new Consumable();
                 item.SetID(5);
                 item.SetName("Healing Scroll");
-                item.SetDescription("Restores 60 health");
+                item.SetDescription("Restores 250 health");
                 item.SetSprite("/Assets/Items/Scroll1.png");
-                item.SetPrice(1);
+                item.SetPrice(100);
                 item.SetHealthChange(60);
                 Stuff.AddItem(item);
 
                 item = new Consumable();
                 item.SetID(6);
                 item.SetName("Mana Scroll");
-                item.SetDescription("Restores 40 mana");
+                item.SetDescription("Restores 100 mana");
                 item.SetSprite("/Assets/Items/Scroll2.png");
                 item.SetPrice(1);
-                item.SetManaChange(40);
+                item.SetManaChange(100);
                 Stuff.AddItem(item);
             }
             {
@@ -601,9 +600,9 @@ namespace RolePlayingGame
                 item.SetName("Leather Armor");
                 item.SetDescription("Offers light protection.");
                 item.SetSprite("/Assets/Items/Armor1.png");
-                item.SetPrice(1);
+                item.SetPrice(100);
                 item.SetMainType(3);
-                item.SetPower(20);
+                item.SetPower(10);
                 Stuff.AddItem(item);
 
                 item = new Equipable();
@@ -611,9 +610,9 @@ namespace RolePlayingGame
                 item.SetName("Fancy Shirt");
                 item.SetDescription("Offers next to no protection.");
                 item.SetSprite("/Assets/Items/Armor2.png");
-                item.SetPrice(1);
+                item.SetPrice(50);
                 item.SetMainType(3);
-                item.SetPower(5);
+                item.SetPower(3);
                 Stuff.AddItem(item);
 
                 item = new Equipable();
@@ -621,9 +620,9 @@ namespace RolePlayingGame
                 item.SetName("Chainmail Armor");
                 item.SetDescription("Offers decent protection.");
                 item.SetSprite("/Assets/Items/Armor3.png");
-                item.SetPrice(1);
+                item.SetPrice(250);
                 item.SetMainType(3);
-                item.SetPower(50);
+                item.SetPower(25);
                 Stuff.AddItem(item);
 
                 item = new Equipable();
@@ -631,10 +630,10 @@ namespace RolePlayingGame
                 item.SetName("Steel Armor");
                 item.SetDescription("Offers great protection.");
                 item.SetSprite("/Assets/Items/Armor4.png");
-                item.SetPrice(1);
+                item.SetPrice(500);
                 item.SetMainType(3);
                 item.SetSubType(2);
-                item.SetPower(100);
+                item.SetPower(50);
                 Stuff.AddItem(item);
 
                 //Adding axes
@@ -643,10 +642,10 @@ namespace RolePlayingGame
                 item.SetName("Stone Axe");
                 item.SetDescription("Cuts trees semi-decently.");
                 item.SetSprite("/Assets/Items/Axe1.png");
-                item.SetPrice(1);
+                item.SetPrice(20);
                 item.SetMainType(1);
                 item.SetSubType(2);
-                item.SetPower(10);
+                item.SetPower(60);
                 Stuff.AddItem(item);
 
                 item = new Equipable();
@@ -654,10 +653,10 @@ namespace RolePlayingGame
                 item.SetName("Iron Axe");
                 item.SetDescription("Chops all sorts of things.");
                 item.SetSprite("/Assets/Items/Axe1.png");
-                item.SetPrice(1);
+                item.SetPrice(100);
                 item.SetMainType(1);
                 item.SetSubType(2);
-                item.SetPower(10);
+                item.SetPower(250);
                 Stuff.AddItem(item);
 
                 item = new Equipable();
@@ -665,10 +664,10 @@ namespace RolePlayingGame
                 item.SetName("Steel Waraxe");
                 item.SetDescription("You don't want to know where this one was found.");
                 item.SetSprite("/Assets/Items/Axe3.png");
-                item.SetPrice(1);
+                item.SetPrice(250);
                 item.SetMainType(1);
                 item.SetSubType(2);
-                item.SetPower(10);
+                item.SetPower(500);
                 Stuff.AddItem(item);
 
                 //Adding swords
@@ -677,10 +676,10 @@ namespace RolePlayingGame
                 item.SetName("Steel Sword");
                 item.SetDescription("Pretty basic");
                 item.SetSprite("/Assets/Items/Sword1.png");
-                item.SetPrice(1);
+                item.SetPrice(50);
                 item.SetMainType(1);
                 item.SetSubType(1);
-                item.SetPower(10);
+                item.SetPower(100);
                 Stuff.AddItem(item);
 
                 item = new Equipable();
@@ -688,10 +687,10 @@ namespace RolePlayingGame
                 item.SetName("Legendary Dragon's Blade");
                 item.SetDescription("Shiny");
                 item.SetSprite("/Assets/Items/Sword2.png");
-                item.SetPrice(1);
+                item.SetPrice(500);
                 item.SetMainType(1);
                 item.SetSubType(1);
-                item.SetPower(10);
+                item.SetPower(2500);
                 Stuff.AddItem(item);
 
                 //Adding daggers
@@ -700,10 +699,10 @@ namespace RolePlayingGame
                 item.SetName("Dark Shiv");
                 item.SetDescription("Silent, and deadly.");
                 item.SetSprite("/Assets/Items/Dagger2.png");
-                item.SetPrice(1);
+                item.SetPrice(30);
                 item.SetMainType(1);
                 item.SetSubType(3);
-                item.SetPower(10);
+                item.SetPower(80);
                 Stuff.AddItem(item);
 
                 item = new Equipable();
@@ -711,10 +710,10 @@ namespace RolePlayingGame
                 item.SetName("Ritual Blade");
                 item.SetDescription("Has some strange illegible markings.");
                 item.SetSprite("/Assets/Items/Dagger1.png");
-                item.SetPrice(1);
+                item.SetPrice(350);
                 item.SetMainType(1);
                 item.SetSubType(3);
-                item.SetPower(10);
+                item.SetPower(700);
                 Stuff.AddItem(item);
 
                 //Adding staves
@@ -723,10 +722,10 @@ namespace RolePlayingGame
                 item.SetName("Old man's walking stick");
                 item.SetDescription("Seriously, has no magical abilities.");
                 item.SetSprite("/Assets/Items/Staff1.png");
-                item.SetPrice(1);
+                item.SetPrice(10);
                 item.SetMainType(1);
                 item.SetSubType(4);
-                item.SetPower(10);
+                item.SetPower(40);
                 Stuff.AddItem(item);
             }
 
@@ -800,9 +799,12 @@ namespace RolePlayingGame
                 for (int i = 0; i < functionIDs.Count; i++) functions.Add(Stuff.FindFunctionTile(functionIDs[i]));
                 Mapa.SetFunctionLayer(functions);
 
+                List<int> spawnIDs = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 0, 0, 0, 0, 0, 6, 6, 6, 6, 6, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 6, 6, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 0, 0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 0, 0, 0, 3, 3, 0, 0, 0, 0, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 0, 0, 0, 3, 3, 0, 0, 0, 3, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 0, 0, 0, 3, 3, 3, 3, 3, 3, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 0, 0, 0, 3, 3, 3, 3, 3, 3, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+                Mapa.SetSpawnLayer(spawnIDs);
+
                 Stuff.AddMap(Mapa);
-                Stuff.FindCharacter(1).SetPositionX(14);
-                Stuff.FindCharacter(1).SetPositionY(11);
+                Stuff.FindCharacter(1).SetPositionX(38);
+                Stuff.FindCharacter(1).SetPositionY(5);
                 Stuff.SetCurrentMapID(1);
 
                 //Mapa 2 -Shop
@@ -817,6 +819,10 @@ namespace RolePlayingGame
 
                 List<int> functionIDs2 = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
                 List<FunctionTile> functions1 = new List<FunctionTile>();
+
+                List<int> spawnIDs2 = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+                Mapa2.SetSpawnLayer(spawnIDs2);
+
                 for (int i = 0; i < functionIDs2.Count; i++) functions1.Add(Stuff.FindFunctionTile(functionIDs2[i]));
                 Mapa2.SetFunctionLayer(functions1);
 
@@ -833,23 +839,23 @@ namespace RolePlayingGame
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1), Stuff);
+            this.Frame.Navigate(typeof(MapMeni), Stuff);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MapMeni), Stuff);
+            //this.Frame.Navigate(typeof(MapMeni), Stuff);
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InGameMeni), Stuff);
+            //this.Frame.Navigate(typeof(InGameMeni), Stuff);
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
             Stuff.SetOption(1);
-            this.Frame.Navigate(typeof(InventoryMeni), Stuff);
+            //this.Frame.Navigate(typeof(InventoryMeni), Stuff);
         }
     }
 }

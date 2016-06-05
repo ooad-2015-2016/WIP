@@ -17,6 +17,7 @@ namespace Entity {
 		private Atributes atributes;
 		private List<Skill> skills;
 		private List<StatusEffect> statusEffects;
+        private int origID;
         private AI ai;
 
         public Monster() {
@@ -157,19 +158,20 @@ namespace Entity {
             skills = monster.GetSkills();
             statusEffects = monster.GetStatusEffects();
             ai = monster.GetAI();
+            origID = monster.GetID();
         }
         public Skill AIDecide() {
 			throw new System.Exception("Not implemented");
 		}
 
-        public int GetEXPReward()
+        public long GetEXPReward()
         {
-            int x = (int)Math.Ceiling((double)((30 + 10 * LVL) * (1 + (ID - 1) / 4)));
+            long x = (long)Math.Pow(Math.Ceiling((double)((30 + 10 * Math.Pow(LVL, 2)))), 1 + origID/20);
             return x;
         }
         public int GetGoldReward()
         {
-            int x = (int)Math.Ceiling((double)((30 + 10 * LVL) * (1 + (ID - 1) / 4))/4);
+            int x = ((30 + 10 * LVL) * (origID))/4;
             return x;
         }
 

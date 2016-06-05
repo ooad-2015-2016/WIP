@@ -96,7 +96,7 @@ namespace RolePlayingGame
                 if (monsterparty[1].GetID() != 0)
                 {
                     Enemy2.Text = monsterparty[1].GetName();
-                    Enemy1Image.Source = monsterparty[1].GetSprite().Source;
+                    Enemy2Image.Source = monsterparty[1].GetSprite().Source;
                     double Enemy2HP = Stuff.GetBattle().GetMonsterParty()[1].GetHealth();
                     double Enemy2MaxHP = Stuff.GetBattle().GetMonsterParty()[1].GetMaxHealth();
                     Enemy2HealthBar.Value = Enemy2HP / Enemy2MaxHP * 100;
@@ -118,8 +118,8 @@ namespace RolePlayingGame
                     double Enemy3HP = Stuff.GetBattle().GetMonsterParty()[2].GetHealth();
                     double Enemy3MaxHP = Stuff.GetBattle().GetMonsterParty()[2].GetMaxHealth();
                     Enemy3HealthBar.Value = Enemy3HP / Enemy3MaxHP * 100;
-                    double Enemy3MP = Stuff.GetBattle().GetMonsterParty()[1].GetMana();
-                    double Enemy3MaxMP = Stuff.GetBattle().GetMonsterParty()[1].GetMaxMana();
+                    double Enemy3MP = Stuff.GetBattle().GetMonsterParty()[2].GetMana();
+                    double Enemy3MaxMP = Stuff.GetBattle().GetMonsterParty()[2].GetMaxMana();
                     Enemy3ManaBar.Value = Enemy3MP / Enemy3MaxMP * 100;
                     Enemy3Health.Text = "Health:" + "\t" + Enemy3HP + "/" + Enemy3MaxHP;
                     Enemy3Mana.Text = "Mana:" + "  \t" + Enemy3MP + "/" + Enemy3MaxMP;
@@ -135,12 +135,120 @@ namespace RolePlayingGame
             {
                 //Adding a battle
                 Battle Fight = new Battle();
+                Random rand = Stuff.GetRandom();
+                int x = Stuff.GetOption();
                 Fight.AddPlayer(Stuff.FindCharacter(1));
-                Fight.AddMonster(Stuff.FindMonster(1));
-                Fight.AddMonster(Stuff.FindMonster(1));
-                Fight.AddMonster(Stuff.FindMonster(1));
-                Stuff.SetBattle(Fight);
+                switch (x)
+                {
+                    case 0:
+                        Fight.AddMonster(Stuff.FindMonster(1));
+                        Fight.AddMonster(Stuff.FindMonster(1));
+                        Fight.AddMonster(Stuff.FindMonster(1));
+                        break;
+                    case 1:
+                        for(int i = 0; i < 3; i++)
+                        {
+                            int par = rand.Next(1, 10);
+                            if(par > 2*i)
+                            {
+                                int monsta = rand.Next(1, 5);
+                                int LVL = rand.Next(1, 3);
+                                Fight.AddMonster(Stuff.FindMonster(1));
+                                Fight.GetMonsterParty()[i].LevelUpTo(LVL);
+                            }
+                            else Fight.AddMonster(new Monster());
+                        }
+                        break;
+                    case 2:
+                        for (int i = 0; i < 3; i++)
+                        {
+                            int par = rand.Next(1, 100);
+                            if (par > 25 * i)
+                            {
+                                int monsta = rand.Next(1, 5);
+                                int LVL = rand.Next(1, 3);
+                                if (monsta > 2) Fight.AddMonster(Stuff.FindMonster(1));
+                                else Fight.AddMonster(Stuff.FindMonster(2));
+                                Fight.GetMonsterParty()[i].LevelUpTo(2 + LVL);
+                            }
+                            else Fight.AddMonster(new Monster());
+                        }
+                        break;
+                    case 3:
+                        for (int i = 0; i < 3; i++)
+                        {
+                            int par = rand.Next(1, 100);
+                            if (par > 25 * i)
+                            {
+                                int monsta = rand.Next(1, 5);
+                                int LVL = rand.Next(1, 4);
+                                if (monsta > 2) Fight.AddMonster(Stuff.FindMonster(1));
+                                else Fight.AddMonster(Stuff.FindMonster(3));
+                                Fight.GetMonsterParty()[i].LevelUpTo(4 + LVL);
+                            }
+                            else Fight.AddMonster(new Monster());
+                        }
+                        break;
+                    case 4:
+                        for (int i = 0; i < 3; i++)
+                        {
+                            int par = rand.Next(1, 10);
+                            if (par > 4 * i)
+                            {
+                                int monsta = rand.Next(1, 5);
+                                if (i == 0) monsta = rand.Next(1, 100);
+                                int LVL = rand.Next(1, 5);
+                                if (monsta > 10) Fight.AddMonster(Stuff.FindMonster(2));
+                                else Fight.AddMonster(Stuff.FindMonster(4));
+                                Fight.GetMonsterParty()[i].LevelUpTo(5 + LVL);
+                            }
+                            else Fight.AddMonster(new Monster());
+                        }
+                        break;
+                    case 5:
+                        for (int i = 0; i < 3; i++)
+                        {
+                            int par = rand.Next(0, 10);
+                            if (par > 4 * i)
+                            {
+                                int monsta = rand.Next(1, 13);
+                                if (i == 0) monsta = rand.Next(1, 100);
+                                int LVL = rand.Next(1, 6);
+                                if (monsta < 10) Fight.AddMonster(Stuff.FindMonster(3));
+                                else Fight.AddMonster(Stuff.FindMonster(5));
+                                Fight.GetMonsterParty()[i].LevelUpTo(9 + LVL);
+                            }
+                            else Fight.AddMonster(new Monster());
+                        }
+                        break;
+                    case 6:
+                        for (int i = 0; i < 3; i++)
+                        {
+                            int par = rand.Next(0, 10);
+                            if (par > 5 * i)
+                            {
+                                int monsta = rand.Next(1, 6);
+                                if (i == 0) monsta = rand.Next(1, 100);
+                                int LVL = rand.Next(0, 10);
+                                if (monsta < 6) Fight.AddMonster(Stuff.FindMonster(monsta));
+                                else Fight.AddMonster(Stuff.FindMonster(6));
+                                Fight.GetMonsterParty()[i].LevelUpTo(15 + LVL);
+                            }
+                            else Fight.AddMonster(new Monster());
+                        }
+                        break;
+                    case 7:
+                        Fight.AddMonster(Stuff.FindMonster(7));
+                        Fight.GetMonsterParty()[0].LevelUpTo(25);
+                        break;
+                    default:
+                        break;
+                }
+                if(Stuff.GetOption() != 11) Stuff.SetBattle(Fight);
             }
+            //DisplayEnemy1(0);
+            //DisplayEnemy2(0);
+            //DisplayEnemy3(0);
             SetProgressBars();
         }
 
@@ -223,6 +331,7 @@ namespace RolePlayingGame
                         if(Stuff.GetBattle().DidBattleEnd())
                         {
                             Stuff.SetReport(report);
+                            Stuff.SetOption(0);
                             this.Frame.Navigate(typeof(ExitBattle), Stuff);
                         }
                     }
@@ -317,11 +426,16 @@ namespace RolePlayingGame
                 if (k % 10 < 3)
                 {
                     int id = FindSkill(k / 10, k % 10);
+                    EquipmentSlots equipment = Stuff.FindCharacter(1).GetEquipment();
+                    InfoBox.Text = "Base damage: ";
+                    if (equipment.GetPrimary().GetID() != 0)
+                        InfoBox.Text += equipment.GetPrimary().GetPower();
+                    else InfoBox.Text += 15;
                     if (id >= 0)
                     {
                         Skill skill = Stuff.FindSkill(id);
-                        InfoBox.Text = "Name: " + skill.GetName() + "\n" + skill.GetDescription() + "\n"
-                            + "Deals " + skill.GetPower() + " damage" + "\nCosts " + skill.GetManaCost()
+                        InfoBox.Text += "\nName: " + skill.GetName() + "\n" + skill.GetDescription() + "\n"
+                            + "Deals " + skill.GetPower() + "% of base damage" + "\nCosts " + skill.GetManaCost()
                             + " mana";
                     }
                     else
@@ -336,7 +450,7 @@ namespace RolePlayingGame
                 if (target >= 0)
                 {
                     Monster monster = Stuff.GetBattle().GetMonsterParty()[target - 1];
-                    InfoBox.Text = "Name: " + monster.GetName() + "\n" + monster.GetDescription() + "\n";
+                    InfoBox.Text = "Level: " + monster.GetLVL() + "\nName: " + monster.GetName() + "\n" + monster.GetDescription() + "\n";
                 }
                 else
                 {
@@ -452,12 +566,13 @@ namespace RolePlayingGame
                     ChangeButtonText(2);
                     p = 10;
                     break;
+                case 3:
+                    Stuff.SetOption(11);
+                    this.Frame.Navigate(typeof(InventoryMeni), Stuff);
+                    break;
                 case 4:
-                    Attack_Text.Text = "You coward!";
-                    Ability_Text.Text = "";
-                    Item_Text.Text = "";
-                    Run_Text.Text = "";
-                    p = 10;
+                    Stuff.SetOption(2);
+                    this.Frame.Navigate(typeof(ExitBattle), Stuff);
                     break;
                 case 11:
                 case 21:
@@ -469,12 +584,6 @@ namespace RolePlayingGame
                 case 42:
                     ChangeButtonText(3);
                     p = 100;
-                    break;
-                case 14:
-                case 24:
-                case 34:
-                case 44:
-                    this.Frame.Navigate(typeof(MapMeni), Stuff);
                     break;
                 default:
                     EndTurn(k);

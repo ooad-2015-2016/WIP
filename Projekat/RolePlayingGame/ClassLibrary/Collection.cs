@@ -19,6 +19,7 @@ namespace Entity {
         Battle battle;
         String report;
         int option = 0;
+        Random rand;
 
         public Collection() {
             Characters = new SortedDictionary<int, Character>();
@@ -33,6 +34,7 @@ namespace Entity {
             Shops = new SortedDictionary<int, Shop>();
             NPCs = new SortedDictionary<int, NPC>();
             AIs = new SortedDictionary<int, AI>();
+            rand = new Random();
         }
         public void AddCharacter(Character Element)
         {
@@ -261,6 +263,10 @@ namespace Entity {
         public int GetOption()
         {
             return option;
+        }
+        public Random GetRandom()
+        {
+            return rand;
         }
     }
 

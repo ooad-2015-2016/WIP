@@ -68,13 +68,23 @@ namespace RolePlayingGame
             UpdateCharacter();
         }
 
+        public void CheckBattle(int x, int y)
+        {
+            Map mapa = Stuff.FindMap(Stuff.GetCurrentMapID());
+            if(mapa.CheckBattle(x, y, Stuff.GetRandom()))
+            {
+                Stuff.SetOption(mapa.GetSpawnLayer()[mapa.GetPosition(x, y)]);
+                this.Frame.Navigate(typeof(BlankPage1), Stuff);
+            }
+        }
+
         public void MoveCharacter(int direction)
         {
             // direction = 1 move up, 2 move down, 4 move right, 3 move left
             Map mapa = Stuff.FindMap(Stuff.GetCurrentMapID());
             int m = mapa.Getm() - 1,
                 n = mapa.Getn();
-            int x = 0, y = 0;
+            int x = 0, y = 0; bool hasMoved = false;
             GetCharacterPosition(ref x, ref y);
             //button.Content = m + " " + n + "d " + x + " " + y;
             string text = "/Assets/Players/";
@@ -82,23 +92,36 @@ namespace RolePlayingGame
             {
                 case 1:
                     text += "PlayerUp.png";
-                    if (y > 0 && mapa.CheckCollision(x, y - 1)) y--;
+                    if (y > 0 && mapa.CheckCollision(x, y - 1))
+                    {
+                        y--; hasMoved = true;
+                    }
                     break;
                 case 2:
                     text += "/PlayerDown.png";
-                    if (y < m && mapa.CheckCollision(x, y + 1))  y++;
-                    break;
+                    if (y < m && mapa.CheckCollision(x, y + 1))
+                    {
+                        y++; hasMoved = true;
+                    }
+                        break;
                 case 3:
                     text += "/PlayerLeft.png";
-                    if (x > 0 && mapa.CheckCollision(x - 1, y)) x--;
-                    break;
+                    if (x > 0 && mapa.CheckCollision(x - 1, y))
+                    {
+                        x--; hasMoved = true;
+                    }
+                        break;
                 default:
                     text += "/PlayerRight.png";
-                    if (x < n && mapa.CheckCollision(x + 1, y)) x++;
+                    if (x < n && mapa.CheckCollision(x + 1, y))
+                    {
+                        x++; hasMoved = true;
+                    }
                     break;
             }
             Stuff.FindCharacter(1).SetSprite(text);
             SetCharacterPosition(x, y);
+            if (hasMoved) CheckBattle(x, y);
         }
 
         public void ExecuteFunction()
@@ -152,7 +175,7 @@ namespace RolePlayingGame
             ExecuteFunction();
             int x = 0, y = 0;
             GetCharacterPosition(ref x, ref y);
-            button4.Content = x + " " + y + " " + Stuff.FindMap(1).GetFunction(x, y).GetID();  
+            //button4.Content = x + " " + y + " " + Stuff.FindMap(1).GetFunction(x, y).GetID();  
         }
 
         private void button5_Click(object sender, RoutedEventArgs e)

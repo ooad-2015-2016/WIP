@@ -81,15 +81,19 @@ namespace Entity {
             // caster = 0 player koristi skill
             // caster = 1, 2, 3 odgovarajuci neprijatelj koristi skill
             damageDealt = skill.GetPower();
+            EquipmentSlots equipment = playerParty[0].GetEquipment();
             if (target == 0)
-            {
+            {                
                 monsterParty[caster - 1].LoseMana(skill.GetManaCost());
+                damageDealt -= damageDealt * equipment.GetArmor().GetPower() / 100;
                 playerParty[0].LoseHealth(damageDealt);
                 if (playerParty[0].GetHealth() <= 0) playerParty[0].SetID(0);
             }
             else
             {
                 playerParty[0].LoseMana(skill.GetManaCost());
+                damageDealt = damageDealt * equipment.GetPrimary().GetPower() / 100;
+                if(damageDealt == 0) damageDealt = (int)skill.GetPower()/5;
                 monsterParty[target - 1].LoseHealth(damageDealt);
                 if (monsterParty[target - 1].GetHealth() <= 0) monsterParty[target - 1].SetID(0);
             }
@@ -110,7 +114,8 @@ namespace Entity {
                     + " on " + monster.GetName() + " and did " + damageDealt + " damage.\n";
                 if(monster.GetID() == 0)
                 {
-                    int exp = monster.GetEXPReward(), gold = monster.GetGoldReward();
+                    long exp = monster.GetEXPReward();
+                    int gold = monster.GetGoldReward();
                     playerParty[0].IncreaseEXP(exp);
                     playerParty[0].IncreaseGold(gold);
                     report += "You killed " + monster.GetName() + " and recieved "
@@ -157,7 +162,7 @@ namespace Entity {
                     m++;
                 }
             }
-            if (m == 0) battleEnd = true;
+            if (m == 0 || playerParty[0].GetID() == 0) battleEnd = true;
             return report;        
 		}
 		public void Render() {

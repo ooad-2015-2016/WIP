@@ -27,7 +27,6 @@ namespace RolePlayingGame
             ResetSelect();
             if (Stuff.GetOption() == 1) ShowStats(1);
             else ShowStats(0);
-            Stuff.SetOption(0);
         }
         public InGameMeni()
         {
@@ -234,12 +233,16 @@ namespace RolePlayingGame
                     ShowStats(1);
                     break;
                 case 2:
+                    if (Stuff.GetOption() != 11) Stuff.SetOption(0);
                     this.Frame.Navigate(typeof(InventoryMeni), Stuff);
                     break;
                 case 3:
                     break;
                 default:
-                    this.Frame.Navigate(typeof(MapMeni), Stuff);
+                    if (Stuff.GetOption() == 11)
+                        this.Frame.Navigate(typeof(BlankPage1), Stuff);
+                    else
+                        this.Frame.Navigate(typeof(MapMeni), Stuff);
                     break;
             }
         }

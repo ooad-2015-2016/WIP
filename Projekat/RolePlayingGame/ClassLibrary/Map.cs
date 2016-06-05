@@ -10,7 +10,7 @@ namespace Entity {
 		private int height = 0;
         private int width = 0;
         private List<bool> collisionLayer;
-		private List<SpawnTile> spawnLayer;
+		private List<int> spawnLayer;
 		private Image bottomLayer;
         private Image topLayer;
 		private List<FunctionTile> functionLayer;
@@ -19,10 +19,10 @@ namespace Entity {
             bottomLayer = new Image();
             topLayer = new Image();
             collisionLayer = new List<bool>();
-            spawnLayer = new List<SpawnTile>();
+            spawnLayer = new List<int>();
             functionLayer = new List<FunctionTile>();
 		}
-        private int GetPosition(int x, int y)
+        public int GetPosition(int x, int y)
         {
             //Prebacuje dvodimenzionalnu poziciju na mapi na jednodimenzionu poziciju na listi
             int z = x + y * width;
@@ -42,8 +42,26 @@ namespace Entity {
             int z = GetPosition(x, y);
             return functionLayer[z];
 		}
-		public bool CheckBattle(ref object int_x, ref object int_y) {
-			throw new System.Exception("Not implemented");
+		public bool CheckBattle(int x, int y, Random rand) {
+            int spawn = spawnLayer[GetPosition(x, y)];
+            bool battle = false;
+            switch(spawn)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    if(rand.Next(1, 10) <= 2) battle = true;
+                    break;
+                case 7:
+                    battle = true;
+                    break;
+                default:
+                    break;
+            }
+            return battle;
 		}
 		//public void() MoveCharacter() {
 		//	throw new System.Exception("Not implemented");
@@ -94,11 +112,11 @@ namespace Entity {
         {
             this.collisionLayer = collisionLayer;
         }
-        public List<SpawnTile> GetSpawnLayer()
+        public List<int> GetSpawnLayer()
         {
             return spawnLayer;
         }
-        public void SetSpawnLayer(List<SpawnTile> spawnLayer)
+        public void SetSpawnLayer(List<int> spawnLayer)
         {
             this.spawnLayer = spawnLayer;
         }
