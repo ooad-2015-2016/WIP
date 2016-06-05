@@ -149,7 +149,7 @@ namespace RolePlayingGame
                         for(int i = 0; i < 3; i++)
                         {
                             int par = rand.Next(1, 10);
-                            if(par > 2*i)
+                            if(par > 10*i)
                             {
                                 int monsta = rand.Next(1, 5);
                                 int LVL = rand.Next(1, 3);
@@ -163,7 +163,7 @@ namespace RolePlayingGame
                         for (int i = 0; i < 3; i++)
                         {
                             int par = rand.Next(1, 100);
-                            if (par > 25 * i)
+                            if (par > 100 * i)
                             {
                                 int monsta = rand.Next(1, 5);
                                 int LVL = rand.Next(1, 3);
@@ -178,7 +178,7 @@ namespace RolePlayingGame
                         for (int i = 0; i < 3; i++)
                         {
                             int par = rand.Next(1, 100);
-                            if (par > 25 * i)
+                            if (par > 100 * i)
                             {
                                 int monsta = rand.Next(1, 5);
                                 int LVL = rand.Next(1, 4);
@@ -193,7 +193,7 @@ namespace RolePlayingGame
                         for (int i = 0; i < 3; i++)
                         {
                             int par = rand.Next(1, 10);
-                            if (par > 4 * i)
+                            if (par > 10 * i)
                             {
                                 int monsta = rand.Next(1, 5);
                                 if (i == 0) monsta = rand.Next(1, 100);
@@ -209,7 +209,7 @@ namespace RolePlayingGame
                         for (int i = 0; i < 3; i++)
                         {
                             int par = rand.Next(0, 10);
-                            if (par > 4 * i)
+                            if (par > 10 * i)
                             {
                                 int monsta = rand.Next(1, 13);
                                 if (i == 0) monsta = rand.Next(1, 100);
@@ -225,7 +225,7 @@ namespace RolePlayingGame
                         for (int i = 0; i < 3; i++)
                         {
                             int par = rand.Next(0, 10);
-                            if (par > 5 * i)
+                            if (par > 10 * i)
                             {
                                 int monsta = rand.Next(1, 6);
                                 if (i == 0) monsta = rand.Next(1, 100);
