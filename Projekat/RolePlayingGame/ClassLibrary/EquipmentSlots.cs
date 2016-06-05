@@ -26,7 +26,7 @@ namespace Entity {
 		}
         public Equipable GetArmor()
         {
-            return primaryWeapon;
+            return armor;
         }
         public void SetArmor(Equipable item) {
             armor = item;

@@ -100,7 +100,7 @@ namespace RolePlayingGame
                 skill6.SetManaCost(0);
                 Stuff.AddSkill(skill6);
 
-                //Adding enemy skills
+                //Adding enemy skills -Bat
                 Skill skill = new Skill();
                 skill.SetID(101);
                 skill.SetName("Bite");
@@ -136,6 +136,337 @@ namespace RolePlayingGame
                 skill.SetAccuracy(1);
                 skill.SetManaCost(20);
                 Stuff.AddSkill(skill);
+
+                //-Cave dweller
+                skill = new Skill();
+                skill.SetID(111);
+                skill.SetName("Pickaxe Strike");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent");
+                skill.SetPower(5);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(0);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(112);
+                skill.SetName("Rock Throw");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(15);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(10);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(113);
+                skill.SetName("Kung Fu");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(25);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(20);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(114);
+                skill.SetName("Cliff Breaker");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(50);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(30);
+                Stuff.AddSkill(skill);
+
+                //-Bird-man
+                skill = new Skill();
+                skill.SetID(121);
+                skill.SetName("Tackle");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent");
+                skill.SetPower(10);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(0);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(122);
+                skill.SetName("Claw Strike");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(30);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(20);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(123);
+                skill.SetName("Boulder Toss");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(60);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(30);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(124);
+                skill.SetName("Whirlwind");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(20);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(15);
+                Stuff.AddSkill(skill);
+
+                //-Fungi
+                skill = new Skill();
+                skill.SetID(131);
+                skill.SetName("Fungal Slap");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent");
+                skill.SetPower(10);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(0);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(132);
+                skill.SetName("Toxic Fumes");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(40);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(20);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(133);
+                skill.SetName("Neurotoxic Bite");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(90);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(40);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(134);
+                skill.SetName("Root grab");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(30);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(15);
+                Stuff.AddSkill(skill);
+
+                //-Dragonling
+                skill = new Skill();
+                skill.SetID(141);
+                skill.SetName("Swipe");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent");
+                skill.SetPower(10);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(0);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(142);
+                skill.SetName("Fireball");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(80);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(20);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(143);
+                skill.SetName("Flamestrike");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(300);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(70);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(144);
+                skill.SetName("Pyroblast");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(500);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(100);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(145);
+                skill.SetName("Fireblast");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(30);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(5);
+                Stuff.AddSkill(skill);
+
+                //-Medusa
+                skill = new Skill();
+                skill.SetID(151);
+                skill.SetName("Tentacle Strike");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent");
+                skill.SetPower(20);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(0);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(152);
+                skill.SetName("Death Stare");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(1000);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(150);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(153);
+                skill.SetName("Grab");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(50);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(20);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(154);
+                skill.SetName("Terror gaze");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(100);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(25);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(155);
+                skill.SetName("Tentacle Flurry");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(250);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(50);
+                Stuff.AddSkill(skill);
+
+                //-Devil's Advocate
+
+                skill = new Skill();
+                skill.SetID(161);
+                skill.SetName("Harrasement Complaint");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent");
+                skill.SetPower(100);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(0);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(162);
+                skill.SetName("Sexual Harrasement Charge");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(250);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(50);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(163);
+                skill.SetName("Copiright Infringement Lawsuit");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(1500);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(100);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(164);
+                skill.SetName("Canadian Devil's Mobile Game!®");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(5000);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(200);
+                Stuff.AddSkill(skill);
+
+                skill = new Skill();
+                skill.SetID(165);
+                skill.SetName("I AM THE LAW! - in Silvester Stalone's voice");
+                skill.SetSprite("/Assets/Skills/Attacks/punch.png");
+                skill.SetMainType(1);
+                skill.SetSubType(1);
+                skill.SetDescription("Bite your opponent hard");
+                skill.SetPower(3000);
+                skill.SetAccuracy(1);
+                skill.SetManaCost(150);
+                Stuff.AddSkill(skill);
             }
 
             {
@@ -149,6 +480,65 @@ namespace RolePlayingGame
                 Enemy.AddSkill(Stuff.FindSkill(102));
                 Enemy.AddSkill(Stuff.FindSkill(103));
                 Stuff.AddMonster(Enemy);
+
+                Enemy = new Monster();
+                Enemy.SetID(2);
+                Enemy.SetName("Cave Dweller");
+                Enemy.SetSprite("/Assets/Monsters/hardhat.png");
+                Enemy.SetDescription("Usually found near caverns, obviously. Also doesn't like company.");
+                Enemy.AddSkill(Stuff.FindSkill(111));
+                Enemy.AddSkill(Stuff.FindSkill(112));
+                Enemy.AddSkill(Stuff.FindSkill(113));
+                Enemy.AddSkill(Stuff.FindSkill(114));
+                Stuff.AddMonster(Enemy);
+
+                Enemy = new Monster();
+                Enemy.SetID(3);
+                Enemy.SetName("Bird-man");
+                Enemy.SetSprite("/Assets/Monsters/birdman.png");
+                Enemy.SetDescription("Icarus went too far on this one.");
+                Enemy.AddSkill(Stuff.FindSkill(121));
+                Enemy.AddSkill(Stuff.FindSkill(122));
+                Enemy.AddSkill(Stuff.FindSkill(123));
+                Enemy.AddSkill(Stuff.FindSkill(124));
+                Stuff.AddMonster(Enemy);
+
+                Enemy = new Monster();
+                Enemy.SetID(4);
+                Enemy.SetName("Eatus Humanus");
+                Enemy.SetSprite("/Assets/Monsters/mushroom.png");
+                Enemy.SetDescription("Commonly considered to be a mushroom, but he's actually a fungi.");
+                for(int i = 1; i <= 4; i++)
+                    Enemy.AddSkill(Stuff.FindSkill(130 + i));
+                Stuff.AddMonster(Enemy);
+
+                Enemy = new Monster();
+                Enemy.SetID(5);
+                Enemy.SetName("Powerfull Dragonling");
+                Enemy.SetSprite("/Assets/Monsters/lizard.png");
+                Enemy.SetDescription("Oh. So you like hitting babies. How nice of you. This baby ain't messing around.");
+                for (int i = 1; i <= 5; i++)
+                    Enemy.AddSkill(Stuff.FindSkill(140 + i));
+                Stuff.AddMonster(Enemy);
+
+                Enemy = new Monster();
+                Enemy.SetID(6);
+                Enemy.SetName("Medusa");
+                Enemy.SetSprite("/Assets/Monsters/eye.png");
+                Enemy.SetDescription("I woudn't look at it, if I we're you.");
+                for (int i = 1; i <= 5; i++)
+                    Enemy.AddSkill(Stuff.FindSkill(150 + i));
+                Stuff.AddMonster(Enemy);
+
+                Enemy = new Monster();
+                Enemy.SetID(7);
+                Enemy.SetName("Devil's Advocate");
+                Enemy.SetSprite("/Assets/Monsters/imp.png");
+                Enemy.SetDescription("He came straight from hell. You better have prepared your defence.");
+                for (int i = 1; i <= 5; i++)
+                    Enemy.AddSkill(Stuff.FindSkill(160 + i));
+                Stuff.AddMonster(Enemy);
+
             }
 
             {

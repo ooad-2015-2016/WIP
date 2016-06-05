@@ -9,10 +9,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image x:Name="Background" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="1280" Source="/Assets/Background.png"/>
-        
+
         <Image x:Name="image" HorizontalAlignment="Left" Height="676" VerticalAlignment="Top" Width="1147" Margin="76,22,0,0" Source="/Assets/InGameMeni/MainBox.png"/>
         <Image x:Name="image2" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="723" Margin="478,46,0,0" Source="/Assets/InGameMeni/SideBox.png"/>
-        <TextBlock x:Name="InfoBox" HorizontalAlignment="Left" Margin="493,61,0,0" FontSize="20" Foreground="White" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="598" Width="695"/>
+        <TextBlock x:Name="InfoBox" HorizontalAlignment="Left" Margin="493,207,0,0" FontSize="24" Foreground="White" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="452" Width="508"/>
 
         <Image x:Name="ViewStats_Button" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="280" Margin="102,56,0,0" Source="/Assets/Button1.png"/>
         <Image x:Name="ViewStats_Select" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="283" Margin="101,55,0,0" Source="/Assets/Button1Select.png"/>
@@ -69,6 +69,44 @@
         <!--</TextBlock>-->
         <!--<TextBlock x:Name="Enemy2" HorizontalAlignment="Left" Margin="894,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy2"/>-->
         <!--<TextBlock x:Name="Enemy1" HorizontalAlignment="Left" Margin="695,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="33" SelectionChanged="textBlock2_SelectionChanged" Width="90" Text="Enemy1"/>-->
+
+        <TextBlock x:Name="EquipmentInfo" Foreground="White" HorizontalAlignment="Left" Height="441" Margin="1006,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="24">
+        	<Run Text="Equipment:"/>
+        	<LineBreak/>
+        	<Run Text="Primary:"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="Secondary:"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="Armor:"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+
+        <Rectangle Name="Item1_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="1006,301,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Image x:Name="Item1" HorizontalAlignment="Left" Height="64" Margin="1006,301,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <Button x:Name="Item1_Button" HorizontalAlignment="Left" Height="64" Margin="1006,301,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item1_Button_Click"/>
+
+        <Rectangle Name="Item2_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="1006,428,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Image x:Name="Item2" HorizontalAlignment="Left" Height="64" Margin="1006,428,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <Button x:Name="Item2_Button" HorizontalAlignment="Left" Height="64" Margin="1006,428,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item3_Button_Click"/>
+
+        <Rectangle Name="Item3_Slot" Fill="Black" HorizontalAlignment="Left" Height="64" Margin="1006,554,0,0" Stroke="Black" VerticalAlignment="Top" Width="64" Opacity="0.5"/>
+        <Image x:Name="Item3" HorizontalAlignment="Left" Height="64" Margin="1006,554,0,0" VerticalAlignment="Top" Width="64" Source="/Assets/Items/Armor1.png"/>
+        <Button x:Name="Item3_Button" HorizontalAlignment="Left" Height="64" Margin="1006,554,0,0" VerticalAlignment="Top" Width="64" Opacity="0" Click="Item2_Button_Click"/>
 
     </Grid>
 </Page>

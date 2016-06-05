@@ -35,6 +35,7 @@ namespace Entity {
             statusEffects = new List<StatusEffect>();
             atributes = new Atributes();
             inventory = new Inventory();
+            equipment = new EquipmentSlots();
         }
 		public void LevelUp(ref string report) {
             LVL++; ChangedLVL--;

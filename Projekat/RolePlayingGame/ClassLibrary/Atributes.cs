@@ -49,7 +49,7 @@ namespace Entity {
         {
             intelligence++;
         }
-        public int GetWillPower()
+        public int GetWillpower()
         {
             return this.willpower;
         }
