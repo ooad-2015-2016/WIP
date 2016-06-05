@@ -212,4 +212,11 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
 * [XAML implementacija](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeniXAML.png)
 
+###Implementacija projekta
 
+Da bi pokrenuli ovaj projekat potrebno je extractovati .rar fajl koji se nalazi u  folderi WIP, te nakon toga u njega kopirati potrebne foldere iz WIP/Projekat.
+
+Projekat u .rar-u nije Update-ovan jer projekat u .7z nije radio kad sam testirao na faks-u. Kada se uradi gore navedeno projekat bi se trebao moći pokrenuti.
+
+* [Implementacija u video formi - Youtube](https://youtu.be/TnAXd54byJs)
+* [Posljednja borba u video formi - Youtube]()

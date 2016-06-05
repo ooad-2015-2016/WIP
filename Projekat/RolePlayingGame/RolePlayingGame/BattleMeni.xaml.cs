@@ -240,6 +240,8 @@ namespace RolePlayingGame
                     case 7:
                         Fight.AddMonster(Stuff.FindMonster(7));
                         Fight.GetMonsterParty()[0].LevelUpTo(25);
+                        Fight.AddMonster(new Monster());
+                        Fight.AddMonster(new Monster());
                         break;
                     default:
                         break;
