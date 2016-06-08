@@ -225,3 +225,5 @@ Na nekim menijima ima viska stvari sa strane koji se ne bi trebali vidjeti na mo
 Ne bi trebao imati bug-ova ali nije previse testiran. Pokrece se na isti nacin kao i izvorni projekat.
 
 * [Implementacija u video formi - Youtube](https://youtu.be/TnAXd54byJs)
+
+* [Implementacija mobilnog port-a - Youtube](https://youtu.be/GD6durO6R-U)
