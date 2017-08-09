@@ -1,15 +1,15 @@
-﻿#WIP
+# WIP
 
-##Role Playing Game
+## Role Playing Game
 
-###Članovi tima:
+### Članovi tima:
 
 1. Subašić Adi
 2. Murselović Lejla
 3. Solak Naida
 4. Muratagić Amer
 
-###Opis Teme
+### Opis Teme
 
 Cilj projekta je napraviti video igru koja pripada RPG žanru(tačnije JRPG).
 Ona se sastoji od niza sistema sa kojima korisnik može istraživati svijet, 
@@ -45,21 +45,21 @@ Narativ će biti prezentiran kroz komunikaciju sa ostalim karakterima.
 eliminiši t, ...)
 
 
-###Procesi
+### Procesi
 
-######Proces započinjanja igre
+###### Proces započinjanja igre
 
 Korisniku se pojavi interfejs na kojem može izabrati da li će započeti novu igru ili nastaviti
 sačuvanu igru. Ukoliko započinje novu igru pokrenut će se proces kreiranja novog karaktera u 
 kojem unosi željeno ime. Nakon toga na ekranu se prikaže mapa i kreirani lik.
 
-######Proces kretanja po mapi
+###### Proces kretanja po mapi
 
 Korisnik korištenjem tastature može da mijenja poziciju svog karaktera na mapi. To radi pomoću
 strelica koje označavaju smijer kretanja. Tokom tog kretanja postoji mogućnost da lik naiđe na 
 neprijatelja nakon čega se pokreće proces borbe. 
 
-######Proces borbe
+###### Proces borbe
 
 Korisniku se prikazuje intefejs na kojem vidi sliku svog lika i neprijatelja, zajedno sa 
 njihovim borbenim statistikama. Korisniku će biti ponuđene mogućnosti odabira napada, 
@@ -72,53 +72,53 @@ igrač ili neprijatelj ne izgube život, osim u slučaju da igrač pobjegne. Ako
 pobijedi dobiva odredjeni broj iskustva i/ili zlata. U suprotnom pokrenut će se proces 
 učitavanja igre sa predhodnog spašenog stanja.
 
-######Proces korištenja menija
+###### Proces korištenja menija
 
 Otvaranjem menija pojavljuje se korisnički interfejs koji nudi izbor pregleda osobina karaktera, 
 otvaranja inventara gdje možemo vršiti procese odabira opreme i korištenja predmeta, pregleda 
 sposobnosti igrača i napuštanja igre. 
 
-######Proces levelovanja
+###### Proces levelovanja
 
 Ukoliko korisnik stekne dovoljno iskustva povećava mu se level, što donosi statističke prednosti.
 On također dobiva i određeni broj "skill" poena sa kojima može otključati nove sposobnosti za
 korištenje unutar borbi.
  
-######Proces kupovine predmeta i opreme
+###### Proces kupovine predmeta i opreme
 
 Ako se korisnik nađe u blizini prodavača na mapi, ima mogućnost kupovine novih predmeta i opreme
 koji su mu ponuđeni. Predmeti su prikazani u novom korisničkom interfejsu. Za kupovinu se koristi 
 zlato stečeno u borbi. Kada kupi predmet, on se prohranjuje u inventar.
 
-######Proces odabira opreme
+###### Proces odabira opreme
 
 Unutar inventarskog menija biramo opremu koju karakter može koristiti. 
 
-######Proces korištenja predmeta
+###### Proces korištenja predmeta
 
 Ako korisnik želi iskoristiti predmet iz inventara kojim bi promijenio trenutno stanje igrača, 
 odabire odgovarajuću opciju unutar menija.
 
-######Proces bacanja predmeta i opreme
+###### Proces bacanja predmeta i opreme
 
 U istom meniju kao i u prethodnom slučaju korisnik može odbaciti neželjene predmete i opremu.
 
-######Proces razgovora sa NPC karakterom
+###### Proces razgovora sa NPC karakterom
 
 U blizini NPC-a korisnik može započeti razgovor, prilikom čega dobiva uputstva ili informacije o 
 svijetu u kojem se odvija igra. Također on može dobiti i neke nagrade od samog NPC-a.
 
-######Proces spašavanja igre
+###### Proces spašavanja igre
 
 Kada se karakter nađe u blizini objekta za spašavanje igre, nazovimo ga "Checkpoint" on ima mogućnost da
 spasi trenutno stanje igre.
 
-######Proces učitavanja igre
+###### Proces učitavanja igre
 
 Korisnik se može vratiti na početni meni ("Main Meni") odakle može učitati neko od prethodno spašenih stanja
 igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
-###Funkcionalnosti
+### Funkcionalnosti
 
 - Mogućnost kretanja po mapi
 	- Mogućnost ulaska u borbu
@@ -136,18 +136,18 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 *Consumable Items - pružaju trenutno povećanje određenih atributa, nestanu nakon toga  
 *Inventory - skladište svih stvari koji karakter može skupiti  
 
-###Akteri
+### Akteri
 
 - Korisnik - on je jedini akter u ovom projektu, ima apsolutnu kontrolu nad svim funkcionalnostima
 
-###Dijagrami i scenariji
+### Dijagrami i scenariji
 
-#####Use Case dijagram
+##### Use Case dijagram
 
 - [Use Case dijagram](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/UseCaseIScenarij/RolePlayingGame.jpg)
 	- [Započinjanje igre](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/UseCaseIScenarij/Zapo%C4%8Dinjanje%20igre.jpg)
 
-#####Scenariji
+##### Scenariji
  
 * [Započinjanje igre](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/Zapo%C4%8DinjanjeIgre.pdf)
 * [Korištenje mape](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/Kori%C5%A1tenjeMape.pdf)
@@ -157,7 +157,7 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 	* [Spašavanje igre](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/SpašavanjeIgre.pdf)
 * [Korištenje Menija](https://github.com/ooad-2015-2016/WIP/blob/master/UseCaseIScenarij/KoristenjeMenija.pdf)
 
-#####Activity dijagrami
+##### Activity dijagrami
 
 * [Dijagram ukupnog procesa](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramAktivnosti/DijagramUkupnogProcesa.jpg)  
 	* [Kretanje po mapi](https://github.com/ooad-2015-2016/WIP/blob/master/DijagramAktivnosti/KretanjePoMapi.jpg?raw=true)  
@@ -175,30 +175,30 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 
 []()
 
-###Dijagram Klasa
+### Dijagram Klasa
 
 * [Klase](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/Character.jpg)
 * [Klase kompresovane](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramKlasa/KlaseCompressed.jpg)
 
-###Dijagram Sekvenci
+### Dijagram Sekvenci
 
 * [Dijagram sekvenci](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/DijagramSekvenci.png)
 
-###Design pattern-i
+### Design pattern-i
 
 * [Strategy pattern](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/StrategyPattern.png)
 
 
-###Skice Formi
+### Skice Formi
 
-#####Battle Meni
+##### Battle Meni
 
 * [Forma 1](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/1.png)
 * [Forma 2](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/2.png)
 * [Forma 3](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/3.png)
 * [Forma 4](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeni/4.png)
 
-#####Alternate Battle Meni - vjerovatno bolji
+##### Alternate Battle Meni - vjerovatno bolji
 
 * [Forma 1](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/1.png)
 * [Forma 2](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/2.png)
@@ -208,11 +208,11 @@ igre. Prilikom povratka na taj meni trenutno stanje igre se briše.
 * [Forma 6](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/6.png)
 * [Forma 7](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/AlternateBattleMeni/7.png)
 
-#####Battle Meni - XAML
+##### Battle Meni - XAML
 
 * [XAML implementacija](https://raw.githubusercontent.com/ooad-2015-2016/WIP/master/SkiceFormi/BattleMeniXAML.png)
 
-###Implementacija projekta
+### Implementacija projekta
 
 Da bi pokrenuli ovaj projekat potrebno je extractovati .rar fajl koji se nalazi u  folderi WIP, te nakon toga u njega kopirati potrebne foldere iz WIP/Projekat.
 
